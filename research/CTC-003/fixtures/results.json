@@ -1,0 +1,132 @@
+{
+  "passed": 21,
+  "total": 21,
+  "results": [
+    {
+      "test": "HMRC inclusive 180 net",
+      "pass": true,
+      "actual": "150",
+      "expected": "150.00"
+    },
+    {
+      "test": "HMRC inclusive 180 tax",
+      "pass": true,
+      "actual": "30.00",
+      "expected": "30.00"
+    },
+    {
+      "test": "Inclusive basis effect already included",
+      "pass": true,
+      "actual": "180.00",
+      "expected": "180.00"
+    },
+    {
+      "test": "Exclusive basis effect added",
+      "pass": true,
+      "actual": "180.00",
+      "expected": "180.00"
+    },
+    {
+      "test": "HMRC invoice VAT total",
+      "pass": true,
+      "actual": "418.68",
+      "expected": "418.68"
+    },
+    {
+      "test": "CFDI withholding preserved as magnitude",
+      "pass": true,
+      "actual": "0.10",
+      "expected": "0.10"
+    },
+    {
+      "test": "CFDI illustrative signed contributions",
+      "pass": true,
+      "actual": "-0.04",
+      "expected": "-0.04"
+    },
+    {
+      "test": "CFDI illustrative payable",
+      "pass": true,
+      "actual": "0.96",
+      "expected": "0.96"
+    },
+    {
+      "test": "Peppol signed credit lines",
+      "pass": true,
+      "actual": "1300",
+      "expected": "1300"
+    },
+    {
+      "test": "Peppol credit tax exclusive",
+      "pass": true,
+      "actual": "1325",
+      "expected": "1325"
+    },
+    {
+      "test": "Peppol credit VAT",
+      "pass": true,
+      "actual": "331.25",
+      "expected": "331.25"
+    },
+    {
+      "test": "Peppol credit payable presentation",
+      "pass": true,
+      "actual": "1656.25",
+      "expected": "1656.25"
+    },
+    {
+      "test": "Credit presentation distinct from seller receivable delta",
+      "pass": true,
+      "actual": "-1656.25",
+      "expected": "-1656.25"
+    },
+    {
+      "test": "Versioned conversion synthetic EUR to USD",
+      "pass": true,
+      "actual": "132.00",
+      "expected": "132.00"
+    },
+    {
+      "test": "Line rounding",
+      "pass": true,
+      "actual": "0.03",
+      "expected": "0.03"
+    },
+    {
+      "test": "Aggregate rounding",
+      "pass": true,
+      "actual": "0.02",
+      "expected": "0.02"
+    },
+    {
+      "test": "Rounding variance",
+      "pass": true,
+      "actual": "0.01",
+      "expected": "0.01"
+    },
+    {
+      "test": "Source summary discrepancy",
+      "pass": true,
+      "actual": "0.01",
+      "expected": "0.01"
+    },
+    {
+      "test": "NOT_EVALUABLE unknown basis",
+      "pass": true,
+      "actual": "NOT_EVALUABLE",
+      "expected": "NOT_EVALUABLE"
+    },
+    {
+      "test": "NOT_EVALUABLE unknown fx",
+      "pass": true,
+      "actual": "NOT_EVALUABLE",
+      "expected": "NOT_EVALUABLE"
+    },
+    {
+      "test": "NOT_EVALUABLE unknown rounding",
+      "pass": true,
+      "actual": "NOT_EVALUABLE",
+      "expected": "NOT_EVALUABLE"
+    }
+  ]
+}

@@ -45,3 +45,23 @@ CTC-002-P1..P6 are accepted as architecture principles in DECISIONS.md. **No sem
 ## CTC-002 — D2 formal logical contract candidate (2026-10-20)
 
 The nine-concept D2 logical contract and I-01..I-10 invariants are **proposed for review**, not accepted as the final semantic schema. User previously validated D2 as logical direction only. FiscalContext A/B/C physical/aggregate cardinalities remain deferred. See `research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md`.
+
+## 2026-10-20 — Accepted D2 logical foundation (not a complete approved schema)
+
+**Accepted by explicit user approval:** D2 implementation-neutral nine-concept logical semantic contract and I-01..I-10; see `DECISIONS.md` and `research/CTC-002/CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md`. P1..P7 remain accepted.
+
+**Logical concepts:** BillingDocument; PublishedRevision; SourceFiscalFact; FiscalInterpretation; DerivedFiscalFact; ProfilePackage; DocumentRepresentation; ComplianceTransaction; FiscalIdentity/Evidence.
+
+**Boundary rules:** immutable published revisions; distinguish source and derived assertions; pin exact revision, interpretation, profile package and representation references; preserve separate compliance history and fiscal evidence; apply profile-specific arithmetic/precision and distinct semantic-vs-target-validity gates.
+
+**Not approved:** full entity dictionary or JSON schema; mandatory physical aggregate roots; FiscalContext A/B/C; database design, physical cardinalities and jurisdictional legal conformance. Earlier sections describing an unapproved *full schema* remain accurate; this section records only the accepted logical foundation. CTC-003 is eligible to begin.
+
+
+## CTC-003 tax governance note — 2026-10-20
+
+**Accepted at concept level:** T01 separates TaxRegime and TaxApplication with explicit application scope; T02 makes TaxSummary a reconciled aggregate with source summary assertions preserved. **Not accepted:** T03 sign policy (provisional experiment only), exact tax schema/cardinalities, detailed reconciliation rules. Commercial dictionary draft 0.2 and tax/monetary dictionary draft 0.3 remain proposals. Existing D2 logical baseline and P1–P7/I-01..I-10 are unchanged.
+
+
+## 2026-10-20 — CTC-003 T03 approved policy annotation
+
+CTC-003-T03 is **Accepted at logical monetary policy level only**. The exact ten approved invariants are recorded in `DECISIONS.md` and the decision-ready research report. `MonetaryBasis` and `MonetaryEffect` remain **candidate logical concepts**, not approved entities, fields, aggregate roots or tables. T01 and T02 remain Accepted. The detailed CTC-003 semantic entity dictionary remains a draft and **CTC-003 is In Progress**. No physical FiscalContext A/B/C choice was made.

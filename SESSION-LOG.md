@@ -89,3 +89,41 @@
 - Next: User approval of contract/invariants and whether scoped logical-boundary closure is acceptable; record explicit decision before status change.
 - Deliverable: `research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md`.
 - GitHub: Replacement files generated locally; no remote push.
+
+## Session 004 — 2026-10-20 — CTC-002 D2 formal contract and scoped approval
+
+- **Scope:** Explicit approval and closure decision after Peppol, CFDI, Malaysia and India focused constructed-fixture tests, two-version synthetic replay, Italy SdI documentation review and France conceptual stress test.
+- **User approval:** D2 nine-concept implementation-neutral logical contract **Accepted**; invariants **I-01 through I-10 Accepted**; **CTC-002 scoped logical-boundary closure Approved**. Previously accepted P1..P7 unchanged.
+- **Decision record:** `DECISIONS.md` section `CTC-002 — Explicit D2 logical-contract approval and scoped closure`; task-qualified `CTC-002-D2-LOGICAL-APPROVAL`, not a global ADR number.
+- **Explicit exclusions:** No acceptance of FiscalContext A/B/C physical design, mandatory independent aggregates, concrete physical cardinalities, full JSON/relational schema or regulatory conformance.
+- **Task changes:** CTC-002 marked Done **only for scoped logical boundary**; CTC-003 eligible to start. Follow-ups CTC-002-FU01..FU05 introduced for physical design, paired real fixtures, archived historical replay, multi-interpretation evidence and semantic precision.
+- **Evidence:** Test reports remain as documented; synthetic and constructed fixtures do not establish full tax-authority validity. No new external validation performed during approval update.
+- **Model baseline:** Accepted logical D2 foundation annotated; detailed model remains unapproved.
+- **Next task:** Begin CTC-003 logical entity dictionary and cardinalities, preserving deferred choices as explicit open questions.
+- **Synchronization:** Git-ready replacement files generated locally; remote GitHub not modified.
+
+
+## Session 005 — 2026-10-20 — CTC-003 T01/T02 approval and T03 provisional test
+
+- **Scope:** TaxRegime/TaxApplication ownership, TaxSummary aggregation, sign policy and five synthetic monetary scenarios.
+- **Explicit approvals:** T01 and T02 accepted at conceptual level. T03 remains proposed/provisional, not approved.
+- **Existing approvals preserved:** CTC-002 P1–P7, D2 logical contract and I-01..I-10. FiscalContext A/B/C physical design deferred.
+- **Test:** `tests/test_tax_signs.py` executed with Python Decimal; 5/5 synthetic cases passed (positive invoice, negative line, withholding, credit note, informational tax). No official regulatory validation.
+- **Proposed findings:** CTC-003-F01..F05 in FINDINGS.md; evidence limitations explicit.
+- **Model changes:** No detailed tax schema accepted. Draft 0.2/0.3 remain unapproved.
+- **Backlog:** CTC-003 In Progress; CTC-004 not started.
+- **Next:** Resolve whether contribution is a stored assertion or derived projection, and test included taxes, credit/reversal polarity, mixed currencies, rounding and source-asserted tax-summary variances before T03 approval.
+- **GitHub:** Full replacement files supplied, not pushed or synchronized.
+
+
+## Session — 2026-10-20 — CTC-003 T03 logical-policy approval
+
+- **Scope:** Record explicit T03 decision after decision-ready source review and focused tests.
+- **Evidence:** `research/CTC-003/CTC-003-T03-DECISION-READY-REVIEW.md` (21 focused assertions; incomplete real-world regulatory fixture validation).
+- **Explicitly accepted:** CTC-003-T03 as the ten refined logical monetary invariants transcribed in DECISIONS.md.
+- **Preserved approvals:** T01/T02; CTC-002 P1..P7, D2 and I-01..I-10.
+- **Not accepted:** Final `MonetaryBasis`/`MonetaryEffect` entity shapes, physical cardinalities, aggregate roots, jurisdictional rules, T03 draft field schema.
+- **Open evidence:** E-T03-01..05 and detailed candidate monetary concepts.
+- **Backlog:** CTC-003 remains In Progress; evidence and detailed design follow-ups proposed.
+- **Next:** Continue CTC-003 detailed entity dictionary and reconcile T03 logical policy with source assertions and summary models.
+- **GitHub:** No remote push. Complete replacement files supplied for manual review/commit.

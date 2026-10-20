@@ -88,3 +88,23 @@ The following findings result from a **synthetic, fictional-jurisdiction (XX)** 
 | F-002-57 | India state/POS/special flags are source facts, not complete legal conclusions | IRP schema + constructed JSON tests | Pending review |
 | F-002-58 | D2 handles synthetic Malaysia/India examples without overwriting source facts | Three synthetic cases, 33 focused checks | Pending review |
 | F-002-59 | Malaysia/India tests do not establish full schema conformance, authority signatures or historical replay | Test report limitations | Pending review |
+
+## CTC-002 — Decision disposition (2026-10-20)
+
+The user explicitly approved the D2 logical contract and I-01..I-10 and scoped CTC-002 closure. **This is an approval record, not new empirical validation.** Existing F-002-11..59 (and any earlier findings) retain their existing evidence tiers and review statuses; synthetic/constructed-fixture results do not become regulatory-conformance findings. Follow-up evidence gates are tracked as CTC-002-FU02..FU04 in BACKLOG.md. No finding IDs were renumbered or reclassified as verified by virtue of this approval.
+
+
+## CTC-003 — Tax sign experiment (2026-10-20)
+
+| Finding | Observation | Evidence | Status |
+|---|---|---|---|
+| CTC-003-F01 | Explicit economic scope and tax-regime reference can avoid treating line applications and document summary assertions as additive duplicate taxes. | Approved T01/T02 conceptual analysis; no official fixture executed | Proposed / design inference |
+| CTC-003-F02 | Nonnegative tax magnitude with explicit signed payable contribution models the five constructed cases without double-negation. | `tests/test_tax_signs.py`, `tests/test-results.json` | Tested only on synthetic arithmetic |
+| CTC-003-F03 | A credit note can require negative payable contribution even where tax magnitude is positive. | Synthetic credit-note scenario | Proposed; legal convention unverified |
+| CTC-003-F04 | An informational tax can have a positive reportable magnitude and zero payable contribution. | Synthetic informational-tax scenario | Proposed; legal convention unverified |
+| CTC-003-F05 | Summary asserted-versus-calculated values and source provenance must remain distinct; monetary reconciliation needs separate tests for currency, rounding, adjustments and prepaid amounts. | Approved T02; draft 0.3 | Pending evidence |
+
+
+## 2026-10-20 — T03 decision disposition (not a new research finding)
+
+The user approved the ten logical T03 policy statements in `research/CTC-003/CTC-003-T03-DECISION-READY-REVIEW.md`. Evidence remains bounded: 21/21 focused checks reported in that review; official worked examples and documentation support selected semantics, but no complete inclusive-unit-price structured invoice, validated certified withholding fixture, or complete jurisdiction-specific conformance suite was executed. Approval does **not** increase evidence confidence or close E-T03-01..05. See DECISIONS.md for exact approval scope.

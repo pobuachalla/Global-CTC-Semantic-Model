@@ -11,8 +11,8 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 | ID | Task | Priority | Workstream | Status | Dependencies | Acceptance criteria |
 |---|---|---|---|---|---|---|
 | CTC-001 | Reconcile SemanticDocument and BillingDocument | P0 | Semantic foundation | Review | — | Entity-by-entity comparison, conflict register, proposed resolutions with evidence |
-| CTC-002 | Agree semantic aggregate boundaries | P0 | Semantic foundation | Review (evidence-gated; P1-P6 approved) | CTC-001 | Proposed boundaries for BillingDocument, FiscalContext, ComplianceTransaction, DocumentRepresentation; FiscalContext A/B/C unresolved |
-| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | Todo | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
+| CTC-002 | Agree semantic aggregate boundaries | P0 | Semantic foundation | Done (scoped logical boundary only; P1-P7 + D2 + I-01..I-10 accepted) | CTC-001 | Proposed boundaries for BillingDocument, FiscalContext, ComplianceTransaction, DocumentRepresentation; FiscalContext A/B/C unresolved |
+| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | In Progress (commercial draft 0.2; tax draft 0.3; T01/T02 accepted; T03 proposed) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
 | CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Todo | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Todo | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
 | CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Todo | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
@@ -52,3 +52,32 @@ Six architectural principles (CTC-002-P1 through P6) explicitly accepted at prin
 ## 2026-10-20 CTC-002 consolidated decision review
 
 CTC-002 remains **Review / evidence-gated**, not Done. Pending explicit approval of D2 formal contract I-01..I-10 and scoped logical closure. Outstanding evidence: paired CFDI certification, SdI response, French Extended CTC XSD fixture, real MyInvois/India conformance, archived profile packages, and independent fiscal-interpretation discriminator. CTC-003 remains Todo.
+
+## 2026-10-20 — Explicit CTC-002 scoped closure and follow-up evidence gates
+
+- **CTC-002: Done (scoped logical-boundary deliverable)** following explicit user approval of the D2 nine-concept logical contract and invariants I-01..I-10; accepted P1..P7 unchanged. This supersedes earlier Review status notes; historical entries remain as audit history.
+- **CTC-003: Todo / now eligible to start** on the accepted logical contract; do not pre-approve physical aggregate-root choices or concrete cardinalities.
+- **CTC-002-FU01: Todo (P1, persistence/aggregate design; dependency CTC-003 and CTC-011)** — Decide FiscalContext A embedded / B independent / C hybrid physical ownership and cardinalities with a documented trade-off and migration plan. Acceptance: explicitly approved ADR after actual design evidence; no default implicit selection.
+- **CTC-002-FU02: Todo (P1, evidence; linked to CTC-008/009/010)** — Collect licensed, version-pinned paired CFDI pre/post certification XML; Italian FatturaPA/SdI response pairs; French Extended CTC XML with applicable profile/XSD; authoritative MyInvois and India IRP samples. Acceptance: source/version/license inventory and executed applicable schema/business-rule checks with failure logs.
+- **CTC-002-FU03: Todo (P1, reproducibility; dependency CTC-007/009)** — Archive immutable profile/mapping/rule/code-list packages and external enrichment snapshots; demonstrate historical replay and compare exact outputs. Acceptance: content digests, repeatable execution and documented limitations.
+- **CTC-002-FU04: Todo (P1, evidence discriminator; dependency CTC-008/009)** — Seek a verified case requiring multiple materially distinct fiscal interpretations of one immutable billing revision. Acceptance: documented scenario and references or explicit negative finding with bounded search; do not assume absence proves impossibility.
+- **CTC-002-FU05: Todo (P1, semantic precision; dependency CTC-003)** — Resolve publication/freeze boundary, detailed correction/cancellation semantics and identity/evidence ownership in entity dictionary; distinguish jurisdiction-specific obligations from shared invariants.
+
+These task-qualified follow-up IDs are proposed tracking IDs, not approved global ADRs. Their details can be incorporated into later backlog governance without changing the accepted CTC-002 scope.
+
+## 2026-10-20 CTC-003 tax review
+
+T01 and T02 explicitly Accepted; T03 remains Proposed (provisional). Five synthetic tax-sign cases executed and passed as arithmetic demonstrations, not regulatory tests. Detailed entity schema and monetary reconciliation remain unapproved.
+
+
+## 2026-10-20 — CTC-003 T03 logical policy approval
+
+- **CTC-003: In Progress.** T01, T02 and T03 are Accepted at their expressly stated logical scopes; detailed tax/monetary entity dictionary, cardinalities, reconciliation implementation and remaining review are not approved.
+- **CTC-003-EV01: Todo (P1; evidence, related to CTC-008/009/010)** — Obtain and validate full licensed machine-readable tax-inclusive unit-price invoice with governing calculation/profile.
+- **CTC-003-EV02: Todo (P1; evidence)** — Validate full Peppol credit note against applicable XSD/Schematron and compare presentation to economic effect.
+- **CTC-003-EV03: Todo (P1; evidence)** — Obtain verified withholding invoice and reconcile source taxes/payable under applicable rules.
+- **CTC-003-EV04: Todo (P1; evidence)** — Test source FX rate/date, accounting currency and versioned rounding against a full example.
+- **CTC-003-EV05: Todo (P1; evidence)** — Test source subtotal discrepancies and jurisdictional tolerances without overwriting assertions.
+- **CTC-003-DES01: Todo (P0; CTC-003)** — Define and review detailed fields/cardinalities for candidate `MonetaryBasis`, `MonetaryEffect`, `DocumentEconomicEffect` and `MonetaryReconciliation` without assuming separate aggregate roots.
+
+These are proposed backlog tracking entries, not accepted regulatory findings.
