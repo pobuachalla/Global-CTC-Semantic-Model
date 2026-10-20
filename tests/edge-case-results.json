@@ -1,0 +1,111 @@
+{
+  "scope": "synthetic logical checks only",
+  "count": 26,
+  "passed": 26,
+  "checks": [
+    {
+      "name": "manifest digest stable",
+      "passed": true
+    },
+    {
+      "name": "manifest change detected",
+      "passed": true
+    },
+    {
+      "name": "member outcomes independent",
+      "passed": true
+    },
+    {
+      "name": "envelope receipt not clearance",
+      "passed": true
+    },
+    {
+      "name": "orphan response rejected",
+      "passed": true
+    },
+    {
+      "name": "out of order handled",
+      "passed": true
+    },
+    {
+      "name": "missing response remains unknown",
+      "passed": true
+    },
+    {
+      "name": "identical bytes distinct receptions",
+      "passed": true
+    },
+    {
+      "name": "byte equality not business identity",
+      "passed": true
+    },
+    {
+      "name": "distinct bytes may refer same document",
+      "passed": true
+    },
+    {
+      "name": "retry preserves first attempt",
+      "passed": true
+    },
+    {
+      "name": "unknown not converted to rejected",
+      "passed": true
+    },
+    {
+      "name": "retry payload pinned",
+      "passed": true
+    },
+    {
+      "name": "external id alone ambiguous",
+      "passed": true
+    },
+    {
+      "name": "typed subject resolves ambiguity",
+      "passed": true
+    },
+    {
+      "name": "duplicate provider callback can be retained",
+      "passed": true
+    },
+    {
+      "name": "zero-extraction ingestion valid",
+      "passed": true
+    },
+    {
+      "name": "one extraction may remain unresolved",
+      "passed": true
+    },
+    {
+      "name": "no mutable revision reference",
+      "passed": true
+    },
+    {
+      "name": "member IDs unique",
+      "passed": true
+    },
+    {
+      "name": "one transport payload per attempt",
+      "passed": true
+    },
+    {
+      "name": "partial rejection not global rejection",
+      "passed": true
+    },
+    {
+      "name": "source artifact retained despite parse failure",
+      "passed": true
+    },
+    {
+      "name": "separate attempt and business identifiers",
+      "passed": true
+    },
+    {
+      "name": "typed event subject present",
+      "passed": true
+    },
+    {
+      "name": "original response identity preserved",
+      "passed": true
+    }
+  ]
+}

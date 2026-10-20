@@ -12,7 +12,7 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 |---|---|---|---|---|---|---|
 | CTC-001 | Reconcile SemanticDocument and BillingDocument | P0 | Semantic foundation | Done (scoped reconciliation deliverable) | — | Entity-by-entity comparison, conflict register, proposed resolutions with evidence |
 | CTC-002 | Agree semantic aggregate boundaries | P0 | Semantic foundation | Done (scoped logical boundary only; P1-P7 + D2 + I-01..I-10 accepted) | CTC-001 | Proposed boundaries for BillingDocument, FiscalContext, ComplianceTransaction, DocumentRepresentation; FiscalContext A/B/C unresolved |
-| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | In Progress (unified draft 0.4 prepared; T01/T02/T03 logical decisions accepted; detailed schema proposed) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
+| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | Done — scoped (detailed logical dictionary approved 2026-10-20) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
 | CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Todo (prior CTC-003 evidence linked) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Todo | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
 | CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Todo | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
@@ -151,3 +151,33 @@ CTC-003 remains **In Progress**. Batch ingestion and outbound submission envelop
 - **Pending review:** B01–B10, C09-01..08 (especially C09-02/C09-07), and candidate extraction/envelope/member/transport-attempt entity shapes and cardinalities.
 - **Evidence dependency:** CTC-008/009/010 to acquire/validate multi-document batch fixtures and partial-outcome responses; CTC-013/014 to refine transport and member response correlation.
 - **Next CTC-003 activity:** Test proposed cardinalities against zero-member, multi-member, duplicate-member, retry and partial-outcome instances before requesting detailed-model approval.
+
+
+## 2026-10-20 — CTC-003 blitz batch/cardinality checkpoint
+
+- **CTC-003:** In Progress. C09-02, C09-07 and B01–B10 accepted at **logical** level under explicit user authorization to accept default recommendations. C09-01/03..06/08, detailed schema and physical entity shapes remain Proposed.
+- **CTC-003-BATCH-EV01:** Todo (P1; CTC-008/009/010). Acquire versioned, licensed multi-document source and provider response fixtures with partial/member outcomes; validate actual correlation and schema.
+- **CTC-003-BATCH-EV02:** Todo (P1; CTC-013/014). Resolve ambiguous external identifiers, late/out-of-order callbacks, timeout reconciliation and provider-specific retry/idempotency semantics.
+- **CTC-003-BATCH-EV03:** Todo (P1; CTC-011/012). Design immutable envelope manifests, transport attempts and provenance persistence only after logical model approval.
+- **Next CTC-003 milestone:** review remaining C09 cardinalities and integrate approved logical constraints into unified dictionary; do not mark CTC-003 Done yet.
+
+## 2026-10-20 CTC-003 blitz continuation
+
+- CTC-003 remains **In Progress**; logical C09-01..08 cardinalities accepted with recorded qualifications.
+- Remaining CTC-003 acceptance: complete unified detailed dictionary, conditional constraints, source-model traceability and representative semantic examples.
+- CTC-004 tax validation, CTC-005 profiles, CTC-006 parties/corrections and CTC-008..010 real fixtures remain open; do not infer completion from synthetic tests.
+
+
+## 2026-10-20 CTC-003 completion candidate
+Draft 1.3 unified semantic dictionary and review gate prepared. **CTC-003 remains In Progress**, pending G1-G5 and explicit detailed-model approval. Previous logical approvals remain unchanged.
+
+## 2026-10-20 CTC-003 G2 continuation
+
+CTC-003: **Review / evidence-gated, not Done**. Six G2 logical ownership dispositions accepted under standing blitz authorization. Integrated detailed dictionary Draft 1.9 is a **candidate**; G2-01..08 and field-level constraints are not approved. Remaining G1 field review, G3 broad validation, G4 field-level traceability and G5 explicit detailed schema approval.
+
+## 2026-10-20 — CTC-003 scoped closure
+
+- **CTC-003: Done — scoped.** User explicitly approved the CTC-003 final detailed logical dictionary closure candidate v1.0, with entity definitions, logical types, identifiers, qualified cardinalities and relationships.
+- The 18 additional typed field contracts remain **Proposed**; do not treat them as accepted normative fields.
+- Physical FiscalContext A/B/C, relational design, regulatory conformance, full independent format round trips and exhaustive historical field compatibility remain deferred to existing workstreams (CTC-002-FU01, CTC-004, CTC-008/009/010, CTC-011/012).
+- **Next: CTC-004** — formal tax and monetary semantic validation, reusing prior T01–T03 tests; assess multi-regime tax, withholding, signed values, reconciliation and precision.

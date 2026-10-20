@@ -1,0 +1,100 @@
+{
+  "representations": {
+    "SRC1": {
+      "digest": "c8a43f7760c5c90bdffcc16da72bf4912ebccfdd2f36f951fbdf7697ad781d88"
+    },
+    "OUT1": {
+      "digest": "12502a5d41685eaffd787a707d8ab6559410d3edc00c169402f1ff5ae399c5bd"
+    },
+    "R1": {
+      "digest": "992cab6b8d035d5edb2f5d3d5a6806cec7dc63b5092d01511952637559260675"
+    },
+    "R2": {
+      "digest": "31d67ffd3e25c35f4e2be642348202d672547d6d1aa18e9b3db4ae534fa290d7"
+    }
+  },
+  "documents": {
+    "D1": {},
+    "D2": {}
+  },
+  "revisions": {
+    "V1": {
+      "digest": "449949f41ec24b8dd2041ef63eae18fcf56fd9ad50563d9cec65442cb8730ac2"
+    },
+    "V2": {
+      "digest": "f75d39c7b76817d262d8f3a292b9c487f9a932b3d6d4f8e9d13fca419ff9630c"
+    }
+  },
+  "ingestions": [
+    {
+      "id": "ING1",
+      "representationRefs": [
+        "SRC1"
+      ]
+    }
+  ],
+  "extractions": [
+    {
+      "id": "EX1",
+      "sourceRef": "SRC1",
+      "locator": "Invoice[1]",
+      "documentRef": "D1"
+    },
+    {
+      "id": "EX2",
+      "sourceRef": "SRC1",
+      "locator": "Invoice[2]",
+      "documentRef": "D2"
+    }
+  ],
+  "envelopes": [
+    {
+      "id": "ENV1",
+      "representationRef": "OUT1",
+      "digest": "12502a5d41685eaffd787a707d8ab6559410d3edc00c169402f1ff5ae399c5bd",
+      "members": [
+        {
+          "memberId": "M1",
+          "revisionRef": "V1",
+          "revisionDigest": "449949f41ec24b8dd2041ef63eae18fcf56fd9ad50563d9cec65442cb8730ac2",
+          "representationRef": "R1"
+        },
+        {
+          "memberId": "M2",
+          "revisionRef": "V2",
+          "revisionDigest": "f75d39c7b76817d262d8f3a292b9c487f9a932b3d6d4f8e9d13fca419ff9630c",
+          "representationRef": "R2"
+        }
+      ]
+    }
+  ],
+  "attempts": [
+    {
+      "id": "A1",
+      "envelopeRef": "ENV1",
+      "payloadDigest": "12502a5d41685eaffd787a707d8ab6559410d3edc00c169402f1ff5ae399c5bd"
+    }
+  ],
+  "events": [
+    {
+      "id": "E1",
+      "subjectType": "ENVELOPE",
+      "envelopeRef": "ENV1",
+      "outcome": "RECEIVED"
+    },
+    {
+      "id": "E2",
+      "subjectType": "MEMBER",
+      "envelopeRef": "ENV1",
+      "memberId": "M1",
+      "outcome": "ACCEPTED"
+    },
+    {
+      "id": "E3",
+      "subjectType": "MEMBER",
+      "envelopeRef": "ENV1",
+      "memberId": "M2",
+      "outcome": "REJECTED"
+    }
+  ]
+}

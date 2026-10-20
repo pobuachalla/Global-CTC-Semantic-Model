@@ -268,3 +268,60 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Not approved:** B01–B10 remain **Proposed**; C09-01 through C09-08, including proposed changes to C09-02/C09-07, remain **Proposed**. `IngestionRecord`, `DocumentExtraction`, `SubmissionEnvelope`, `EnvelopeMember`, and `TransportAttempt` remain candidate entity names/shapes only. No detailed cardinality, physical aggregate/table, jurisdiction-specific batch rule, or real fixture conformance was approved.
 
 **Unchanged accepted baseline:** D2, P1–P7, I-01–I-10, T01–T03, D01–D03 (and paired invariants), three lifecycle dimensions and L01–L10. FiscalContext A/B/C physical design remains deferred. CTC-003 remains In Progress.
+
+
+## CTC-003 Blitz approval — 2026-10-20 — user-authorized default decisions
+
+**Authority:** User instruction: "lets go into blitz mode. progress with any recommendations and accept default decisions". This authorizes acceptance of recommended logical constraints for the current CTC-003 batch review, **not** unreviewed physical architecture, provider-specific rules, or regulatory claims.
+
+**CTC-003-C09-02 — Accepted, logical cardinality:** An ingestion event may yield 0..N document extractions. An individual extraction resolves to at most one logical BillingDocument at a given resolved state. Multiple receptions and extractions may refer to the same logical document; this does not establish legal identity or idempotency policy.
+
+**CTC-003-C09-07 — Accepted, logical cardinality:** A submitted transport attempt references exactly one immutable outbound payload artifact (which may be a batch/envelope). A multi-document envelope carries 1..N identifiable member references; member-specific compliance operations and outcomes remain independently correlated. This does not mandate a separate envelope database table or one fixed transport protocol.
+
+**CTC-003-B01..B10 — Accepted, logical invariants only:**
+
+| ID | Accepted logical invariant | Exclusions / deferred |
+|---|---|---|
+| B01 | Preserve immutable original source representation reference(s) per reception. | Retention duration/storage. |
+| B02 | Each extracted member has a stable source locator and distinct resolution history. | Provider-specific locator syntax. |
+| B03 | A resolved extraction identifies at most one BillingDocument at a time; ambiguous matches remain unresolved and auditable. | Dedup/identity algorithms. |
+| B04 | Submitted transport attempts pin one exact immutable outbound payload/digest. | Physical storage/envelope requirement. |
+| B05 | Submitted multi-member payloads have immutable member manifests with exact revision/representation references. | Manifest encoding, ordering rules. |
+| B06 | A revision can be referenced by distinct transport submissions without modifying the revision. | Whether retry is legally permitted. |
+| B07 | Envelope and member outcomes carry typed, independently correlated subjects. | Provider correlation fields. |
+| B08 | Transport/envelope success alone does not imply legal acceptance/clearance of each member. | Country-specific legal-state mapping. |
+| B09 | Partial, total and unknown member outcomes are expressible with original response provenance. | Provider atomicity assumptions. |
+| B10 | Retry, duplicate reception and idempotency histories remain distinct and auditable. | Dedup keys, external idempotency semantics, retry safety. |
+
+**Not approved:** C09-01, C09-03..06, C09-08; full detailed cardinality schema; named physical entity roots/tables; country-specific batch behavior; real-fixture conformance. Existing D2/P1–P7/I-01–I-10/T01–T03/D01–D03/L01–L10/CTC-003-BATCH-01 approvals unchanged. FiscalContext A/B/C physical choice deferred. CTC-003 remains In Progress.
+
+## CTC-003 Blitz continuation — 2026-10-20 — C09 remaining logical cardinalities
+
+**Approval basis:** User instructed the project to proceed in blitz mode and accept default recommendations. Applied only to the recommended logical cardinality constraints below; no physical schema or legal mandate decisions.
+
+- **CTC-003-C09-01 Accepted (qualified):** A completed external ingestion/reception preserves 1..N immutable original source artifact references. This does not impose an external artifact on purely internal document creation.
+- **CTC-003-C09-03 Accepted (logical):** A BillingDocument may have 0..N published revisions, with at least one after the platform's first publication; the legal issuance boundary remains separately governed.
+- **CTC-003-C09-04 Accepted (logical):** PublishedRevision may structurally reference 0..N PartyParticipations and BillingLines; mandatory roles/lines are enforced by document-family and jurisdiction profile. This does not authorize publication of invalid invoices.
+- **CTC-003-C09-05 Accepted (logical):** Each PartyParticipation resolves to exactly one PartySnapshot; published references must resolve to immutable snapshots.
+- **CTC-003-C09-06 Accepted (logical):** A PublishedRevision may have 0..N FiscalInterpretations; each interpretation pins exactly one revision and a complete immutable profile/input manifest. Physical FiscalContext design remains deferred.
+- **CTC-003-C09-08 Accepted (logical):** A PublishedRevision may have 0..N legal-state assessments and a ComplianceTransaction 0..N typed processing events. Legal assessments require applicable evidence/basis, which need not be an authority response in every regime.
+
+**Already accepted and unchanged:** C09-02/C09-07; B01–B10; CTC-003-BATCH-01; D2/P1–P7/I-01–I-10/T01–T03/D01–D03/L01–L10.
+**Still proposed:** Detailed entity shapes and cross-profile validation requirements. No physical aggregate/table or universal legal-state transition approved.
+**Evidence:** 22 synthetic positive/negative structural assertions in tests/validate_ctc003_draft12.py; not official source fixtures.
+
+## CTC-003 G2 logical ownership — 2026-10-20 blitz continuation
+
+**Status: Accepted at logical ownership level only** under the user's standing blitz-mode authorization to accept default recommendations. G2-A through G2-F: one authoritative MonetaryReconciliation; one scoped TaxPoint; separate SubmissionAttempt and TransportAttempt; distinct commercial and source fiscal fact ownership; separate FiscalIdentity and FiscalEvidence; preserved SourceAssertion distinct from computed TaxSummary. **G2-01..08, detailed fields, nullability, cardinalities and physical schema remain Proposed.** No change to D2, P1-P7, I-01..10, T01..03, D01..03, L01..10, B01..10, C09 or FiscalContext A/B/C deferral.
+
+## CTC-003 — Detailed logical dictionary scoped approval — 2026-10-20
+
+**Status: Accepted — scoped. Approval authority:** User explicitly stated: “I explicitly approve the CTC-003 detailed logical entity dictionary at the scoped closure-candidate level. Mark CTC-003 Done — scoped. Preserve the 18 additional field contracts as proposals, all deferred physical and regulatory work, and existing accepted decisions.”
+
+**Normative approved artifact:** `research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md`, based on `CTC-003-DETAILED-LOGICAL-DICTIONARY-CLOSURE-CANDIDATE.md` v1.0.
+
+**Approval includes:** 51 candidate logical entity definitions promoted as the approved scoped logical dictionary, the documented logical field types and optionality, stable identities, typed fiscal identities/authority references, controlled signature alias convention, logical relationships and qualified cardinalities. The approved logical rules D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, C09 and G2 ownership remain unchanged.
+
+**Not approved:** The 18 Draft 4.2 additional field contracts (remain Proposed); physical FiscalContext A/B/C; tables and aggregate-root implementation; country-specific publication/issuance rules; full regulatory conformance; full independent format round trips; exhaustive historical field compatibility; unresolved jurisdictional mappings. No historical ADR is silently superseded.
+
+**Disposition:** CTC-003 Done — scoped. Deferred items retain their existing backlog ownership; this is not an assertion that all 51 entities have been proven across all countries.

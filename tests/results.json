@@ -1,0 +1,122 @@
+{
+  "assertions": [
+    {
+      "scenario": "multi_ingestion",
+      "assertion": "batch source resolves two separate documents",
+      "passed": true
+    },
+    {
+      "scenario": "multi_ingestion",
+      "assertion": "two extractions from one source artifact",
+      "passed": true
+    },
+    {
+      "scenario": "multi_ingestion",
+      "assertion": "batch instance validates",
+      "passed": true
+    },
+    {
+      "scenario": "partial_acceptance",
+      "assertion": "member outcomes remain independent",
+      "passed": true
+    },
+    {
+      "scenario": "partial_acceptance",
+      "assertion": "envelope receipt is not member acceptance",
+      "passed": true
+    },
+    {
+      "scenario": "unknown_member",
+      "assertion": "no inferred outcome for absent member event",
+      "passed": true
+    },
+    {
+      "scenario": "retry",
+      "assertion": "same revision can appear in a second envelope without mutation",
+      "passed": true
+    },
+    {
+      "scenario": "retry",
+      "assertion": "retry has distinct immutable attempt and envelope",
+      "passed": true
+    },
+    {
+      "scenario": "retry",
+      "assertion": "original attempt preserved",
+      "passed": true
+    },
+    {
+      "scenario": "retry",
+      "assertion": "original rejected event preserved",
+      "passed": true
+    },
+    {
+      "scenario": "duplicates",
+      "assertion": "duplicate receipt is distinct ingestion event",
+      "passed": true
+    },
+    {
+      "scenario": "duplicates",
+      "assertion": "duplicate resolves to existing document without overwriting",
+      "passed": true
+    },
+    {
+      "scenario": "duplicates",
+      "assertion": "digest equality alone does not establish idempotency",
+      "passed": true
+    },
+    {
+      "scenario": "correlation",
+      "assertion": "out-of-order event arrival structurally allowed",
+      "passed": true
+    },
+    {
+      "scenario": "correlation",
+      "assertion": "member M2 pending not falsely accepted",
+      "passed": true
+    },
+    {
+      "scenario": "correlation",
+      "assertion": "member response carries explicit envelope and member refs",
+      "passed": true
+    },
+    {
+      "scenario": "negative_controls",
+      "assertion": "reject mutable latest attempt ref",
+      "passed": true
+    },
+    {
+      "scenario": "negative_controls",
+      "assertion": "reject orphan member response",
+      "passed": true
+    },
+    {
+      "scenario": "negative_controls",
+      "assertion": "reject wrong revision digest",
+      "passed": true
+    },
+    {
+      "scenario": "negative_controls",
+      "assertion": "reject extraction resolving to multiple documents",
+      "passed": true
+    },
+    {
+      "scenario": "negative_controls",
+      "assertion": "reject altered envelope digest",
+      "passed": true
+    },
+    {
+      "scenario": "zero_document",
+      "assertion": "zero extractions permitted",
+      "passed": true
+    }
+  ],
+  "passed": 22,
+  "total": 22,
+  "all_passed": true,
+  "limitations": [
+    "Synthetic instances only",
+    "Validator does not enforce temporal state transitions or unique event IDs",
+    "Provider deduplication, batch atomicity and legal outcome rules untested"
+  ]
+}

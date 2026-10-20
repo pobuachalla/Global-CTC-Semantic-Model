@@ -213,3 +213,48 @@
 - **Task status:** CTC-003 In Progress.
 - **Next:** Instance-level batch and member correlation tests, then conditional cardinality review.
 - **GitHub:** Complete replacement files prepared; remote repository not modified.
+
+
+## Session — 2026-10-20 — CTC-003 blitz batch/cardinality validation
+
+- **Authorization:** User explicitly requested autonomous progression and acceptance of default recommendations.
+- **Evidence:** Existing synthetic batch validator 22/22; additional edge-case validator 26/26; source drafts 0.9, 1.0 and 1.1.
+- **Accepted logical decisions:** C09-02, C09-07, B01–B10 with exact exclusions recorded in DECISIONS.md.
+- **Unchanged:** D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10 and CTC-003-BATCH-01.
+- **Deferred:** C09-01/03..06/08; detailed entity/cardinality schema, physical FiscalContext aggregation, real authority fixtures, retry/idempotency and provider-specific legality.
+- **Task status:** CTC-003 In Progress; no regulatory conformance claimed.
+- **Next:** Integrate logical constraints into Draft 1.2 and review remaining cardinalities and representative cases.
+
+### Session — 2026-10-20 — CTC-003 Draft 1.2 blitz continuation
+- Scope: consolidate batch separation and review remaining C09 cardinalities.
+- Decisions: C09-01/03/04/05/06/08 accepted at qualified logical level under user blitz authorization; prior decisions preserved.
+- Tests: 22 synthetic checks; no authority fixtures.
+- CTC-003 remains In Progress.
+- Next: complete entity dictionary, examples and traceability; move formal tax evidence to CTC-004.
+
+
+## 2026-10-20 — CTC-003 Draft 1.3 completion candidate
+- Consolidated Draft 0.5 dictionary with lifecycle, conditional cardinality, batch/envelope concepts, conceptual ERD, five synthetic instances, source-model traceability and closure gates.
+- No new decisions approved; CTC-003 remains In Progress.
+- Source: latest available local Draft 1.2 snapshot; remote GitHub HEAD not verified.
+- Next: review G1-G5, resolve overlap and missing attribute definitions, then seek detailed dictionary approval.
+
+### 2026-10-20 — CTC-003 G2 logical disposition and Draft 1.9
+
+- Scope: Accept six recommended G2 logical ownership directions under standing blitz authorization and integrate detailed field corrections into one candidate dictionary.
+- Accepted: G2-A..F logical ownership only.
+- Still proposed: G2-01..08 and all detailed entity fields/cardinalities.
+- Evidence: prior synthetic G3 tests; no new external fixture conformance.
+- Status: CTC-003 Review/evidence-gated, not Done.
+- Next: G1 field-level review and G5 scoped closure request.
+
+## 2026-10-20 — CTC-003 scoped closure approval
+
+- **Task:** CTC-003. **Status:** Done — scoped, explicitly approved by user.
+- **Approved:** Final detailed logical dictionary closure candidate v1.0, with 51 logical entities and documented logical identities, types, nullability, qualified cardinalities and relationships; typed fiscal/authority/signature reference conventions.
+- **Preserved:** D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, C09, G2 accepted logical ownership.
+- **Proposed only:** 18 additional Draft 4.2 typed field contracts.
+- **Deferred:** FiscalContext A/B/C physical aggregation, regulatory conformance, full format round trips, exhaustive G4 historical mapping, database design and jurisdiction-specific lifecycle rules.
+- **Evidence:** Final closure candidate and earlier focused synthetic tests. No new runtime tests in this record-only update.
+- **Next task:** CTC-004, validate tax and monetary semantics using existing test corpus and evidence gap matrix, avoiding repeat exploratory design.
+- **Synchronization:** Full replacement Markdown files prepared for manual Git commit; GitHub not modified automatically.

@@ -100,3 +100,26 @@ Candidate extraction, submission envelope, envelope member and transport-attempt
 ## 2026-10-20 — Accepted batch/container separation (logical only)
 
 `CTC-003-BATCH-01` is Accepted: inbound ingestion and outbound transport containers are semantically distinct from individual `BillingDocument` and `ComplianceTransaction` identities. A container-level processing outcome does not imply individual document legal/fiscal acceptance. **No** candidate batch entities, B01–B10 invariants, C09 cardinalities or physical aggregation have been accepted. The detailed CTC-003 dictionary remains proposed.
+
+
+## CTC-003 blitz logical constraints — 2026-10-20
+
+**Accepted logical constraints:** C09-02 (0..N extractions per ingestion, 0..1 resolved document per extraction); C09-07 (one immutable payload per submitted transport attempt; multi-member manifest); B01–B10 logical invariants. These supplement previously accepted CTC-003-BATCH-01. **Not an approved detailed schema:** all other C09 cardinalities, physical roots/tables, FiscalContext physical A/B/C and provider-specific legal behavior remain open.
+
+## 2026-10-20 Draft 1.2 cardinality governance note
+
+C09-01 through C09-08 now accepted at qualified **logical relationship** level (C09-02/C09-07 from earlier blitz; remaining six under continuation). This does not approve Draft 1.2 detailed entity shapes, a physical aggregate design, or jurisdiction-specific publication requirements. CTC-003 remains In Progress.
+
+
+## CTC-003 Draft 1.3 completion candidate
+Candidate consolidated dictionary: `research/CTC-003/CTC-003-UNIFIED-SEMANTIC-MODEL-COMPLETION-CANDIDATE-DRAFT-1.3.md`. No detailed schema approval; CTC-003 remains In Progress. Accepted logical principles unchanged.
+
+## 2026-10-20 CTC-003 G2 checkpoint
+
+G2-A..F accepted **only as logical ownership directions**. Integrated dictionary Draft 1.9 is not an accepted detailed schema. FiscalContext physical A/B/C remains deferred.
+
+## 2026-10-20 — CTC-003 detailed logical dictionary accepted at scoped level
+
+The normative **logical** entity dictionary is `research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md` (closure candidate v1.0 approved by user). It defines the scoped 51-entity logical catalogue, identifiers, types, optionality, relationships and qualified cardinalities. This acceptance supersedes the earlier *candidate status* of the detailed dictionary only within the approved scope; it does not approve physical persistence or jurisdiction-specific rules.
+
+The 18 additional Draft 4.2 field contracts remain Proposed, not part of the approved normative field set. FiscalContext A/B/C remains deferred. Historical source specifications and candidate drafts remain reference material, not independently approved alternatives.

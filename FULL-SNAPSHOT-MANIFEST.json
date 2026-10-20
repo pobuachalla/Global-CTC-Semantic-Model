@@ -1,16 +1,516 @@
 {
   "snapshot_date": "2026-10-20",
-  "authority": "Latest locally available CTC-003 batch separation approved checkpoint; not verified against remote GitHub",
-  "root_register_source": "Global_CTC_CTC003_Batch_Separation_Approved_2026-10-20",
-  "included_files": 101,
-  "preserved_alternate_versions": 0,
-  "status": {
-    "CTC-001": "Done (scoped)",
-    "CTC-002": "Done (scoped)",
-    "CTC-003": "In Progress",
-    "CTC-003-BATCH-01": "Accepted logical principle",
-    "B01-B10": "Proposed",
-    "C09-01-C09-08": "Proposed",
-    "FiscalContext A/B/C": "Deferred"
-  }
+  "source_base": "Global_CTC_CTC003_G2_Draft_1.9_Git_Ready.zip",
+  "approved_overlay": "Global_CTC_CTC003_Approved_Scoped_Closure_Git_Update_2026-10-20.zip",
+  "current_task": "CTC-004 Todo",
+  "ctc_001": "Done scoped",
+  "ctc_002": "Done scoped",
+  "ctc_003": "Done scoped",
+  "file_count_excluding_manifests": 126,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "bab6ff9338f40acebc25fada846abe08b4b651472012cdd2c19274621f073f2f"
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "ea4657c2fb971d88a5d76ac0bb069b71d969319484850c6ffc5ed146b38a0e9b"
+    },
+    {
+      "path": "BASELINE-MANIFEST.md",
+      "sha256": "420f9bfe5c7e5a4d5f6bb3d8ac8cb238a43040080af34f7a48a09b509da959ed"
+    },
+    {
+      "path": "BLITZ-APPLY.md",
+      "sha256": "2836d35a0566f42f7930c87feaa878b899f8efe76c8b65adcbd32334407248bc"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "5b1c46916ca9e940d84d8a56f0cbc91e51c33c284dbe792747b663decc8137da"
+    },
+    {
+      "path": "FINDINGS.md",
+      "sha256": "cb095f9fa13ba00f5fd916f0d6880cdab3e16574dc0e6dec3d2f5529903976c4"
+    },
+    {
+      "path": "MASTER-PROMPT.md",
+      "sha256": "24cefa37fb13010edcc5770af7a1ba6ade39465dd48fc0fce592711bd734c209"
+    },
+    {
+      "path": "MODEL-BASELINE.md",
+      "sha256": "18d44673a1c606c7baae740ba8a5ed4032a4a99b2b32b370de50ed5a45cb390c"
+    },
+    {
+      "path": "PICK-UP-TOMORROW.md",
+      "sha256": "84e3a8797ccce755293edf2676fc22410602d7cc3f528892f86fc8d47ea9c52a"
+    },
+    {
+      "path": "PROJECT-INSTRUCTIONS.md",
+      "sha256": "3f397236879c4f801809a7e2f756c186601def04c579b3b03699c5f5fa2cbe71"
+    },
+    {
+      "path": "README-APPLY-G2-1.9.md",
+      "sha256": "2299299b29a7c31c0cfe774bbd3d07e204a0bcc7583c436fc6f422116b98aa3f"
+    },
+    {
+      "path": "README-APPLY.md",
+      "sha256": "849f8d275428eee62f96d0f8d91e51b831496c9899566152cb02cfefab8723d8"
+    },
+    {
+      "path": "README-BLITZ-CONTINUATION.md",
+      "sha256": "ce6d43788d0a41457d921115c260ac870b8c0798ed7bb6086ce121489202be5f"
+    },
+    {
+      "path": "README-COMPLETION-CANDIDATE.md",
+      "sha256": "e40571bbaf93eb5ea2caac018e669dc01b2f3fe6fd0d7096c040d2eea356e6b0"
+    },
+    {
+      "path": "README-END-OF-DAY.md",
+      "sha256": "d5cfcc9329b6709281ba23023ec8ef5c9ad3216590e5f45bb9eba4b24022377f"
+    },
+    {
+      "path": "README-FULL-SNAPSHOT.md",
+      "sha256": "b9255ce57c0276e78a7b4b4f4d88a0778910fe1b2fbe0e7e4d1f954d445f35a0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1b745dbdcc9f2a7b235b6f099dd4e4e441373da284488488635124bc01c37c58"
+    },
+    {
+      "path": "SESSION-LOG.md",
+      "sha256": "ca52d74e7831f061bbf5db7e0ba01ad33f0eb5832d4e2c34af74997af7ea63b3"
+    },
+    {
+      "path": "checkpoints/2026-10-19/BUNDLE-MANIFEST.md",
+      "sha256": "6fc633bdf900d813cfa828d55bac88b7a1a1ff8066e1402852f8307b228af580"
+    },
+    {
+      "path": "checkpoints/2026-10-19/PICK-UP-NEXT-SESSION.md",
+      "sha256": "68b172ced9431eba70e26b2ac81134dda16906e1485f53ff2ba0dfb2148a0c21"
+    },
+    {
+      "path": "checkpoints/2026-10-20/CTC-002-DECISION-CHECKPOINT.md",
+      "sha256": "503703d979940ec2ecafa3998866523f67f5297c0c4b0cbf2665dcea29ca880e"
+    },
+    {
+      "path": "references/CTC-Format-Families-Reference.xlsx",
+      "sha256": "aeb73bc8026bf99bce2236bcaacc7a07b2d9d3d5de71894604c411bc6d1736b1"
+    },
+    {
+      "path": "references/CTC-Semantic-Document-Entity-Model-v1.0.docx",
+      "sha256": "3393239ca4a00ebab96ba03e4e4ee14ee1c8ffa0616d27fc449505f8d22629aa"
+    },
+    {
+      "path": "references/CTC-Transformer-Architecture-v2.0-ERP.docx",
+      "sha256": "01168b07cf7d09533fd000e268a9f5d212a8572461f930258acf23dd17b38fab"
+    },
+    {
+      "path": "references/ctc-transformation-framework-reference-v1.1.md",
+      "sha256": "107de91982127ffc3412a3a568d1eebccfdd1f637b69d718827607aa741c3461"
+    },
+    {
+      "path": "references/ctc-transformer-complete-reference.md",
+      "sha256": "957f27f09f2c78278d7300ab18a158d45232461c3f918286698897e66f8d22cc"
+    },
+    {
+      "path": "references/relational-data-model-v0.3.md",
+      "sha256": "fd3628f1ce52e67bd62ad9d88a7ed01ecec223bc4ddc42f13f5853f0bc1df074"
+    },
+    {
+      "path": "references/relational-model-v0.3.mmd",
+      "sha256": "1a1ccf4a50f4bd78cd18b0fce4d8a615b5d72019d5fc83141fb0b152a82ab609"
+    },
+    {
+      "path": "references/semantic-billing-model-v0.3.md",
+      "sha256": "ebb45cfc67fde14b3bb66eafbcb00523042d15c4e9458eca56db9f7f5636e51d"
+    },
+    {
+      "path": "research/CTC-001/CTC-001-RECONCILIATION-REVIEW.md",
+      "sha256": "95be953214affe5c4e4a629c6da80b7c3f0d5e4849c44a9987558232ecb2f6ca"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-AGGREGATE-BOUNDARIES-DRAFT.md",
+      "sha256": "32a346347544bd2afe2a1c32660e7044b08c521c16b1ef79cb03187790198a2e"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-CFDI-CERTIFICATION-EVIDENCE-REVIEW.md",
+      "sha256": "76afdae0ac56418d8715c771e87ee00e5649087e9b9065da970c8afb166c47cf"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md",
+      "sha256": "4f1ac1e79d725d59827d1d60dc898fca288b8588744d3bc4917a7451de0372d1"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-D2-CFDI-MAPPING-REVIEW.md",
+      "sha256": "5210f72f74d832c61ed56fccfe21d3b0e9a4aec8f0ce8607b8327ae40f868046"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-D2-CONTRACT-AND-REPLAY.md",
+      "sha256": "a6933c84e9ee85b5fe009c31fc63dc51b6156dc3245e4b473209c3323596620b"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md",
+      "sha256": "949269c3c37cb300eb27c501634faa76050cddb1fb34314ef31e4c8cb131ee8a"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-D2-MALAYSIA-INDIA-VALIDATION.md",
+      "sha256": "266abc14630a9a1a9e444c4be78bde9b9eff36ccb40ac0867b27ef47523c816a"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-EXTENDED-FISCAL-OWNERSHIP-REVIEW.md",
+      "sha256": "dbefee1264bef70bd3ce1223b7c4c22b31a4d815d6cdbe73ad69bac400ec08b6"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-FISCAL-FIELD-OWNERSHIP-MATRIX.md",
+      "sha256": "49c790e0e9360cfd6003b5d484c878135421a19012949e8757f98743acebdf73"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-FRANCE-EXTENDED-CTC-STRESS-TEST.md",
+      "sha256": "12c003a9a5d0aafb9f31d2a01193cee99067e94e599f6534cffc0a9a53666d0e"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-ITALY-SDI-RESPONSE-EVIDENCE.md",
+      "sha256": "8c661c86cbac13416b4fc1d951c0fcd5ce71e9d9acf80c9481983456b0602112"
+    },
+    {
+      "path": "research/CTC-002/CTC-002-SEMANTIC-CONTRACT-CONSISTENCY-TEST.md",
+      "sha256": "f31a9628057b74bc916cc65bcff32e9eaf11eeb068cfd0d03fe004517567a66a"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/BILLING-REVISION.json",
+      "sha256": "af24de42d56f59b3e3346ef5e81cb3d30ae9e8ef1cdfc94c7c827a30444f93c3"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/CTC-002-D2-CFDI-MAPPING-REVIEW.md",
+      "sha256": "5210f72f74d832c61ed56fccfe21d3b0e9a4aec8f0ce8607b8327ae40f868046"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/FISCAL-INTERPRETATION.json",
+      "sha256": "d349001aad206b0540a46849f9f766c70c644fb3151d658f94bc9c607ba00d43"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/README.md",
+      "sha256": "1ac7f963652c19ae17ce332fb7890692c56e32766ec24c8f3986aad59c1661f2"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/VALIDATION-RESULT.json",
+      "sha256": "f8b57e01ad5547a364b14c3454ee45a863790d890dcda08757090ea58dfe90c6"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/cfdi40-constructed.xml",
+      "sha256": "8ce9b5c28029391079700053ebe18f74a9a3c2d5595becb8ea6e79942b0c6a08"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/cfdi/validate_cfdi_d2.py",
+      "sha256": "dd475d09d6a6ac01a38a1b5f28d1e3115fdd89c5a00efbe5ebb1fa5e7594e7b3"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/CTC-002-D2-MALAYSIA-INDIA-VALIDATION.md",
+      "sha256": "266abc14630a9a1a9e444c4be78bde9b9eff36ccb40ac0867b27ef47523c816a"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/README.md",
+      "sha256": "5f9b147e9c304e06315f8a24108f788d8993f3cfda09bf6f19a700a047512d78"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/india-interstate-constructed.json",
+      "sha256": "bec5568a2c280a6ffb4e60e139804cfe07531c096464323cf231431ef46ef529"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/india-intrastate-constructed.json",
+      "sha256": "0687d689d0b3fd1efca48f27c5a49c8ad6b6f106f38b1f334952a1dfa757d91e"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/malaysia-constructed.json",
+      "sha256": "34bc552347761e7874f513adb97ae57d8ac29cb66c16cc80da8224ec9e2c0c93"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/results/IN-TEST-001.json",
+      "sha256": "1fdaeb22ca23e7c2cdcafee7041985438baac511e494da6d8cc3e5c084ccd15f"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/results/IN-TEST-002.json",
+      "sha256": "5a01938487d5b20a1e5e2c94338570f08f735ba971e21e027bf388147ce0dfb1"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/results/MY-TEST-001.json",
+      "sha256": "340c990a199a66d08ee09bfdc43d4cb99b0c5603b318f9d2459df348e6c16875"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/results/summary.json",
+      "sha256": "0cf5090cb008e9f1534b30243a325e4557a4ab85af27593bbd273b78ab26c479"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/malaysia-india/run_validation.py",
+      "sha256": "ad2a7430715fcd12af57289557b0f36d32cb47ceee61b74790c31128bb2895a7"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/BILLING-REVISION.json",
+      "sha256": "b041acf915ae6b98c0696b9eec44d2de386d86e0bb983daed88ddb00760b14bf"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md",
+      "sha256": "949269c3c37cb300eb27c501634faa76050cddb1fb34314ef31e4c8cb131ee8a"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/FISCAL-INTERPRETATION.json",
+      "sha256": "54de8a61f1b0c7426ad1915b5d8e88360c28522bc622860539135d337ec6485e"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/README.md",
+      "sha256": "af74aa20ae28d4dc8bd7950595eaf995e8347af166711a485e55bc0b03c8b98c"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/VALIDATION-RESULT.json",
+      "sha256": "2d3543cc3493668ce93394cf04c89470be8abfd958de83a3f9bac71aa4fbb2f8"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/sample-ubl-invoice.xml",
+      "sha256": "29972eafe2aa7fa1c343925f2081536a4938bab4741893436624beab5bf890eb"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/peppol/validate_mapping.py",
+      "sha256": "8b3e7a10c53e41459bfe811f404b3a887e87c92705fed3310bfe647fa4bd89e0"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/BILLING-REVISION.json",
+      "sha256": "91a471497319b7122c359792e327642fe876c104ce843af67c8759b39c5f127e"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/CTC-002-D2-CONTRACT-AND-REPLAY.md",
+      "sha256": "a6933c84e9ee85b5fe009c31fc63dc51b6156dc3245e4b473209c3323596620b"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/INTERPRETATION-V1.json",
+      "sha256": "0cbb6a318a1734bc8caca8791fc0218abbe76163ceaf775dbb82d83601a08e15"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/INTERPRETATION-V2.json",
+      "sha256": "33e60484ea395731d5b55d6e81badb9a0c909c9e004ad6780470feca934b90b9"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/PROFILE-V1.json",
+      "sha256": "a62a23cbbcefeb818e8881381d3e823de0cfa62f97492481841e8403defd5d15"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/PROFILE-V2.json",
+      "sha256": "2de14b19547ec1527d1b2d5315ad3629278f0e97e196cd98d5e46e0ba525f2ba"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/README.md",
+      "sha256": "e67d13b0eb16fd6367c75b160449a97a36a9df3076b734e4a342cef856962733"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/SOURCE-REPRESENTATION.json",
+      "sha256": "27151eae989a898068a1f6901dad03c4b416d50261e749e35fb076d577fb7807"
+    },
+    {
+      "path": "research/CTC-002/test-artifacts/replay/build.py",
+      "sha256": "a9de51a03377c74b202804280b003cb720b3d47ad0e80ff04029c8debdf204a0"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-BATCH-CARDINALITY-INSTANCE-VALIDATION-DRAFT-1.1.md",
+      "sha256": "72426cb3a017e2d0a6ab7484cef8d0b892f78040008d0314165be617fd51678b"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-BATCH-INGESTION-SUBMISSION-ENVELOPE-DRAFT-1.0.md",
+      "sha256": "97d1b0e758dba8e9a2a27e84e71be1fcb50f90ba65ce9fd5f1fc01f835505fb8"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-BLITZ-BATCH-DECISION-REVIEW.md",
+      "sha256": "659714993933ac2b227dc00d6c36241a220f381212a396dcbd3d5395cc237a35"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-CONDITIONAL-CARDINALITY-INSTANCE-VALIDATION-DRAFT-0.7.md",
+      "sha256": "ebb22a16a327621a0048329974af6fdf4fd0cb696c8eab3d610574fe68fae35f"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md",
+      "sha256": "254dfb41ee18a4ba2a5050b7f38912a15c12559bed1c14bab27e23cb31c1377c"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-DOCUMENT-COMMERCIAL-ENTITY-DICTIONARY-DRAFT-0.2.md",
+      "sha256": "1470af2796f6069e6722dadbee24040b05578ba96c190731fd3c9c95c1c58b00"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-G2-LOGICAL-DECISION-CHECKPOINT-1.9.md",
+      "sha256": "b4cb459aeffd5f818724bda8e5bddbb8cd410c3d6c7911247694a347490f7416"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-LIFECYCLE-PUBLICATION-CARDINALITY-REVIEW-DRAFT-0.8.md",
+      "sha256": "6ee073bad16192685afa0fe2d3c7f080c7a292b22749cb08d7ea8229b50c16b2"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-OWNERSHIP-RELATIONSHIP-REVIEW-DRAFT-0.6.md",
+      "sha256": "9dc05ade79a4a02925b207a2e6fa161205d3abf11467140c783f76a445dd7659"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-SCOPED-CLOSURE-DECISION.md",
+      "sha256": "7ede0e42014580145f967dc1007860b9f18c61659e2488772cb5db1c9677f08c"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-SYNTHETIC-REFERENCE-FIXTURES.json",
+      "sha256": "3eff0adbaee3bbf504127ecb30278f70ea10d4efd4b72a12357ad3a30e7e2711"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-SYNTHETIC-TEST-RESULTS.txt",
+      "sha256": "789fca868f66a5a5cd0d2a075724a07a2e803e3869d83c1063ffa60d35bf2252"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-T01-T03-DECISION-AND-SIGN-TEST.md",
+      "sha256": "6e3dd1564e7423e80cf497839e08fe4af714528f413befe43353471544d3682e"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-T03-EXTENDED-MONETARY-STRESS-TEST.md",
+      "sha256": "fac323c9026027a9ae98f1d53fb4300f6921dfd4451464e07b6cdb36016f19cb"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-T03-FORMAL-CONTRIBUTION-CONTRACT-DRAFT-0.4.md",
+      "sha256": "b25faa3916846d51263995041e2c2f26473daf3acf0d5985868c64302e9678a6"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-TAX-MONETARY-ENTITY-DICTIONARY-DRAFT-0.3.md",
+      "sha256": "d3a4982f32eb6984a654c47cedee201fd1e374aba7ffbf7b52f5ab57c1ee94d5"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-CARDINALITY-REFERENCE-REVIEW-DRAFT-1.2.md",
+      "sha256": "45aaf884eeff26f514c79bff4dc9be3a6a46b10ab7b6795c06aa199b18d2ba15"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-D2-DICTIONARY-INTEGRATED-CANDIDATE-DRAFT-1.9.md",
+      "sha256": "f7c7a1b3b604094648d12bfe93977451e01f3663fe95328f048a9dfcd1414089"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-D2-LIFECYCLE-CARDINALITY-DRAFT-0.9.md",
+      "sha256": "bb35a22e44bd471da2efb1cc29bb4b1c804a5a07f7a836ae05a21334f19e79a1"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-D2-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.5.md",
+      "sha256": "5db20dcba4b293f4e78cbe8d5dc9947f0e15dd6c50116ee3fdb6a94116491320"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.4.md",
+      "sha256": "916982243584d22c2bb1e61afee5f641d11d81cd9f31029ef8136020da716924"
+    },
+    {
+      "path": "research/CTC-003/CTC-003-UNIFIED-SEMANTIC-MODEL-COMPLETION-CANDIDATE-DRAFT-1.3.md",
+      "sha256": "3ea78d3ccb4df2aeaa1d8aa65ab4d65e0e6e27d6af8da7c5e98349db51f57119"
+    },
+    {
+      "path": "research/CTC-003/supplementary-evidence/CTC-003-Final-Closure-Candidate-2026-10-20.zip",
+      "sha256": "52b1cb9478fc4133de28c82d315a9c7e90e81294579d24006079a856a815625f"
+    },
+    {
+      "path": "research/CTC-003/supplementary-evidence/CTC-003-G4-Typed-Contracts-Draft-4.2.zip",
+      "sha256": "c5de00f09ad34ee449ca776cd8eb3eeb2c1641ceecbb3d23f2f7827aace9b4df"
+    },
+    {
+      "path": "research/CTC-003/test_reference_instances.py",
+      "sha256": "8cef000d52ef278f66215f3462dc2ce9ae6eed823fcc7840137c4679c41d5992"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-Consolidated-Decision-Package-2026-10-20/PACKAGE-MANIFEST.json",
+      "sha256": "977c04b963441e5f63586bc5d0ebb29b2ccfbe834c796d79bcf0d1ac6756eb1f"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-CFDI-Test/BILLING-REVISION.json",
+      "sha256": "af24de42d56f59b3e3346ef5e81cb3d30ae9e8ef1cdfc94c7c827a30444f93c3"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-CFDI-Test/FISCAL-INTERPRETATION.json",
+      "sha256": "d349001aad206b0540a46849f9f766c70c644fb3151d658f94bc9c607ba00d43"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-CFDI-Test/VALIDATION-RESULT.json",
+      "sha256": "f8b57e01ad5547a364b14c3454ee45a863790d890dcda08757090ea58dfe90c6"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-CFDI-Test/cfdi40-constructed.xml",
+      "sha256": "8ce9b5c28029391079700053ebe18f74a9a3c2d5595becb8ea6e79942b0c6a08"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-CFDI-Test/validate_cfdi_d2.py",
+      "sha256": "dd475d09d6a6ac01a38a1b5f28d1e3115fdd89c5a00efbe5ebb1fa5e7594e7b3"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Formal-Contract/BILLING-REVISION.json",
+      "sha256": "b041acf915ae6b98c0696b9eec44d2de386d86e0bb983daed88ddb00760b14bf"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Formal-Contract/FISCAL-INTERPRETATION.json",
+      "sha256": "54de8a61f1b0c7426ad1915b5d8e88360c28522bc622860539135d337ec6485e"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Formal-Contract/VALIDATION-RESULT.json",
+      "sha256": "2d3543cc3493668ce93394cf04c89470be8abfd958de83a3f9bac71aa4fbb2f8"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Formal-Contract/sample-ubl-invoice.xml",
+      "sha256": "29972eafe2aa7fa1c343925f2081536a4938bab4741893436624beab5bf890eb"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Formal-Contract/validate_mapping.py",
+      "sha256": "8b3e7a10c53e41459bfe811f404b3a887e87c92705fed3310bfe647fa4bd89e0"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/BILLING-REVISION.json",
+      "sha256": "91a471497319b7122c359792e327642fe876c104ce843af67c8759b39c5f127e"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/INTERPRETATION-V1.json",
+      "sha256": "0cbb6a318a1734bc8caca8791fc0218abbe76163ceaf775dbb82d83601a08e15"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/INTERPRETATION-V2.json",
+      "sha256": "33e60484ea395731d5b55d6e81badb9a0c909c9e004ad6780470feca934b90b9"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/PROFILE-V1.json",
+      "sha256": "a62a23cbbcefeb818e8881381d3e823de0cfa62f97492481841e8403defd5d15"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/PROFILE-V2.json",
+      "sha256": "2de14b19547ec1527d1b2d5315ad3629278f0e97e196cd98d5e46e0ba525f2ba"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/SOURCE-REPRESENTATION.json",
+      "sha256": "27151eae989a898068a1f6901dad03c4b416d50261e749e35fb076d577fb7807"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-D2-Prototype/build.py",
+      "sha256": "a9de51a03377c74b202804280b003cb720b3d47ad0e80ff04029c8debdf204a0"
+    },
+    {
+      "path": "research/supporting-tests/CTC-002-Malaysia-India-Final-Tests/run_validation.py",
+      "sha256": "ad2a7430715fcd12af57289557b0f36d32cb47ceee61b74790c31128bb2895a7"
+    },
+    {
+      "path": "tests/ctc003_draft12_results.json",
+      "sha256": "129bb084aea890b9e86ac0b980960c700eef1abbd273de04e000909f90ff5d6e"
+    },
+    {
+      "path": "tests/edge-case-results.json",
+      "sha256": "35bb6077cf678492bbd1dc1e211a46de1a5975199aa8a0834e59be79e586551f"
+    },
+    {
+      "path": "tests/results.json",
+      "sha256": "237b9ace7ffd55ab05ebcee48da316632b42fd496fcf77a406da7798d330b1e3"
+    },
+    {
+      "path": "tests/sample-instance.json",
+      "sha256": "48002e4b071450aaaf0928e43ef6e7ee158dfe982bc3294b376fae54fee37495"
+    },
+    {
+      "path": "tests/validate_batch_cardinality.py",
+      "sha256": "00992f007df0ea952d8480d3069f53df73398c762a7c0fbd0fb58405d74ed61b"
+    },
+    {
+      "path": "tests/validate_batch_edge_cases.py",
+      "sha256": "31209f6f135ef24993a681fc5d120f886c1f0fa5c4f01ef7cf795fb2f9978626"
+    },
+    {
+      "path": "tests/validate_ctc003_draft12.py",
+      "sha256": "b1fd8d83ff3a5462abd02a8e3dd66aab87c6102256cd7166c0ef51032dce03b1"
+    }
+  ]
 }

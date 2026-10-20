@@ -167,3 +167,22 @@ These are not newly validated authority facts and remain pending review.
 ## 2026-10-20 — CTC-003 batch review disposition
 
 The earlier batch/envelope observations remain **Pending review** and based on conceptual/synthetic evidence. `CTC-003-BATCH-01` was explicitly accepted as a **logical design principle**, not as new verified jurisdictional evidence. B01–B10 and C09-01..08 remain proposed. Real multi-document submission and partial-outcome fixtures are still required.
+
+
+## CTC-003 blitz batch validation — 2026-10-20
+
+- **F-003-BLITZ-01 (synthetic):** Existing 22/22 structural assertions passed; 26/26 new edge-case assertions passed locally. Tests exercise logical references, manifest changes, partial outcomes, duplicate receptions, uncertain retries and ambiguous external IDs, not provider/legal conformance.
+- **F-003-BLITZ-02 (architectural):** Envelope-level success is insufficient to infer per-member legal outcome. Typed subjects and pinned member manifests are required for safe correlation.
+- **F-003-BLITZ-03 (evidence gap):** No verified provider partial-result pair, real-world retry semantics, legally binding duplicate policy or complete concurrency test was executed. Do not upgrade evidence confidence beyond synthetic validation.
+
+## CTC-003 Draft 1.2 findings — synthetic structural review
+
+See `research/CTC-003/CTC-003-UNIFIED-CARDINALITY-REFERENCE-REVIEW-DRAFT-1.2.md` for F-003-C12-01 through F-003-C12-05. These are candidate research findings supported by synthetic checks only; no regulatory conformance asserted.
+
+## 2026-10-20 G2 checkpoint
+
+The six ownership overlaps are resolved at logical level under standing blitz authorization. Draft 1.9 integrates earlier candidate constraint corrections; no new regulatory fixture validation or exhaustive 48-entity conformance is claimed.
+
+## 2026-10-20 — CTC-003 closure evidence disposition
+
+The user approved the scoped detailed logical dictionary. Earlier synthetic structural validations and partial UBL/CFDI selected-field tests remain evidence of *focused* consistency only; they do not demonstrate full country regulatory conformance, complete source-to-D2-to-target round-trip preservation, or exhaustive historical field-level coverage. The 18 additional typed field contracts remain proposals. No existing finding confidence is upgraded by the closure decision.

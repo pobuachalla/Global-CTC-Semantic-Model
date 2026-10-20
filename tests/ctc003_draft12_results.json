@@ -1,0 +1,140 @@
+{
+  "suite": "CTC-003 Draft 1.2 synthetic cardinality",
+  "total": 22,
+  "passed": 22,
+  "cases": [
+    {
+      "name": "baseline published invoice",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "draft document without revision",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "published invoice missing digest",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "orphan revision",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "published mutable party snapshot",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "orphan party snapshot",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "multiple interpretations of one revision",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "interpretation missing manifest",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "interpretation missing profile",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "orphan interpretation",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "undetermined legal state without evidence",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "issued state without evidence",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "issued state with evidence",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "multiple legal assessments",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "event missing typed subject",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "multiple events",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "published credit-note no line globally",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "profile requires missing line",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "profile requires missing seller",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "profile allows sparse document",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "name": "cancelled state without evidence",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "name": "rejected state with evidence",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "limits": "Only local structural invariants; no official payloads, legal profiles, or external response validation."
+}
