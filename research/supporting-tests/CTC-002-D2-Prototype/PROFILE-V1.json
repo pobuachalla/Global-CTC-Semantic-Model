@@ -1,0 +1,13 @@
+{
+  "profileId": "XX-CTC",
+  "profileVersion": "1.0.0",
+  "mappingId": "MAP-XX",
+  "mappingVersion": "1.0.0",
+  "codeListId": "XX-TAX",
+  "codeListVersion": "1.0.0",
+  "ruleId": "TAX-CLASSIFY-001",
+  "lookup": {
+    "LOCAL-TAX-A": "STANDARD"
+  },
+  "packageSha256": "6d55c5ea145ed1c66bb7d776f2904ec7536a7a2a277b6e4032d772c4f847082c"
+}

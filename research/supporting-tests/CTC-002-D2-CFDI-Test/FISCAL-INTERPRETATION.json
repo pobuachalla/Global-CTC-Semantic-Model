@@ -1,0 +1,80 @@
+{
+  "id": "FI-MX-001",
+  "revisionId": "REV-MX-001",
+  "revisionFingerprint": "7c3f3c2aafc7556862bf4024110aeed275909570c15e8278a7b404f96e2d25ba",
+  "sourceFacts": [
+    {
+      "factId": "SF-MX-EMISOR-REG",
+      "value": "601",
+      "scheme": "SAT CFDI 4.0 code list (release not archived)",
+      "origin": "SOURCE_SUPPLIED",
+      "sourceRepresentationId": "REP-MX-001",
+      "sourcePath": "./cfdi:Emisor/@RegimenFiscal"
+    },
+    {
+      "factId": "SF-MX-RECEPTOR-REG",
+      "value": "601",
+      "scheme": "SAT CFDI 4.0 code list (release not archived)",
+      "origin": "SOURCE_SUPPLIED",
+      "sourceRepresentationId": "REP-MX-001",
+      "sourcePath": "./cfdi:Receptor/@RegimenFiscalReceptor"
+    },
+    {
+      "factId": "SF-MX-USO",
+      "value": "G03",
+      "scheme": "SAT CFDI 4.0 code list (release not archived)",
+      "origin": "SOURCE_SUPPLIED",
+      "sourceRepresentationId": "REP-MX-001",
+      "sourcePath": "./cfdi:Receptor/@UsoCFDI"
+    },
+    {
+      "factId": "SF-MX-OBJETO",
+      "value": "02",
+      "scheme": "SAT CFDI 4.0 code list (release not archived)",
+      "origin": "SOURCE_SUPPLIED",
+      "sourceRepresentationId": "REP-MX-001",
+      "sourcePath": "./cfdi:Conceptos/cfdi:Concepto/@ObjetoImp"
+    },
+    {
+      "factId": "SF-MX-IMPUESTO",
+      "value": "002",
+      "scheme": "SAT CFDI 4.0 code list (release not archived)",
+      "origin": "SOURCE_SUPPLIED",
+      "sourceRepresentationId": "REP-MX-001",
+      "sourcePath": "./cfdi:Conceptos/cfdi:Concepto/cfdi:Impuestos/cfdi:Traslados/cfdi:Traslado/@Impuesto"
+    }
+  ],
+  "derivedFacts": [
+    {
+      "factId": "DF-MX-IVA",
+      "concept": "normalizedTaxFamily",
+      "value": "IVA",
+      "origin": "MAPPED",
+      "inputFactIds": [
+        "SF-MX-IMPUESTO"
+      ],
+      "ruleId": "MX-002-TO-IVA",
+      "ruleVersion": "0.1-demo",
+      "profileId": "MX-CFDI-4.0-POC",
+      "codeListVersion": "NOT_ARCHIVED",
+      "confidence": "ILLUSTRATIVE_SEMANTIC_ALIGNMENT"
+    }
+  ],
+  "profilePackage": {
+    "id": "MX-CFDI-4.0-POC",
+    "specification": "SAT Anexo 20 CFDI 4.0",
+    "mappingId": "CFDI-TO-D2-POC",
+    "mappingVersion": "0.1-demo",
+    "ruleId": "MX-002-TO-IVA",
+    "ruleVersion": "0.1-demo",
+    "codeListVersion": "NOT_ARCHIVED",
+    "packageDigest": "NOT_ARCHIVED"
+  },
+  "sourceRepresentation": {
+    "id": "REP-MX-001",
+    "syntax": "CFDI 4.0",
+    "sha256": "8ce9b5c28029391079700053ebe18f74a9a3c2d5595becb8ea6e79942b0c6a08",
+    "verification": "CONSTRUCTED_UNSIGNED_UNCERTIFIED_DEMO"
+  },
+  "fingerprint": "5c2096ea63b7eae40dcebe61e5945c2dcf9d880a80f0ca4cd9a83e166b3d2131"
+}

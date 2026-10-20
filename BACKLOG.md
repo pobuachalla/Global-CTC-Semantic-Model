@@ -10,10 +10,10 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 
 | ID | Task | Priority | Workstream | Status | Dependencies | Acceptance criteria |
 |---|---|---|---|---|---|---|
-| CTC-001 | Reconcile SemanticDocument and BillingDocument | P0 | Semantic foundation | Review | — | Entity-by-entity comparison, conflict register, proposed resolutions with evidence |
+| CTC-001 | Reconcile SemanticDocument and BillingDocument | P0 | Semantic foundation | Done (scoped reconciliation deliverable) | — | Entity-by-entity comparison, conflict register, proposed resolutions with evidence |
 | CTC-002 | Agree semantic aggregate boundaries | P0 | Semantic foundation | Done (scoped logical boundary only; P1-P7 + D2 + I-01..I-10 accepted) | CTC-001 | Proposed boundaries for BillingDocument, FiscalContext, ComplianceTransaction, DocumentRepresentation; FiscalContext A/B/C unresolved |
-| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | In Progress (commercial draft 0.2; tax draft 0.3; T01/T02 accepted; T03 proposed) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
-| CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Todo | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
+| CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | In Progress (unified draft 0.4 prepared; T01/T02/T03 logical decisions accepted; detailed schema proposed) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
+| CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Todo (prior CTC-003 evidence linked) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Todo | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
 | CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Todo | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
 | CTC-007 | Define semantic model versioning and compatibility | P0 | Semantic foundation | Todo | CTC-003 | Versioning rules, breaking-change policy and compatibility test plan |
@@ -81,3 +81,73 @@ T01 and T02 explicitly Accepted; T03 remains Proposed (provisional). Five synthe
 - **CTC-003-DES01: Todo (P0; CTC-003)** — Define and review detailed fields/cardinalities for candidate `MonetaryBasis`, `MonetaryEffect`, `DocumentEconomicEffect` and `MonetaryReconciliation` without assuming separate aggregate roots.
 
 These are proposed backlog tracking entries, not accepted regulatory findings.
+
+## 2026-10-20 — Backlog realignment review (proposed, no closure approval)
+
+- **CTC-001: Review, not Done.** The 28-row reconciliation and eight conflict analyses exist at `research/CTC-001/CTC-001-RECONCILIATION-REVIEW.md`. D2 and T01/T02/T03 address some earlier conflicts, but full reconciliation disposition, historical ADR namespace inventory, and formal task acceptance remain outstanding. See `reviews/CTC-001-CLOSURE-ASSESSMENT.md`. Request explicit user closure approval before changing status.
+- **CTC-002: Done (scoped).** Preserve approved D2 logical contract, P1–P7 and I-01–I-10; physical FiscalContext and evidence gates remain under FU01–FU05.
+- **CTC-003: In Progress.** Next output is a unified candidate entity dictionary merging commercial draft 0.2 and tax/monetary draft 0.3, incorporating accepted T01/T02/T03 logical decisions, without pre-approving concrete schema/cardinalities.
+- **CTC-004: Todo, with linked preliminary evidence.** Prior CTC-003 tax tests are preparatory evidence only: `research/CTC-003/CTC-003-T03-DECISION-READY-REVIEW.md`, `research/CTC-003/tests/test_t03.py`, and other extended monetary and source-mapping reports where present. No complete official conformance suite or accepted CTC-004 validation matrix.
+- **CTC-017: Todo.** Formalize project ADR namespace, approval/closure gates, supersession rules, and GitHub review/commit process; existing approval practice does not imply task closure.
+- **Deferred follow-ups:** CTC-002-FU01..FU05 and CTC-003-EV01..EV05 / DES01 remain open as recorded above.
+
+**This review does not change accepted architecture decisions, does not close CTC-001, and does not start CTC-004.**
+
+## 2026-10-20 — CTC-001 explicit scoped closure and CTC-003 consolidation
+
+- **CTC-001: Done (scoped)** by explicit user approval of the original reconciliation deliverable. This supersedes earlier Review status snapshots without changing historical entries. Acceptance covers source comparison, conflict identification and proposed resolutions only; does not accept all historic ADRs or detailed entity designs.
+- **CTC-003: In Progress.** Unified entity dictionary draft 0.4 now consolidates commercial draft 0.2, tax/monetary draft 0.3 and approved T01–T03 logical policy. Entity field names, cardinalities and new candidate value objects remain proposed.
+- **CTC-004: Todo** with prior synthetic and source-derived tests linked as preparatory evidence, not conformance approval.
+- **CTC-017: Todo**; historical ADR numbering and supersession still require governance review.
+- **CTC-002-FU01..FU05 and CTC-003-EV01..EV05/DES01:** remain open and unaffected.
+- **Next:** Review CTC-003 conflict register and publication/identity decisions; develop complete D2 provenance, representation, profile and compliance dictionaries; then seek CTC-003 approval.
+
+
+## 2026-10-20 — CTC-003 Draft 0.5 checkpoint
+
+- **CTC-003: In Progress / review needed.** Draft 0.5 now proposes detailed logical dictionaries for all nine D2 concepts, with a consolidated reference diagram. Detailed fields, identity rules, conditional cardinalities and physical aggregation are **not accepted**.
+- **CTC-003 next gate:** review document/revision/party ownership, fiscal interpretation/provenance references and fiscal identity/evidence correlation; then resolve conditional nullability, complete illustrative instances and v1.0/v0.3 field traceability before closure.
+- **CTC-004 remains Todo** with preparatory monetary test evidence only; CTC-002-FU01..FU05, CTC-003-EV01..EV05/DES01 and CTC-017 remain open.
+
+
+## CTC-003 Draft 0.6 checkpoint — 2026-10-20
+Ownership and relationship review drafted for D01–D03; proposals pending explicit review. CTC-003 remains In Progress. See `research/CTC-003/CTC-003-OWNERSHIP-RELATIONSHIP-REVIEW-DRAFT-0.6.md`.
+
+## 2026-10-20 — CTC-003 D01–D03 approval and conditional-cardinality validation
+
+- **CTC-003: In Progress.** D01, D02, D03 logical directions and paired invariants accepted; detailed entity dictionary and cardinalities remain Proposed.
+- **CTC-003-R01 (open, CTC-003):** Decide draft-ingestion to publication correlation, legal publication boundary, and document number uniqueness scope.
+- **CTC-003-R02 (open, CTC-003/CTC-006):** Decide published party role conditionality, cross-revision snapshot reuse and line-level participant requirements.
+- **CTC-003-R03 (open, CTC-003/CTC-007):** Decide interpretation input-manifest completeness, package pinning and idempotency rules.
+- **CTC-003-R04 (open, CTC-003/CTC-013):** Decide submitted-attempt snapshot cardinality, response-only correlation and retry versus resubmission semantics.
+- **CTC-003-R05 (open, CTC-003/CTC-002-FU02):** Validate candidate conditional cardinalities and references with actual country fixtures.
+
+`research/CTC-003/CTC-003-CONDITIONAL-CARDINALITY-INSTANCE-VALIDATION-DRAFT-0.7.md` is a synthetic logical test, not country conformance.
+
+## 2026-10-20 — CTC-003 Draft 0.8 lifecycle review
+
+- **CTC-003 remains In Progress**. Draft 0.8 proposes three-dimensional lifecycle separation (preparation, legal/fiscal recognition, compliance processing), L01–L10 and conditional cardinality matrix; no new detailed schema approved.
+- **CTC-003-R01** remains open: publication/freeze boundary and commercial number uniqueness.
+- **CTC-003-R02** remains open: document-type conditional party and line requirements.
+- **CTC-003-R04** remains open: retries, snapshots and authority correlation.
+- **CTC-013 / CTC-014** to own detailed legal-state and authority-response mapping.
+- **CTC-002-FU01 / FU02** remain open; physical aggregation and verified real fixtures deferred.
+
+## 2026-10-20 — CTC-003 Draft 0.9 progress
+
+- **CTC-003: In Progress.** Three lifecycle dimensions and L01–L10 approved at logical-policy level. Conditional cardinalities C09-01..08 remain proposed and require review.
+- **CTC-006:** publication/issuance, commercial-number uniqueness, party and correction requirements remain open.
+- **CTC-013/014:** legal-state projection and authority response mapping remain open.
+- **CTC-002-FU01/FU02:** physical FiscalContext aggregation and validated authority fixtures remain deferred.
+- **CTC-004:** remains Todo; earlier tax tests are linked preparatory evidence, not completed regulatory validation.
+
+## CTC-003 Draft 1.0 batch/envelope checkpoint — 2026-10-20
+
+CTC-003 remains **In Progress**. Batch ingestion and outbound submission envelope semantics have been reviewed as **proposals only**. Draft 0.9 C09-02 and C09-07 require reassessment; no cardinality or new logical entity approved. Evidence dependencies: CTC-008/009/010 (real batch fixtures), CTC-013/014 (envelope/member response taxonomy). See `research/CTC-003/CTC-003-BATCH-INGESTION-SUBMISSION-ENVELOPE-DRAFT-1.0.md`.
+
+## 2026-10-20 — CTC-003 batch logical separation approved
+
+- **CTC-003: In Progress.** `CTC-003-BATCH-01` Accepted at logical-principle level: transport/ingestion containers are separate from per-document billing and compliance identities.
+- **Pending review:** B01–B10, C09-01..08 (especially C09-02/C09-07), and candidate extraction/envelope/member/transport-attempt entity shapes and cardinalities.
+- **Evidence dependency:** CTC-008/009/010 to acquire/validate multi-document batch fixtures and partial-outcome responses; CTC-013/014 to refine transport and member response correlation.
+- **Next CTC-003 activity:** Test proposed cardinalities against zero-member, multi-member, duplicate-member, retry and partial-outcome instances before requesting detailed-model approval.

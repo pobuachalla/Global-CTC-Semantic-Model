@@ -1,0 +1,61 @@
+{
+  "revision": {
+    "id": "REV-001",
+    "digest": "sha256:rev001",
+    "partySnapshotIds": [
+      "PS-SELLER-001",
+      "PS-BUYER-001"
+    ],
+    "sourceFactIds": [
+      "SF-001"
+    ]
+  },
+  "ingestion": {
+    "id": "ING-001",
+    "sourceRepresentationId": "REP-SRC-001"
+  },
+  "interpretations": [
+    {
+      "id": "FI-001",
+      "revisionId": "REV-001",
+      "sourceFactIds": [
+        "SF-001"
+      ],
+      "manifestId": "IM-001",
+      "profilePackageId": "PP-1"
+    },
+    {
+      "id": "FI-002",
+      "revisionId": "REV-001",
+      "sourceFactIds": [
+        "SF-001"
+      ],
+      "manifestId": "IM-002",
+      "profilePackageId": "PP-2"
+    }
+  ],
+  "submission": {
+    "attemptId": "ATT-001",
+    "snapshotId": "SS-001",
+    "revisionId": "REV-001",
+    "representationId": "REP-OUT-001",
+    "representationDigest": "sha256:out001"
+  },
+  "correction": {
+    "documentId": "DOC-002",
+    "relationship": "CREDITS",
+    "targetDocumentId": "DOC-001"
+  },
+  "evidence": [
+    {
+      "id": "EVD-CERT-001",
+      "identityId": "FID-001",
+      "artifactId": "REP-CERT-001"
+    },
+    {
+      "id": "EVD-CANCEL-001",
+      "identityId": "FID-001",
+      "operationId": "CT-CANCEL-001"
+    }
+  ]
+}

@@ -127,3 +127,89 @@
 - **Backlog:** CTC-003 remains In Progress; evidence and detailed design follow-ups proposed.
 - **Next:** Continue CTC-003 detailed entity dictionary and reconcile T03 logical policy with source assertions and summary models.
 - **GitHub:** No remote push. Complete replacement files supplied for manual review/commit.
+
+## Session — 2026-10-20 — Backlog realignment review
+
+- Scope: assess CTC-001 closure readiness, maintain CTC-003 In Progress, link prior tax test evidence to CTC-004, identify CTC-017 governance work.
+- Sources: latest locally available CTC-003 T03 approval package and CTC-001 reconciliation review from baseline archive. Remote GitHub not read.
+- Decisions explicitly approved this session: none. Previously accepted D2/P1–P7/I-01–I-10/T01–T03 preserved.
+- Backlog: CTC-001 stays Review pending explicit scoped closure approval; CTC-002 Done scoped; CTC-003 In Progress; CTC-004 Todo with evidence links; CTC-017 Todo.
+- Next: user review CTC-001 closure assessment; then consolidate unified CTC-003 dictionary.
+- Checkpoint: reviews/CTC-001-CLOSURE-ASSESSMENT.md.
+
+## Session — 2026-10-20 — CTC-001 scoped closure and CTC-003 unified draft
+
+- **Scope:** Apply explicit CTC-001 closure approval and reconcile commercial Draft 0.2 with tax Draft 0.3 under D2.
+- **User approval:** CTC-001 Done at original reconciliation-deliverable scope only. No additional ADRs or detailed schema accepted.
+- **Sources:** 28-row CTC-001 reconciliation, commercial Draft 0.2, tax Draft 0.3, latest available backlog/decisions and T03 accepted ten logical invariants. Remote GitHub HEAD not inspected.
+- **Deliverable:** `research/CTC-003/CTC-003-UNIFIED-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.4.md` (proposed).
+- **Decisions retained:** CTC-002 D2/P1–P7/I-01–I-10 and CTC-003 T01–T03 at accepted logical scopes. FiscalContext A/B/C physical choice deferred.
+- **Findings:** F-003-U01..U04 proposed; no new country conformance evidence.
+- **Backlog:** CTC-001 Done scoped, CTC-002 Done scoped, CTC-003 In Progress, CTC-004 Todo with preparatory evidence, CTC-017 Todo. All evidence and aggregate follow-ups open.
+- **Next:** Review unified dictionary ownership conflicts, then complete D2 fiscal/provenance and compliance/evidence portions before approving CTC-003.
+- **GitHub:** Full replacement files supplied; not pushed automatically.
+
+
+## 2026-10-20 — CTC-003 Draft 0.5 D2 companion entity consolidation
+
+- **Scope:** Continue CTC-003 only; extend unified Draft 0.4 into an end-to-end implementation-neutral D2 candidate dictionary.
+- **Sources:** Existing Commercial 0.2, Tax 0.3, Unified 0.4, approved D2 contract and project decisions, SemanticDocument v1.0, Billing Model v0.3; no new official fixture testing.
+- **Output:** `research/CTC-003/CTC-003-UNIFIED-D2-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.5.md`, including source/derived fiscal facts, provenance, profile packages, representations, compliance events, fiscal identity/evidence, logical references, shared types and unresolved decisions.
+- **Accepted decisions:** No new decisions. D2/P1–P7/I-01–I-10/T01–T03 preserved.
+- **Status:** CTC-003 In Progress; Draft 0.5 Proposed; FiscalContext A/B/C physical design deferred. CTC-004 not started.
+- **Next:** Review candidate ownership and correlation rules, conditional cardinalities and complete example validation before CTC-003 acceptance.
+- **GitHub:** Full replacement working files only; no remote push, and remote HEAD not checked.
+
+
+## CTC-003 — Ownership review Draft 0.6 — 2026-10-20
+- Reviewed D01 document/party identity, D02 fiscal provenance, D03 compliance/representation/evidence correlation.
+- Proposed immutable party snapshots, closed interpretation input manifest and pinned submission snapshot. No new approvals.
+- Next: review D01–D03 and test concrete instance references and conditional cardinalities. CTC-003 remains In Progress.
+
+## Session — 2026-10-20 — CTC-003 D01/D02/D03 approval and conditional-cardinality prototype
+
+- **Scope:** Accept logical ownership directions D01/D02/D03 and six paired invariants; evaluate conditional cardinalities and instance-level references without approving schema.
+- **Explicit approvals:** CTC-003-D01/D02/D03, D01-1/2, D02-1/2, D03-1/2 (logical level only).
+- **Preserved approvals:** D2, P1–P7, I-01–I-10, T01–T03.
+- **New deliverables:** Draft 0.7 relationship/cardinality matrix, synthetic instance scenarios and executable structural assertion script.
+- **Not approved:** field-level shapes, cardinalities, publication boundaries, physical FiscalContext A/B/C, country fixtures.
+- **Backlog:** CTC-003 In Progress; CTC-003-R01..R05 tracked as open.
+- **Next:** Review proposed conditional cardinalities and exception handling; then integrate approved details into Draft 0.8.
+- **Sync:** Git-ready replacement files only; no remote push.
+
+## 2026-10-20 — CTC-003 lifecycle/publication Draft 0.8
+
+- Scope: distinguish ingestion, mutable normalization, immutable publication, legal/fiscal issuance and external compliance operations.
+- Output: lifecycle state dimensions, candidate transitions, conditional cardinality matrix, synthetic instance/reference validation cases, proposed L01–L10.
+- Decisions approved: None new. Prior D2, P1–P7, I-01–I-10, T01–T03, D01–D03 retained.
+- Unresolved: publication boundary, legal identity uniqueness, document-type minima, retry/reconciliation and legal-state rules.
+- Task status: CTC-003 In Progress; detailed model not approved.
+- Next: review L01–L10 and lifecycle separation, then refine unified dictionary with approved outcomes.
+
+## Session — 2026-10-20 — CTC-003 L01–L10 approval and Draft 0.9
+
+- **User explicitly approved:** three-dimensional separation of preparation, legal/fiscal recognition, and compliance processing; L01–L10 at logical-policy level only.
+- **Not approved:** detailed cardinalities, legal publication/issuance triggers, country-specific rules, physical FiscalContext A/B/C, entity materialization or regulatory validity.
+- **Draft 0.9:** proposes a phase-aware cardinality contract and synthetic reference fixtures for invoice, credit note, cancellation and pre-publication ingestion. These are design proposals, not regulatory assertions.
+- **Task:** CTC-003 remains In Progress; CTC-004 remains Todo with linked preparatory evidence.
+- **Next:** review C09-01 through C09-08 cardinality proposals and resolve conditional profile requirements before detailed entity schema approval.
+
+## Session — 2026-10-20 — CTC-003 batch and envelope review
+
+- Scope: Reassess Draft 0.9 C09-02 and C09-07 for multi-document inbound payloads and outbound batch envelopes.
+- Findings: Transport container identity and per-document identity/outcome need separate correlation; partial outcomes must not be inferred from envelope acceptance. Synthetic cases only.
+- Proposed: B01–B10 and candidate extraction/envelope/member entities. No new approvals.
+- Existing approvals: D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10 preserved.
+- Task: CTC-003 In Progress. Next: review proposed cardinality changes and obtain real batch/response fixtures.
+- GitHub: replacement files prepared; no push.
+
+## Session — 2026-10-20 — CTC-003 batch separation approval
+
+- **Scope:** Review the Draft 1.0 batch ingestion/submission envelope separation proposal.
+- **Explicit user approval:** Logical separation of ingestion/transport containers from individual `BillingDocument` and `ComplianceTransaction` identities (`CTC-003-BATCH-01`).
+- **Explicit exclusions:** B01–B10, candidate entity shapes and C09 cardinalities remain Proposed; no physical model or jurisdiction-specific batch semantics approved.
+- **Preserved:** D2, P1–P7, I-01–I-10, T01–T03, D01–D03 and L01–L10 unchanged.
+- **Evidence:** Previous Draft 1.0 conceptual analysis and synthetic examples; no newly validated real batch fixtures.
+- **Task status:** CTC-003 In Progress.
+- **Next:** Instance-level batch and member correlation tests, then conditional cardinality review.
+- **GitHub:** Complete replacement files prepared; remote repository not modified.

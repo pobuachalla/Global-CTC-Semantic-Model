@@ -1,0 +1,13 @@
+PASS | ingestion prepublication link
+PASS | revision pinned parties
+PASS | interpretations same revision
+PASS | source facts pinned
+PASS | profiles differ
+PASS | manifests distinct
+PASS | attempt exact revision
+PASS | attempt exact representation
+PASS | correction separate document
+PASS | fiscal identity retained
+PASS | evidence distinct
+PASS | reject mutable latest reference
+RESULT: 12/12 synthetic structural checks passed

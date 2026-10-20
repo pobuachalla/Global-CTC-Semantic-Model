@@ -108,3 +108,62 @@ The user explicitly approved the D2 logical contract and I-01..I-10 and scoped C
 ## 2026-10-20 — T03 decision disposition (not a new research finding)
 
 The user approved the ten logical T03 policy statements in `research/CTC-003/CTC-003-T03-DECISION-READY-REVIEW.md`. Evidence remains bounded: 21/21 focused checks reported in that review; official worked examples and documentation support selected semantics, but no complete inclusive-unit-price structured invoice, validated certified withholding fixture, or complete jurisdiction-specific conformance suite was executed. Approval does **not** increase evidence confidence or close E-T03-01..05. See DECISIONS.md for exact approval scope.
+
+## 2026-10-20 — Backlog evidence-link note
+
+The prior CTC-003 monetary calculations and source-based reviews are **preparatory inputs** for CTC-004, not newly verified regulatory findings or proof that CTC-004 acceptance criteria are met. See BACKLOG.md and reviews/CTC-001-CLOSURE-ASSESSMENT.md.
+
+## 2026-10-20 — CTC-003 dictionary reconciliation observations (proposed)
+
+- **F-003-U01 (Proposed):** Commercial draft 0.2 and tax draft 0.3 both define `TaxPoint`; use one authoritative semantic concept with document/line applicability and profile interpretation references, not competing owners. Evidence: the two draft dictionaries.
+- **F-003-U02 (Proposed):** Draft 0.2 refers to tax facts and monetary totals while draft 0.3 introduces TaxRegime/TaxApplication/TaxSummary; references should converge on those tax concepts, while T01/T02 remain accepted at logical level. Evidence: both drafts and accepted T01/T02.
+- **F-003-U03 (Proposed):** The approved T03 monetary policy requires explicit reconciliation basis and monetary effect, but `MonetaryBasis`/`MonetaryEffect` remain candidate logical concepts with no accepted fields/cardinalities. Evidence: T03 approval record and draft 0.3.
+- **F-003-U04 (Proposed):** `PublishedRevision` ownership of number/type/date and `BillingDocument` as platform identity is a candidate P6-compliant arrangement, not an approved detailed-schema decision. Evidence: commercial draft 0.2.
+- **Evidence limitation:** No new source XML validation or regulatory conformance executed in this consolidation.
+
+
+## CTC-003 — Draft 0.5 modelling observations (proposed, not evidence-validated)
+
+- **F-003-D05-01 (proposed):** A response artifact can be represented by DocumentRepresentation without requiring an issued BillingDocumentRevision reference; it must correlate to the compliance operation. Source: D2 logical boundary and Italy SdI conceptual review. **Confidence:** design inference.
+- **F-003-D05-02 (proposed):** FiscalIdentity and FiscalEvidence need distinct logical roles to prevent authority-issued identity being independently edited in multiple records. Source: D2 P4/P6 and CFDI documentation-based review. **Confidence:** architectural inference.
+- **F-003-D05-03 (proposed):** SourceLocator and FactProvenance capture different responsibilities: immutable original position versus derivation history. Source: D2 P7/I-02/I-03. **Confidence:** conceptual.
+- **F-003-D05-04 (proposed):** An immutable ProfilePackage requires package/dependency digests, not only a display version, for replay. Source: approved D2 I-05; earlier synthetic replay. **Confidence:** source-derived design implication, not real regulatory validation.
+
+These are *candidate findings* and do not amend earlier findings' evidence classifications.
+
+## CTC-003 — Draft 0.7 conditional-cardinality findings (2026-10-20)
+
+These are **proposed conceptual findings**, based on synthetic instance tests; not validated country requirements.
+
+| ID | Finding | Evidence | Status |
+|---|---|---|
+| F-003-07 | Pre-publication representations require ingestion correlation without falsely claiming a published revision exists. | Synthetic draft-to-publication fixture | Pending review |
+| F-003-08 | Party master changes do not affect pinned published party snapshots. | Synthetic party-mutation fixture | Pending review |
+| F-003-09 | Derived fiscal facts can differ by profile without modifying source facts, provided the input manifest is pinned. | Synthetic two-profile fixture | Pending review |
+| F-003-10 | Submitted attempts must reference an immutable exact payload; mutable latest references are invalid. | Synthetic submission and negative control | Pending review |
+| F-003-11 | An external fiscal identifier can be associated with certification and later cancellation evidence without overwriting the original identifier or artifact. | Synthetic evidence chain | Pending review |
+| F-003-12 | Cardinalities depend on lifecycle phase and document type; universal published seller/buyer or line minimums require profile evidence. | Conditional cardinality analysis | Pending review |
+
+## CTC-003 — Draft 0.8 proposed findings (2026-10-20)
+
+- **F-003-L01 (proposed, conceptual):** Internal publication and legal issuance are different lifecycle dimensions. Evidence: logical model stress test; not a verified jurisdictional mandate.
+- **F-003-L02 (proposed, conceptual):** Ingestion/source representation may exist before any published revision. Evidence: Draft 0.7/0.8 synthetic correlation cases.
+- **F-003-L03 (proposed, conceptual):** A single universal status conflates preparation, legal-state and external processing. Evidence: earlier CFDI/SdI conceptual reviews and Draft 0.8 synthetic branches.
+- **F-003-L04 (proposed, conceptual):** Global structural minima and document-type/profile minima must be separated. Evidence: Draft 0.7/0.8 conditional-cardinality matrix.
+
+These are not newly validated authority facts and remain pending review.
+
+## CTC-003 — Draft 0.9 proposed structural observations (2026-10-20)
+
+- **F-003-D09-01 (Proposed, conceptual):** A source representation can precede a platform document or published revision; ingestion correlation therefore cannot depend on a published revision ID. Evidence: Draft 0.8 synthetic lifecycle; no real authority fixture.
+- **F-003-D09-02 (Proposed, conceptual):** Global minimum cardinalities and lifecycle/profile-specific minimums must be expressed separately to avoid treating a partial inbound document as a valid published invoice. Evidence: Draft 0.8 cardinality analysis.
+- **F-003-D09-03 (Proposed, conceptual):** An immutable submission snapshot can reference a published revision and outbound representation without forcing legal issuance to coincide with publication. Evidence: synthetic instance checks; no regulatory assertion.
+- **F-003-D09-04 (Proposed, conceptual):** Corrective documents and cancellation operations require distinct relationships to the original published revision/evidence; permitted legal paths remain jurisdiction-specific. Evidence: synthetic branches only.
+
+## CTC-003 — Batch/envelope architectural observations (2026-10-20)
+
+**Pending review, synthetic/conceptual evidence only:** One received payload may yield multiple billing documents; one submitted envelope may carry multiple immutable document representations; transport-level success cannot establish member-level fiscal success; partial outcomes require member-specific correlation. See CTC-003 Draft 1.0. No real batch fixture or authority response validated.
+
+## 2026-10-20 — CTC-003 batch review disposition
+
+The earlier batch/envelope observations remain **Pending review** and based on conceptual/synthetic evidence. `CTC-003-BATCH-01` was explicitly accepted as a **logical design principle**, not as new verified jurisdictional evidence. B01–B10 and C09-01..08 remain proposed. Real multi-document submission and partial-outcome fixtures are still required.

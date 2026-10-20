@@ -1,0 +1,252 @@
+[
+  {
+    "path": "BACKLOG.md",
+    "sha256": "67e317b66144ec6792e040996639a76054b3bcc86f8e55a98585ec79e20b7538",
+    "bytes": 5732
+  },
+  {
+    "path": "DECISIONS.md",
+    "sha256": "ef9007d4d404b7fc92993d96fa58f82fa34d3492b9f65f9e4916e48b25d2fe05",
+    "bytes": 10214
+  },
+  {
+    "path": "FINDINGS.md",
+    "sha256": "ea49faf5d7c6970f098102106b6f12bdfb3f88be04c108189ca6958cc0ee2483",
+    "bytes": 12965
+  },
+  {
+    "path": "MODEL-BASELINE.md",
+    "sha256": "4a16015bc0fe8a46292549f4fca64470a957699ea7378d16609811a52bef7890",
+    "bytes": 3378
+  },
+  {
+    "path": "README-APPLY.md",
+    "sha256": "efdad6d38653f98fed04867c1169f486b1f2dd4027187f869c52cc6c3947301f",
+    "bytes": 1103
+  },
+  {
+    "path": "SESSION-LOG.md",
+    "sha256": "2842deea58e52e187cb86adab3a28864bd4c2da34d816c5d53e85f7cadd5ac27",
+    "bytes": 8146
+  },
+  {
+    "path": "research/CTC-002/CTC-002-CFDI-CERTIFICATION-EVIDENCE-REVIEW.md",
+    "sha256": "76afdae0ac56418d8715c771e87ee00e5649087e9b9065da970c8afb166c47cf",
+    "bytes": 8940
+  },
+  {
+    "path": "research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md",
+    "sha256": "4f1ac1e79d725d59827d1d60dc898fca288b8588744d3bc4917a7451de0372d1",
+    "bytes": 12305
+  },
+  {
+    "path": "research/CTC-002/CTC-002-D2-CFDI-MAPPING-REVIEW.md",
+    "sha256": "5210f72f74d832c61ed56fccfe21d3b0e9a4aec8f0ce8607b8327ae40f868046",
+    "bytes": 8737
+  },
+  {
+    "path": "research/CTC-002/CTC-002-D2-CONTRACT-AND-REPLAY.md",
+    "sha256": "a6933c84e9ee85b5fe009c31fc63dc51b6156dc3245e4b473209c3323596620b",
+    "bytes": 7958
+  },
+  {
+    "path": "research/CTC-002/CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md",
+    "sha256": "949269c3c37cb300eb27c501634faa76050cddb1fb34314ef31e4c8cb131ee8a",
+    "bytes": 11979
+  },
+  {
+    "path": "research/CTC-002/CTC-002-D2-MALAYSIA-INDIA-VALIDATION.md",
+    "sha256": "266abc14630a9a1a9e444c4be78bde9b9eff36ccb40ac0867b27ef47523c816a",
+    "bytes": 9975
+  },
+  {
+    "path": "research/CTC-002/CTC-002-EXTENDED-FISCAL-OWNERSHIP-REVIEW.md",
+    "sha256": "dbefee1264bef70bd3ce1223b7c4c22b31a4d815d6cdbe73ad69bac400ec08b6",
+    "bytes": 13660
+  },
+  {
+    "path": "research/CTC-002/CTC-002-FISCAL-FIELD-OWNERSHIP-MATRIX.md",
+    "sha256": "49c790e0e9360cfd6003b5d484c878135421a19012949e8757f98743acebdf73",
+    "bytes": 17005
+  },
+  {
+    "path": "research/CTC-002/CTC-002-FRANCE-EXTENDED-CTC-STRESS-TEST.md",
+    "sha256": "12c003a9a5d0aafb9f31d2a01193cee99067e94e599f6534cffc0a9a53666d0e",
+    "bytes": 9675
+  },
+  {
+    "path": "research/CTC-002/CTC-002-ITALY-SDI-RESPONSE-EVIDENCE.md",
+    "sha256": "8c661c86cbac13416b4fc1d951c0fcd5ce71e9d9acf80c9481983456b0602112",
+    "bytes": 4784
+  },
+  {
+    "path": "research/CTC-002/CTC-002-SEMANTIC-CONTRACT-CONSISTENCY-TEST.md",
+    "sha256": "f31a9628057b74bc916cc65bcff32e9eaf11eeb068cfd0d03fe004517567a66a",
+    "bytes": 12203
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/BILLING-REVISION.json",
+    "sha256": "af24de42d56f59b3e3346ef5e81cb3d30ae9e8ef1cdfc94c7c827a30444f93c3",
+    "bytes": 586
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/CTC-002-D2-CFDI-MAPPING-REVIEW.md",
+    "sha256": "5210f72f74d832c61ed56fccfe21d3b0e9a4aec8f0ce8607b8327ae40f868046",
+    "bytes": 8737
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/FISCAL-INTERPRETATION.json",
+    "sha256": "d349001aad206b0540a46849f9f766c70c644fb3151d658f94bc9c607ba00d43",
+    "bytes": 2602
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/README.md",
+    "sha256": "1ac7f963652c19ae17ce332fb7890692c56e32766ec24c8f3986aad59c1661f2",
+    "bytes": 425
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/VALIDATION-RESULT.json",
+    "sha256": "f8b57e01ad5547a364b14c3454ee45a863790d890dcda08757090ea58dfe90c6",
+    "bytes": 763
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/cfdi40-constructed.xml",
+    "sha256": "8ce9b5c28029391079700053ebe18f74a9a3c2d5595becb8ea6e79942b0c6a08",
+    "bytes": 1201
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/cfdi/validate_cfdi_d2.py",
+    "sha256": "dd475d09d6a6ac01a38a1b5f28d1e3115fdd89c5a00efbe5ebb1fa5e7594e7b3",
+    "bytes": 4658
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/CTC-002-D2-MALAYSIA-INDIA-VALIDATION.md",
+    "sha256": "266abc14630a9a1a9e444c4be78bde9b9eff36ccb40ac0867b27ef47523c816a",
+    "bytes": 9975
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/README.md",
+    "sha256": "5f9b147e9c304e06315f8a24108f788d8993f3cfda09bf6f19a700a047512d78",
+    "bytes": 531
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/india-interstate-constructed.json",
+    "sha256": "bec5568a2c280a6ffb4e60e139804cfe07531c096464323cf231431ef46ef529",
+    "bytes": 604
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/india-intrastate-constructed.json",
+    "sha256": "0687d689d0b3fd1efca48f27c5a49c8ad6b6f106f38b1f334952a1dfa757d91e",
+    "bytes": 604
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/fixtures/malaysia-constructed.json",
+    "sha256": "34bc552347761e7874f513adb97ae57d8ac29cb66c16cc80da8224ec9e2c0c93",
+    "bytes": 470
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/results/IN-TEST-001.json",
+    "sha256": "1fdaeb22ca23e7c2cdcafee7041985438baac511e494da6d8cc3e5c084ccd15f",
+    "bytes": 2305
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/results/IN-TEST-002.json",
+    "sha256": "5a01938487d5b20a1e5e2c94338570f08f735ba971e21e027bf388147ce0dfb1",
+    "bytes": 2301
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/results/MY-TEST-001.json",
+    "sha256": "340c990a199a66d08ee09bfdc43d4cb99b0c5603b318f9d2459df348e6c16875",
+    "bytes": 2074
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/results/summary.json",
+    "sha256": "0cf5090cb008e9f1534b30243a325e4557a4ab85af27593bbd273b78ab26c479",
+    "bytes": 153
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/malaysia-india/run_validation.py",
+    "sha256": "ad2a7430715fcd12af57289557b0f36d32cb47ceee61b74790c31128bb2895a7",
+    "bytes": 4579
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/BILLING-REVISION.json",
+    "sha256": "b041acf915ae6b98c0696b9eec44d2de386d86e0bb983daed88ddb00760b14bf",
+    "bytes": 518
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md",
+    "sha256": "949269c3c37cb300eb27c501634faa76050cddb1fb34314ef31e4c8cb131ee8a",
+    "bytes": 11979
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/FISCAL-INTERPRETATION.json",
+    "sha256": "54de8a61f1b0c7426ad1915b5d8e88360c28522bc622860539135d337ec6485e",
+    "bytes": 1733
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/README.md",
+    "sha256": "af74aa20ae28d4dc8bd7950595eaf995e8347af166711a485e55bc0b03c8b98c",
+    "bytes": 569
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/VALIDATION-RESULT.json",
+    "sha256": "2d3543cc3493668ce93394cf04c89470be8abfd958de83a3f9bac71aa4fbb2f8",
+    "bytes": 466
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/sample-ubl-invoice.xml",
+    "sha256": "29972eafe2aa7fa1c343925f2081536a4938bab4741893436624beab5bf890eb",
+    "bytes": 3092
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/peppol/validate_mapping.py",
+    "sha256": "8b3e7a10c53e41459bfe811f404b3a887e87c92705fed3310bfe647fa4bd89e0",
+    "bytes": 4322
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/BILLING-REVISION.json",
+    "sha256": "91a471497319b7122c359792e327642fe876c104ce843af67c8759b39c5f127e",
+    "bytes": 817
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/CTC-002-D2-CONTRACT-AND-REPLAY.md",
+    "sha256": "a6933c84e9ee85b5fe009c31fc63dc51b6156dc3245e4b473209c3323596620b",
+    "bytes": 7958
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/INTERPRETATION-V1.json",
+    "sha256": "0cbb6a318a1734bc8caca8791fc0218abbe76163ceaf775dbb82d83601a08e15",
+    "bytes": 1130
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/INTERPRETATION-V2.json",
+    "sha256": "33e60484ea395731d5b55d6e81badb9a0c909c9e004ad6780470feca934b90b9",
+    "bytes": 1129
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/PROFILE-V1.json",
+    "sha256": "a62a23cbbcefeb818e8881381d3e823de0cfa62f97492481841e8403defd5d15",
+    "bytes": 335
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/PROFILE-V2.json",
+    "sha256": "2de14b19547ec1527d1b2d5315ad3629278f0e97e196cd98d5e46e0ba525f2ba",
+    "bytes": 334
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/README.md",
+    "sha256": "e67d13b0eb16fd6367c75b160449a97a36a9df3076b734e4a342cef856962733",
+    "bytes": 270
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/SOURCE-REPRESENTATION.json",
+    "sha256": "27151eae989a898068a1f6901dad03c4b416d50261e749e35fb076d577fb7807",
+    "bytes": 578
+  },
+  {
+    "path": "research/CTC-002/test-artifacts/replay/build.py",
+    "sha256": "a9de51a03377c74b202804280b003cb720b3d47ad0e80ff04029c8debdf204a0",
+    "bytes": 11962
+  }
+]

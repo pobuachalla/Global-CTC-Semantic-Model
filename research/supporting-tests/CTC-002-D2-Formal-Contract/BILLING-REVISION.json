@@ -1,0 +1,20 @@
+{
+  "documentId": "DOC-PEP-0042",
+  "revisionId": "REV-PEP-001",
+  "documentNumber": "INV-PEPPOL-0042",
+  "issueDate": "2026-10-20",
+  "currency": "EUR",
+  "sellerTaxIdentifier": "IE1234567A",
+  "tax": {
+    "base": "1000.00",
+    "ratePercent": "20",
+    "amount": "200.00",
+    "originalCategory": "S"
+  },
+  "totals": {
+    "taxExclusive": "1000.00",
+    "taxInclusive": "1200.00"
+  },
+  "sourceRepresentationId": "REP-PEP-001",
+  "fingerprint": "d89c098ff8c13be9c3b23dce2dc1fac6484ec56e98da520a2b5d87f232096df8"
+}

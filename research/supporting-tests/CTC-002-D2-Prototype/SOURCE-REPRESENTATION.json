@@ -1,0 +1,19 @@
+{
+  "representationId": "REP-SRC-001",
+  "formatFamily": "SYNTHETIC-JSON",
+  "sourcePath": "invoice.tax.localCategory",
+  "payload": {
+    "documentNumber": "INV-2026-0042",
+    "issueDate": "2026-10-20",
+    "currency": "XCU",
+    "seller": "Alpha Trading Ltd",
+    "buyer": "Beta Services Ltd",
+    "netAmount": "1000.00",
+    "taxRate": "10.00",
+    "taxAmount": "100.00",
+    "payableAmount": "1100.00",
+    "localTaxCategory": "LOCAL-TAX-A",
+    "localTaxScheme": "XX-TAX-SCHEME"
+  },
+  "contentSha256": "38aff3a757aa363fd35c4a9a33eebf9b40b1c3d02229d59553d1b60efe31b2cc"
+}

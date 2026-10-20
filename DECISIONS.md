@@ -187,3 +187,84 @@ The D2 formal implementation-neutral contract is **Accepted at logical level** w
 **Explicitly not approved:** `MonetaryBasis` and `MonetaryEffect` remain **candidate logical concepts**; their final fields, cardinalities, materialization, aggregate-root status and database storage are deferred. `DocumentEconomicEffect` and `MonetaryReconciliation` also remain candidates. The previously proposed T03-I01..I10 field-level invariants are **not** automatically accepted unless identical to the ten statements above. No jurisdictional tax calculation, rounding tolerance or regulatory conformance is approved by this decision.
 
 **Preserved:** CTC-003-T01 and T02 remain Accepted; CTC-002 P1..P7, D2 nine-concept contract and I-01..I-10 remain Accepted; FiscalContext physical A/B/C remain Deferred. CTC-003 remains **In Progress**.
+
+## 2026-10-20 — Backlog realignment (administrative review)
+
+No new architecture decisions approved. CTC-001 closure is proposed, not accepted. CTC-002 scoped closure and CTC-003 T01–T03 remain accepted at their previously recorded scopes. CTC-004 preliminary evidence linkage is not a conformance approval.
+
+## CTC-001 — Explicit scoped task closure (2026-10-20)
+
+**Approval:** User explicitly approved closing CTC-001 at its original reconciliation-deliverable scope. **Task status: Done (scoped).** This is task acceptance, **not** an approval of all earlier candidate entities or historical ADRs. The source comparison, conflict register and proposed resolutions remain the CTC-001 deliverable.
+
+**Carried forward:** detailed entity ownership/cardinalities and corrections into CTC-003/006; tax semantics into CTC-003/004; jurisdiction extensions into CTC-005; historical ADR namespace, review and supersession into CTC-017; evidence gaps into CTC-008/009/010 and CTC-002 follow-ups.
+
+## CTC-003 — Unified entity dictionary draft 0.4 (2026-10-20)
+
+**Status: Proposed, not accepted.** Consolidation of commercial Draft 0.2 and tax Draft 0.3. No new detailed entity definitions, relationships, or cardinalities approved by task continuation. Accepted logical T01/T02/T03 and D2/P1–P7/I-01–I-10 remain in force. FiscalContext physical A/B/C remains deferred. See `research/CTC-003/CTC-003-UNIFIED-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.4.md`.
+
+
+## 2026-10-20 — CTC-003 unified D2 dictionary Draft 0.5 (no new approvals)
+
+Draft 0.5 extends the previously proposed unified dictionary with detailed **candidate** definitions for SourceFiscalFact, FiscalInterpretation, DerivedFiscalFact, ProfilePackage, DocumentRepresentation, ComplianceTransaction, SubmissionAttempt, ProcessingEvent, FiscalIdentity and FiscalEvidence, plus provenance and shared value types. **Status: Proposed / review required.** No new ADR, entity schema, physical aggregate, cardinality, regulatory rule or CTC-003 closure was approved. D2/P1–P7/I-01–I-10 and T01/T02/T03 retain their exact prior approved logical scope. FiscalContext A/B/C remains deferred. See `research/CTC-003/CTC-003-UNIFIED-D2-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.5.md`.
+
+
+## CTC-003 Draft 0.6 — Ownership review proposals (2026-10-20)
+
+D01 (document and immutable party snapshots), D02 (closed fiscal interpretation input manifest), and D03 (pinned submission snapshot and evidence correlation) are **Proposed, not Accepted**. See `research/CTC-003/CTC-003-OWNERSHIP-RELATIONSHIP-REVIEW-DRAFT-0.6.md`. All prior approvals remain unchanged.
+
+## CTC-003 — Explicit D01/D02/D03 logical ownership approval (2026-10-20)
+
+**Approval evidence:** User explicitly approved D01, D02 and D03, with their paired logical invariants, in this conversation. **Status: Accepted — logical ownership/invariant level only.** These task-qualified IDs are not global ADR numbers.
+
+| ID | Accepted logical direction and invariants | Scope |
+|---|---|---|
+| CTC-003-D01 | `BillingDocument` owns stable platform identity; `PublishedRevision` owns immutable published commercial assertions; published party participation pins immutable `PartySnapshot` references (D01-1). Post-issuance changes to legally identifying facts require a governed correction/replacement decision rather than silent replacement (D01-2). | Logical identity and ownership only |
+| CTC-003-D02 | `FiscalInterpretation` uses a closed, pinned input manifest to support reproducibility or explicit `NOT_EVALUABLE` when dependencies are unavailable (D02-1). Derived facts cannot overwrite authoritative source facts; conflicts retain both and produce findings (D02-2). | Logical provenance and interpretation ownership only |
+| CTC-003-D03 | Every submitted attempt pins an immutable submission snapshot and cannot resolve mutable `latest` references (D03-1). Fiscal identity and evidence refer to the exact artifact or operation they attest without duplicating authoritative identifiers (D03-2). | Logical correlation and evidence ownership only |
+
+**Explicit exclusions:** No approval of detailed fields, mandatory physical `InterpretationInputManifest`/`SubmissionSnapshot` entities, schema/cardinalities, party reuse policy, legal publication boundary, country-specific correction/cancellation rules, FiscalContext A/B/C physical aggregation, storage, API, or regulatory fixture validity. Draft 0.6 remains the design rationale; its unapproved status at time of writing is superseded **only for the six explicitly approved logical invariants and three logical directions above**.
+
+**Preserved:** D2 nine-concept logical contract, CTC-002 P1–P7 and I-01–I-10, and CTC-003 T01–T03 remain Accepted at their prior scopes. CTC-003 remains In Progress.
+
+## CTC-003 — Draft 0.8 proposed lifecycle decisions (2026-10-20)
+
+**Status: Proposed, not Accepted.** Candidate separation of preparation, legal/fiscal recognition and compliance-operation lifecycle dimensions; proposed invariants L01–L10. See `research/CTC-003/CTC-003-LIFECYCLE-PUBLICATION-CARDINALITY-REVIEW-DRAFT-0.8.md`. No automatic approval of conditional cardinalities, legal issuance criteria, physical aggregate boundaries or regulatory mandates. Previously accepted D2, P1–P7, I-01–I-10, T01–T03 and D01–D03 remain unchanged.
+
+## 2026-10-20 — CTC-003 lifecycle approval L01–L10
+
+**Approval source:** Explicit user approval in CTC-003 conversation on 2026-10-20. **Status: Accepted at logical-policy level only.**
+
+The following three lifecycle dimensions are independently modelled: **document preparation**, **legal/fiscal recognition**, and **compliance processing**. They must not be collapsed into a single universal status.
+
+| ID | Accepted logical invariant |
+|---|---|
+| L01 | Ingestion and publication have separate identities; an inbound artifact may exist before a BillingDocument or published revision. |
+| L02 | Publication freezes semantic content and immutable references but does not, by itself, establish legal issuance. |
+| L03 | Issuer-assigned commercial identity is captured with issuer, series, document type and an applicable uniqueness scope; the scope is not assumed globally. |
+| L04 | Legal-state assessments reference jurisdiction, profile/rule version, supporting evidence/events and evaluation time. |
+| L05 | Compliance responses do not mutate published commercial content. |
+| L06 | Submitted attempts resolve to exact immutable submission snapshots, never mutable `latest` references. |
+| L07 | Where an applicable rule requires a separate corrective legal document, it has distinct identity and preserves links to the original. |
+| L08 | Cancellation is recorded through separate evidence and legal-state assessment; original clearance history is preserved. |
+| L09 | Pending or unknown external outcomes do not automatically establish rejection or legal issuance. |
+| L10 | Structural validation and jurisdiction/profile validation are separate stages with recorded outcomes. |
+
+**Explicit exclusions:** The detailed cardinality matrix in Draft 0.8 is **not accepted**; neither are exact publication triggers, jurisdictional issuance/cancellation rules, mandatory physical entities, FiscalContext A/B/C physical aggregation, persistence, or legal validity of fictional examples. Draft 0.8's 'Proposed' label remains historically correct at creation; this entry records subsequent approval of only the above principles and invariants.
+
+**Preserved:** D2, P1–P7, CTC-002 I-01–I-10, T01–T03, D01–D03 and their six invariants remain accepted within previous scopes. CTC-003 remains In Progress.
+
+## CTC-003 — Batch ingestion and submission envelope review (2026-10-20)
+
+**Status: Proposed — no approval requested or recorded yet.** Candidate separation of `IngestionRecord` / `DocumentExtraction` and `SubmissionEnvelope` / `EnvelopeMember` / `TransportAttempt` from individual `BillingDocument` and `ComplianceTransaction` identities. Proposed B01–B10 and amendments to C09-02/C09-07 are documented in Draft 1.0. Preserve all existing approvals (D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10). No global ADR ID assigned.
+
+## CTC-003 — Batch and transport logical separation (2026-10-20)
+
+**Decision ID:** CTC-003-BATCH-01  
+**Status:** Accepted — logical principle only  
+**Approval evidence:** Explicit user approval in CTC-003 conversation.
+
+**Approved:** Ingestion and transport containers are logically distinct from the individual `BillingDocument` and `ComplianceTransaction` identities they carry. Container-level receipt, submission or success must not, by itself, establish a member document's legal/fiscal acceptance or outcome. Preserve independent document and compliance-operation correlation.
+
+**Not approved:** B01–B10 remain **Proposed**; C09-01 through C09-08, including proposed changes to C09-02/C09-07, remain **Proposed**. `IngestionRecord`, `DocumentExtraction`, `SubmissionEnvelope`, `EnvelopeMember`, and `TransportAttempt` remain candidate entity names/shapes only. No detailed cardinality, physical aggregate/table, jurisdiction-specific batch rule, or real fixture conformance was approved.
+
+**Unchanged accepted baseline:** D2, P1–P7, I-01–I-10, T01–T03, D01–D03 (and paired invariants), three lifecycle dimensions and L01–L10. FiscalContext A/B/C physical design remains deferred. CTC-003 remains In Progress.

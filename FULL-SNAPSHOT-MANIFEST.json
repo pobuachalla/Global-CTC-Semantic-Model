@@ -1,0 +1,16 @@
+{
+  "snapshot_date": "2026-10-20",
+  "authority": "Latest locally available CTC-003 batch separation approved checkpoint; not verified against remote GitHub",
+  "root_register_source": "Global_CTC_CTC003_Batch_Separation_Approved_2026-10-20",
+  "included_files": 101,
+  "preserved_alternate_versions": 0,
+  "status": {
+    "CTC-001": "Done (scoped)",
+    "CTC-002": "Done (scoped)",
+    "CTC-003": "In Progress",
+    "CTC-003-BATCH-01": "Accepted logical principle",
+    "B01-B10": "Proposed",
+    "C09-01-C09-08": "Proposed",
+    "FiscalContext A/B/C": "Deferred"
+  }
+}

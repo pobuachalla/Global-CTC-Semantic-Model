@@ -65,3 +65,38 @@ The nine-concept D2 logical contract and I-01..I-10 invariants are **proposed fo
 ## 2026-10-20 — CTC-003 T03 approved policy annotation
 
 CTC-003-T03 is **Accepted at logical monetary policy level only**. The exact ten approved invariants are recorded in `DECISIONS.md` and the decision-ready research report. `MonetaryBasis` and `MonetaryEffect` remain **candidate logical concepts**, not approved entities, fields, aggregate roots or tables. T01 and T02 remain Accepted. The detailed CTC-003 semantic entity dictionary remains a draft and **CTC-003 is In Progress**. No physical FiscalContext A/B/C choice was made.
+
+## 2026-10-20 — Backlog realignment note
+
+No model changes in this administrative review. D2 logical contract and T01–T03 policy approvals remain at their exact scopes. Detailed CTC-003 entity dictionary and FiscalContext physical design remain unapproved.
+
+## 2026-10-20 — CTC-001 closure and CTC-003 unified candidate
+
+CTC-001 has explicit **Done (scoped reconciliation)** status; this does not approve its earlier candidate models wholesale. `research/CTC-003/CTC-003-UNIFIED-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.4.md` is the latest **PROPOSED** unified entity dictionary, combining commercial draft 0.2, tax draft 0.3 and approved T01/T02/T03 logical policy. No detailed schema, cardinality or FiscalContext physical aggregate option has been approved. D2, P1–P7 and I-01–I-10 remain accepted at previously approved scope.
+
+
+## CTC-003 — Unified D2 dictionary Draft 0.5 (2026-10-20)
+
+A detailed **candidate** dictionary now covers all nine approved D2 logical categories and their proposed companion entities, in `research/CTC-003/CTC-003-UNIFIED-D2-SEMANTIC-ENTITY-DICTIONARY-DRAFT-0.5.md`. This is **not an accepted detailed semantic schema**. Accepted logical constraints D2/P1–P7/I-01–I-10 and T01/T02/T03 are unchanged; FiscalContext physical A/B/C is deferred. Proposed attributes, nullability and cardinalities require explicit review.
+
+## 2026-10-20 — CTC-003 approved logical ownership directions
+
+D01/D02/D03 and their six paired logical invariants are **Accepted at logical ownership level**. The authoritative published commercial facts and immutable party snapshots are associated with exact revisions; fiscal interpretation derives from pinned inputs without overwriting source facts; submission attempts pin exact submission snapshots and fiscal evidence/identity retain exact attribution. See `DECISIONS.md`.
+
+**Not approved:** candidate entity shapes, cardinalities, concrete fields, physical manifest/snapshot entities, FiscalContext physical A/B/C, or regulatory conformance. Unified dictionary Draft 0.5 and conditional-cardinality Draft 0.7 remain proposed.
+
+## CTC-003 Draft 0.8 proposal (not accepted)
+
+Three-dimensional lifecycle separation, L01–L10 and conditional-cardinality matrix are **proposed**. The approved D2 logical foundation and accepted T01–T03/D01–D03 are unchanged. Detailed entity dictionary remains unapproved. See `research/CTC-003/CTC-003-LIFECYCLE-PUBLICATION-CARDINALITY-REVIEW-DRAFT-0.8.md`.
+
+## 2026-10-20 — Accepted lifecycle policy; Draft 0.9 remains candidate
+
+Three lifecycle dimensions and L01–L10 are **Accepted at logical-policy level** (see DECISIONS.md). No detailed cardinalities, entity shapes, legal issuance rules or physical aggregates were approved. Draft 0.9's conditional relationships and synthetic instances remain proposed. D2, P1–P7, I-01–I-10, T01–T03 and D01–D03 are preserved.
+
+## CTC-003 Draft 1.0 review note
+
+Candidate extraction, submission envelope, envelope member and transport-attempt concepts are **not approved**. Approved D2 logical foundation and scoped decisions remain unchanged; no detailed cardinalities or physical aggregates accepted.
+
+## 2026-10-20 — Accepted batch/container separation (logical only)
+
+`CTC-003-BATCH-01` is Accepted: inbound ingestion and outbound transport containers are semantically distinct from individual `BillingDocument` and `ComplianceTransaction` identities. A container-level processing outcome does not imply individual document legal/fiscal acceptance. **No** candidate batch entities, B01–B10 invariants, C09 cardinalities or physical aggregation have been accepted. The detailed CTC-003 dictionary remains proposed.

@@ -1,0 +1,51 @@
+{
+  "interpretationId": "FI-PEP-001",
+  "revisionId": "REV-PEP-001",
+  "revisionFingerprint": "d89c098ff8c13be9c3b23dce2dc1fac6484ec56e98da520a2b5d87f232096df8",
+  "sourceFacts": [
+    {
+      "factId": "SF-VAT-CATEGORY",
+      "concept": "sourceTaxCategory",
+      "value": "S",
+      "scheme": "Peppol VAT category",
+      "sourceRepresentationId": "REP-PEP-001",
+      "sourcePath": "/Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID",
+      "origin": "SOURCE_SUPPLIED"
+    }
+  ],
+  "derivedFacts": [
+    {
+      "factId": "DF-VAT-CLASS",
+      "concept": "normalizedVatTreatment",
+      "value": "STANDARD_RATE",
+      "origin": "MAPPED",
+      "derivedFrom": [
+        "SF-VAT-CATEGORY"
+      ],
+      "ruleId": "VAT-CATEGORY-S-MAP",
+      "ruleVersion": "0.1-prototype",
+      "profileId": "PEPPOL-BIS-BILLING-3",
+      "profileRelease": "2026-05",
+      "interpretationStatus": "ILLUSTRATIVE_ALIGNMENT"
+    }
+  ],
+  "profilePackage": {
+    "profileId": "PEPPOL-BIS-BILLING-3",
+    "release": "2026-05",
+    "sourceSpecification": "https://docs.peppol.eu/poacc/billing/3.0/",
+    "mappingId": "UBL-TO-D2-POC",
+    "mappingVersion": "0.1-prototype",
+    "ruleId": "VAT-CATEGORY-S-MAP",
+    "ruleVersion": "0.1-prototype",
+    "codeListVersion": "NOT_ARCHIVED",
+    "packageDigest": "NOT_ARCHIVED"
+  },
+  "sourceRepresentation": {
+    "id": "REP-PEP-001",
+    "sha256": "29972eafe2aa7fa1c343925f2081536a4938bab4741893436624beab5bf890eb",
+    "format": "UBL 2.1",
+    "customizationId": "urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0",
+    "profileId": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0"
+  },
+  "fingerprint": "b75bcd714710fe3e32c1ba9ba11948be20ff91b187694340c351f4d2366e96d4"
+}
