@@ -79,3 +79,16 @@ Statuses: Proposed / Accepted / Rejected / Superseded / Deferred. Retain immutab
 - Unresolved: when publication/issuance freezes a revision; intrinsic versus jurisdiction-specific fiscal attributes; single versus multiple fiscal interpretations; mapping and provenance version references; certified artifact/authority identity ownership; correction and cancellation legal workflows; provider-specific retry and reconciliation rules.
 - Evidence gates: verified French Extended CTC XML/profile, paired certified/pre-certification CFDI XML, paired FatturaPA/SdI response XML, and a demonstrable need (or lack thereof) for multiple fiscal interpretations of one immutable revision.
 - Historical ADRs are unchanged and not reapproved. CTC-002 remains **Review / evidence-gated**, not Done.
+
+## CTC-002 — Approved principle P7 (2026-10-20)
+
+**CTC-002-P7 — Source facts versus derived fiscal interpretations**
+
+- **Status:** Accepted — architectural principle only.
+- **Approval:** Explicit user instruction, 2026-10-20.
+- **Exact approved wording:** Source-supplied semantic facts must remain distinguishable from inferred, enriched or jurisdiction-derived facts, with provenance and effective profile versions preserved.
+- **Scope:** Semantic provenance and traceability; preserve origin and transformation/derivation context for fiscal meaning.
+- **Not approved:** A specific provenance schema, persistence mechanism, aggregate root, cardinality, profile-version implementation, or physical database design.
+- **Relationship:** Extends CTC-002-P1 through P6 without modifying their approval status or scope.
+- **Deferred:** FiscalContext A (embedded immutable), B (independently versioned), and C (hybrid) remain open. No option preferred or accepted by this approval.
+- **Task state:** CTC-002 Review / evidence-gated, not Done. CTC-003 not started.

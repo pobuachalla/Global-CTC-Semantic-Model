@@ -64,3 +64,15 @@
 - **Evidence missing:** validated French Extended CTC raw XML/profile, certified CFDI before/after pair, FatturaPA/SdI notification pair, actual multi-interpretation case.
 - **Next task within CTC-002:** Resolve ownership of intrinsic versus jurisdictional fiscal facts, and establish whether A/B/C distinction requires additional fixtures; prepare final aggregate boundary approval request.
 - **File synchronization:** These are replacement working copies, not automatically synchronized Project documents.
+
+## Session checkpoint — 2026-10-20 — CTC-002 P7 approval
+
+- **Scope:** Distinguish source-supplied facts from inferred, enriched and jurisdiction-derived fiscal facts.
+- **Decision explicitly approved:** CTC-002-P7, architectural principle only (exact text recorded in DECISIONS.md).
+- **Prior approvals:** CTC-002-P1 through P6 remain Accepted — principle only.
+- **Deferred decisions:** FiscalContext A/B/C; no aggregate ownership, cardinality, or implementation selected.
+- **Model changes:** None approved. MODEL-BASELINE.md remains a candidate model.
+- **Backlog:** CTC-002 remains Review / evidence-gated; CTC-003 remains Todo.
+- **Evidence needed:** Versioned, validated real-world fixtures and mapping/profile provenance; demonstration of any need for multiple fiscal interpretations of one billing revision.
+- **Next activity:** Within CTC-002, validate provenance classification for source-supplied versus derived fiscal facts against representative fixtures and profile rules.
+- **Repository sync:** Prepared as append-only changes; no remote commit performed.
