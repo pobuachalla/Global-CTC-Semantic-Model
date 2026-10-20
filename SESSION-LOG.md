@@ -76,3 +76,16 @@
 - **Evidence needed:** Versioned, validated real-world fixtures and mapping/profile provenance; demonstration of any need for multiple fiscal interpretations of one billing revision.
 - **Next activity:** Within CTC-002, validate provenance classification for source-supplied versus derived fiscal facts against representative fixtures and profile rules.
 - **Repository sync:** Prepared as append-only changes; no remote commit performed.
+
+
+## Session 004 — 2026-10-20 — CTC-002 consolidated decision package
+
+- Scope: Consolidate D2 formal logical contract, P1..P7 approval, synthetic replay, Peppol/CFDI/Malaysia/India tests and earlier Italy/France evidence.
+- Decisions approved this session: **None**. P1..P7 remain accepted at principle level; user previously validated D2 logical direction.
+- Proposed: D2 nine-concept logical contract and I-01..I-10 invariants for explicit user review.
+- Findings proposed: F-002-41..59, pending review. No full authority conformance asserted.
+- Unresolved: FiscalContext A/B/C aggregate boundaries, publication boundary, real paired fixtures, complete profile archives, independent-interpretation discriminator.
+- Backlog: CTC-002 **Review / evidence-gated, not Done**; CTC-003 Todo.
+- Next: User approval of contract/invariants and whether scoped logical-boundary closure is acceptable; record explicit decision before status change.
+- Deliverable: `research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md`.
+- GitHub: Replacement files generated locally; no remote push.

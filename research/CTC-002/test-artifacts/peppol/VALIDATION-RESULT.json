@@ -1,0 +1,19 @@
+{
+  "assertions": {
+    "xmlWellFormed": true,
+    "mappedFieldsPresent": true,
+    "brCo13Arithmetic": true,
+    "brCo15Arithmetic": true,
+    "taxRateArithmetic": true,
+    "profilePrefix": true,
+    "sourceProvenanceRecorded": true,
+    "revisionUnmodified": true
+  },
+  "notTested": [
+    "full UBL XSD",
+    "Peppol Schematron",
+    "country-specific VAT legal correctness",
+    "official sample provenance",
+    "historical replay with archived package"
+  ]
+}

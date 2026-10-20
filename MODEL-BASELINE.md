@@ -40,3 +40,8 @@ French documented stress test strengthens shared core BillingLine hierarchy, sig
 ## 2026-10-20 governance note — principle approval only
 
 CTC-002-P1..P6 are accepted as architecture principles in DECISIONS.md. **No semantic schema, entity dictionary, aggregate cardinality, or FiscalContext A/B/C choice has been accepted.** This candidate baseline remains unapproved; no model structures were changed by this approval.
+
+
+## CTC-002 — D2 formal logical contract candidate (2026-10-20)
+
+The nine-concept D2 logical contract and I-01..I-10 invariants are **proposed for review**, not accepted as the final semantic schema. User previously validated D2 as logical direction only. FiscalContext A/B/C physical/aggregate cardinalities remain deferred. See `research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md`.

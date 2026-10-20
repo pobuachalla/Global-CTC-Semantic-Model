@@ -1,0 +1,99 @@
+{
+  "fixture": "IN-TEST-001",
+  "checks": [
+    {
+      "name": "source POS preserved",
+      "passed": true
+    },
+    {
+      "name": "source seller state preserved",
+      "passed": true
+    },
+    {
+      "name": "GST tax components reconcile",
+      "passed": true
+    },
+    {
+      "name": "GST total reconciles",
+      "passed": true
+    },
+    {
+      "name": "line and header tax agree",
+      "passed": true
+    },
+    {
+      "name": "illustrative inter-state tax allocation",
+      "passed": true
+    },
+    {
+      "name": "special IGST-on-intra flag preserved",
+      "passed": true
+    },
+    {
+      "name": "immutable revision reference",
+      "passed": true
+    },
+    {
+      "name": "source facts have source paths",
+      "passed": true
+    },
+    {
+      "name": "derived facts preserve input references",
+      "passed": true
+    },
+    {
+      "name": "profile package not falsely claimed archived",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "sourceDigest": "bf6d57147161602e831fab3c4d1049d07c02e08fbe20b71bdac9c55c1cc8f0dc",
+  "revisionDigest": "da6acf7eb8a4fc73ed9ccdf100e4cee6eeb231c90d7d9c63c3fe95565a85aa24",
+  "interpretation": {
+    "revisionDigest": "da6acf7eb8a4fc73ed9ccdf100e4cee6eeb231c90d7d9c63c3fe95565a85aa24",
+    "profile": "INDIA-IRP-SCHEMA",
+    "packageDigest": "NOT_ARCHIVED",
+    "derivedFacts": [
+      {
+        "concept": "illustrativeSupplyRelation",
+        "value": "INTER_STATE",
+        "derivedFrom": [
+          "IN-SELLER-STATE",
+          "IN-POS"
+        ],
+        "rule": "TEST-STATE-COMPARISON-v1",
+        "warning": "Not sufficient for legal GST treatment"
+      }
+    ]
+  },
+  "revision": {
+    "documentId": "IN-TEST-001",
+    "sourceDigest": "bf6d57147161602e831fab3c4d1049d07c02e08fbe20b71bdac9c55c1cc8f0dc",
+    "sourceFacts": [
+      {
+        "id": "IN-SELLER-STATE",
+        "path": "$.SellerDtls.Stcd",
+        "value": "27"
+      },
+      {
+        "id": "IN-POS",
+        "path": "$.BuyerDtls.Pos",
+        "value": "07"
+      },
+      {
+        "id": "IN-GST-RATE",
+        "path": "$.ItemList[0].GstRt",
+        "value": "18"
+      },
+      {
+        "id": "IN-SUPPLY-TYPE",
+        "path": "$.TranDtls.SupTyp",
+        "value": "B2B"
+      }
+    ],
+    "billing": {
+      "currency": "INR"
+    }
+  }
+}

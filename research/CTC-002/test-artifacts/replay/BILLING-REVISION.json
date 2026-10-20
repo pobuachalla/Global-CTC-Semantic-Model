@@ -1,0 +1,29 @@
+{
+  "documentId": "DOC-001",
+  "revisionId": "REV-001",
+  "publicationState": "PUBLISHED",
+  "sourceRepresentationRef": "REP-SRC-001",
+  "commercial": {
+    "documentNumber": "INV-2026-0042",
+    "issueDate": "2026-10-20",
+    "currency": "XCU",
+    "seller": "Alpha Trading Ltd",
+    "buyer": "Beta Services Ltd",
+    "netAmount": "1000.00",
+    "taxRate": "10.00",
+    "taxAmount": "100.00",
+    "payableAmount": "1100.00"
+  },
+  "sourceFiscalFacts": [
+    {
+      "factId": "SF-01",
+      "concept": "localTaxClassification",
+      "value": "LOCAL-TAX-A",
+      "scheme": "XX-TAX-SCHEME",
+      "origin": "SOURCE_SUPPLIED",
+      "representationRef": "REP-SRC-001",
+      "sourcePath": "invoice.tax.localCategory"
+    }
+  ],
+  "revisionSha256": "c8c11ecbdd679bc4f049562c981cd02442266ccb136ef810fb8d47aeb7966418"
+}

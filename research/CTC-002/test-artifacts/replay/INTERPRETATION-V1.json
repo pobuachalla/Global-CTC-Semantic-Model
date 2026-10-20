@@ -1,0 +1,35 @@
+{
+  "interpretationId": "FI-001",
+  "sourceRevisionRef": "REV-001",
+  "sourceRevisionSha256": "c8c11ecbdd679bc4f049562c981cd02442266ccb136ef810fb8d47aeb7966418",
+  "profile": {
+    "profileId": "XX-CTC",
+    "profileVersion": "1.0.0",
+    "mappingId": "MAP-XX",
+    "mappingVersion": "1.0.0",
+    "codeListId": "XX-TAX",
+    "codeListVersion": "1.0.0",
+    "ruleId": "TAX-CLASSIFY-001",
+    "packageSha256": "6d55c5ea145ed1c66bb7d776f2904ec7536a7a2a277b6e4032d772c4f847082c"
+  },
+  "derivedFacts": [
+    {
+      "factId": "IF-001",
+      "concept": "normalizedTaxTreatment",
+      "value": "STANDARD",
+      "origin": "DERIVED",
+      "derivedFrom": [
+        "SF-01"
+      ],
+      "derivation": {
+        "operation": "CODE_LOOKUP",
+        "ruleId": "TAX-CLASSIFY-001",
+        "inputValue": "LOCAL-TAX-A",
+        "sourcePath": "invoice.tax.localCategory",
+        "sourceRepresentationRef": "REP-SRC-001",
+        "sourceRepresentationSha256": "38aff3a757aa363fd35c4a9a33eebf9b40b1c3d02229d59553d1b60efe31b2cc"
+      }
+    }
+  ],
+  "interpretationSha256": "1cd03728ffbc2377590e43ea2c6e13bcd740958cd22d3b7bb8aa8258f9be3df3"
+}

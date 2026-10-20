@@ -1,0 +1,90 @@
+{
+  "fixture": "MY-TEST-001",
+  "checks": [
+    {
+      "name": "document type 01",
+      "passed": true
+    },
+    {
+      "name": "v1.1 signature validation profile identified",
+      "passed": true
+    },
+    {
+      "name": "tax code 02 preserved",
+      "passed": true
+    },
+    {
+      "name": "tax arithmetic",
+      "passed": true
+    },
+    {
+      "name": "gross reconciliation",
+      "passed": true
+    },
+    {
+      "name": "no authority identity invented",
+      "passed": true
+    },
+    {
+      "name": "no signature falsely asserted",
+      "passed": true
+    },
+    {
+      "name": "immutable revision reference",
+      "passed": true
+    },
+    {
+      "name": "source facts have source paths",
+      "passed": true
+    },
+    {
+      "name": "derived facts preserve input references",
+      "passed": true
+    },
+    {
+      "name": "profile package not falsely claimed archived",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "sourceDigest": "5d5fcb0b5812bf74565b3ee13322e21d10fe431bb1205068336223c6e2b020a2",
+  "revisionDigest": "ad6297d17918b73585f7488925e15eaff850640723a0650dba4a9d3b964805ff",
+  "interpretation": {
+    "revisionDigest": "ad6297d17918b73585f7488925e15eaff850640723a0650dba4a9d3b964805ff",
+    "profile": "MYINVOIS-1.1",
+    "packageDigest": "NOT_ARCHIVED",
+    "derivedFacts": [
+      {
+        "concept": "taxFamily",
+        "value": "SERVICE_TAX",
+        "derivedFrom": [
+          "MY-TAX-TYPE"
+        ],
+        "rule": "LOCAL-MY-TAX-TYPE-02-v1",
+        "evidence": "official tax type code list"
+      }
+    ]
+  },
+  "revision": {
+    "documentId": "MY-TEST-001",
+    "sourceDigest": "5d5fcb0b5812bf74565b3ee13322e21d10fe431bb1205068336223c6e2b020a2",
+    "sourceFacts": [
+      {
+        "id": "MY-TAX-TYPE",
+        "path": "$.tax.typeCode",
+        "value": "02",
+        "scheme": "MYINVOIS-TAX-TYPES"
+      },
+      {
+        "id": "MY-RATE",
+        "path": "$.tax.ratePercent",
+        "value": "8",
+        "scheme": "PERCENT"
+      }
+    ],
+    "billing": {
+      "currency": "MYR"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "documentType": "01", "documentVersion": "1.1", "invoiceNumber": "MY-TEST-001", "currency": "MYR",
+  "supplier": {"tin": "DEMO-SUPPLIER-TIN"}, "buyer": {"tin": "DEMO-BUYER-TIN"},
+  "tax": {"typeCode": "02", "scheme": "MYINVOIS-TAX-TYPES", "ratePercent": "8", "taxableAmount": "1000.00", "taxAmount": "80.00"},
+  "totals": {"taxExclusive": "1000.00", "taxInclusive": "1080.00", "payable": "1080.00"},
+  "signature": {"status": "NOT_SIGNED_DEMO"}, "authority": null
+}

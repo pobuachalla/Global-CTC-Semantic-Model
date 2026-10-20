@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "xmlWellFormed": true,
+    "namespaceAndVersion": true,
+    "requiredNodesPresent": true,
+    "lineAndDocumentNetReconcile": true,
+    "lineTaxArithmetic": true,
+    "documentGrossReconcile": true,
+    "taxSummaryMatchesLine": true,
+    "noTimbreBeforeCertification": true,
+    "sourceFiscalCodesPreserved": true,
+    "derivedFactProvenance": true,
+    "immutableRevisionPinned": true,
+    "profileArchiveGapFlagged": true
+  },
+  "sourceSha256": "8ce9b5c28029391079700053ebe18f74a9a3c2d5595becb8ea6e79942b0c6a08",
+  "notTested": [
+    "SAT XSD full validation",
+    "SAT catalogs/conditional rules",
+    "PAC timbrado",
+    "cryptographic signatures",
+    "verified certified CFDI pair",
+    "historical replay with archived code lists"
+  ]
+}

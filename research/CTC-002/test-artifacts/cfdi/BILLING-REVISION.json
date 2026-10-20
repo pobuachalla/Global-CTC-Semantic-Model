@@ -1,0 +1,25 @@
+{
+  "documentId": "DOC-MX-001",
+  "revisionId": "REV-MX-001",
+  "commercialIdentity": {
+    "series": "A",
+    "folio": "0042"
+  },
+  "issueDateTime": "2026-10-20T09:00:00",
+  "currency": "MXN",
+  "sellerRfc": "AAA010101AAA",
+  "buyerRfc": "BBB010101BBB",
+  "tax": {
+    "taxCode": "002",
+    "factor": "Tasa",
+    "rateFraction": "0.160000",
+    "base": "1000.00",
+    "amount": "160.00"
+  },
+  "totals": {
+    "net": "1000.00",
+    "gross": "1160.00"
+  },
+  "sourceRepresentationId": "REP-MX-001",
+  "fingerprint": "7c3f3c2aafc7556862bf4024110aeed275909570c15e8278a7b404f96e2d25ba"
+}

@@ -1,0 +1,8 @@
+{
+  "TranDtls": {"SupTyp":"B2B", "RegRev":"N", "IgstOnIntra":"N"},
+  "DocDtls": {"Typ":"INV", "No":"IN-TEST-001", "Dt":"20/10/2026"},
+  "SellerDtls": {"Gstin":"27DEMO0000X0Z0", "Stcd":"27", "LglNm":"Demo Seller"},
+  "BuyerDtls": {"Gstin":"07DEMO0000X0Z0", "Stcd":"07", "Pos":"07", "LglNm":"Demo Buyer"},
+  "ItemList": [{"SlNo":"1", "PrdDesc":"Demo item", "HsnCd":"000000", "AssAmt":"1000.00", "GstRt":"18", "IgstAmt":"180.00", "CgstAmt":"0.00", "SgstAmt":"0.00", "TotItemVal":"1180.00"}],
+  "ValDtls": {"AssVal":"1000.00", "IgstVal":"180.00", "CgstVal":"0.00", "SgstVal":"0.00", "TotInvVal":"1180.00"}
+}

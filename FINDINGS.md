@@ -48,3 +48,43 @@ The following findings result from a **synthetic, fictional-jurisdiction (XX)** 
 | F-002-33 | CTC-002 | Tax-point meaning may be shared while local exigibility mapping remains profile-specific | CTC-002-FRANCE-EXTENDED-CTC-STRESS-TEST.md §3 | Medium (ownership unresolved) | Test actual code and profile mapping | Pending review |
 | F-002-34 | CTC-002 | UBL syntax/profile identifiers belong to representation provenance | CTC-002-FRANCE-EXTENDED-CTC-STRESS-TEST.md §3 | High (source-derived) | Keep outside commercial identity | Pending review |
 | F-002-35 | CTC-002 | French test does not prove independent FiscalContext versioning | CTC-002-FRANCE-EXTENDED-CTC-STRESS-TEST.md §5 | High within conceptual test | Keep A/B/C under investigation | Pending review |
+
+
+## CTC-002 — Bounded extended research (2026-10-20)
+
+**All entries below are proposed, not accepted.** See `research/CTC-002/CTC-002-EXTENDED-FISCAL-OWNERSHIP-REVIEW.md`.
+
+| ID | Finding | Evidence | Status |
+|---|---|---|---|
+| F-002-36 | Local source code remains source-supplied even if jurisdiction-specific | v0.3 and P7 conceptual analysis | Pending review |
+| F-002-37 | Format profile identifiers belong to representation provenance | OpenPeppol May 2026 | Pending review |
+| F-002-38 | Brazil multi-tax semantics do not prove FiscalContext multiplicity | Public NF-e XSD/examples; inference | Pending review |
+| F-002-39 | French 2026 external specifications require profile-specific fixture checks | impots.gouv.fr v3.2 | Pending review |
+| F-002-40 | No verified example yet distinguishes A/B/C cardinality | Bounded cross-format review | Pending review |
+
+
+## CTC-002 — D2 consistency, mapping and replay evidence (2026-10-20)
+
+**All entries F-002-41..59 are proposed/pending review; synthetic tests are not authority conformance.**
+
+| ID | Finding | Evidence | Status |
+|---|---|---|---|
+| F-002-41 | D2 reduces semantic-path variability but not versioning/reference complexity | Four-option synthetic consistency test | Pending review |
+| F-002-42 | Embedded A needs additional mechanisms for independently evolving interpretations | Four-option synthetic comparison | Pending review |
+| F-002-43 | C and D2 support source/derived separation; D2 formalizes a uniform interface | Four-option synthetic comparison | Pending review |
+| F-002-44 | Synthetic test does not prove a real mandate needs multiple independent interpretations | Four-option synthetic comparison | Pending review |
+| F-002-45 | Published Peppol mappings can be projected into candidate D2 contract | Constructed UBL mapping test, 8 focused checks | Pending review |
+| F-002-46 | Peppol specification/process identifiers belong to representation metadata | Published Peppol UBL paths | Pending review |
+| F-002-47 | Source VAT category and derived treatment should remain distinguishable | Peppol constructed fixture and P7 | Pending review |
+| F-002-48 | Historical replay requires archived rule/code-list inputs, not version strings alone | Formal contract review and synthetic replay | Pending review |
+| F-002-49 | Full Peppol XSD/Schematron and legal validity remain untested | Formal contract test limitations | Pending review |
+| F-002-50 | CFDI 4.0 source fiscal classifications can be preserved separately from derived interpretations | Constructed CFDI test, 12 focused checks | Pending review |
+| F-002-51 | CFDI fractional TasaOCuota must be normalized intentionally | Constructed CFDI tax-rate test | Pending review |
+| F-002-52 | Pre-certification CFDI has no authority stamp and should not be assigned invented UUID | Constructed CFDI fixture | Pending review |
+| F-002-53 | SAT conformance, PAC certification and signed fiscal evidence remain untested | CFDI test limitations | Pending review |
+| F-002-54 | MyInvois tax type `02` is Service Tax; source code remains distinct from derived family | Official MyInvois SDK + simplified JSON test | Pending review |
+| F-002-55 | MyInvois type/version/signature dimensions should be represented distinctly | MyInvois SDK + simplified JSON test | Pending review |
+| F-002-56 | India IRP exposes distinct IGST, CGST and SGST tax amounts | IRP schema + constructed JSON tests | Pending review |
+| F-002-57 | India state/POS/special flags are source facts, not complete legal conclusions | IRP schema + constructed JSON tests | Pending review |
+| F-002-58 | D2 handles synthetic Malaysia/India examples without overwriting source facts | Three synthetic cases, 33 focused checks | Pending review |
+| F-002-59 | Malaysia/India tests do not establish full schema conformance, authority signatures or historical replay | Test report limitations | Pending review |

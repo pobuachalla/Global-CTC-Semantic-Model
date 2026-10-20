@@ -47,3 +47,8 @@ CTC-001 reconciliation deliverable produced and leading hypothesis selected for 
 ## 2026-10-20 CTC-002 review status
 
 Six architectural principles (CTC-002-P1 through P6) explicitly accepted at principle level. FiscalContext alternatives A/B/C deferred; task remains Review, not Done. CTC-003 remains Todo pending boundary approval. See DECISIONS.md and SESSION-LOG.md.
+
+
+## 2026-10-20 CTC-002 consolidated decision review
+
+CTC-002 remains **Review / evidence-gated**, not Done. Pending explicit approval of D2 formal contract I-01..I-10 and scoped logical closure. Outstanding evidence: paired CFDI certification, SdI response, French Extended CTC XSD fixture, real MyInvois/India conformance, archived profile packages, and independent fiscal-interpretation discriminator. CTC-003 remains Todo.

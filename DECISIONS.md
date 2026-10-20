@@ -92,3 +92,14 @@ Statuses: Proposed / Accepted / Rejected / Superseded / Deferred. Retain immutab
 - **Relationship:** Extends CTC-002-P1 through P6 without modifying their approval status or scope.
 - **Deferred:** FiscalContext A (embedded immutable), B (independently versioned), and C (hybrid) remain open. No option preferred or accepted by this approval.
 - **Task state:** CTC-002 Review / evidence-gated, not Done. CTC-003 not started.
+
+
+## CTC-002 — Consolidated D2 decision proposal (2026-10-20)
+
+**Status: Proposed for explicit approval; NOT accepted by creation of this package.** User previously validated D2 logical direction, but the nine-concept formal contract and I-01..I-10 are not yet approved.
+
+- Proposed logical contract: see `research/CTC-002/CTC-002-CONSOLIDATED-DECISION-REVIEW.md` and `CTC-002-D2-FORMAL-LOGICAL-CONTRACT.md`.
+- Proposed invariants: I-01..I-10, detailed in the consolidated decision review.
+- FiscalContext A embedded / B independent / C hybrid: **Deferred**, no choice approved. D2 is an interface/contract candidate, not a decided physical option.
+- Proposed closure: conditional logical-boundary sign-off only if the user explicitly approves the contract, invariants and scoped acceptance criteria; otherwise CTC-002 remains Review.
+- Approved CTC-002-P1..P7 remain unchanged. Historical ADRs remain unchanged.
