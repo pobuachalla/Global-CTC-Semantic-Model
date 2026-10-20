@@ -1,0 +1,101 @@
+erDiagram
+    BILLING_DOCUMENT ||--o{ DOCUMENT_PARTY : has
+    PARTY ||--o{ DOCUMENT_PARTY : participates_as
+    PARTY ||--o{ PARTY_IDENTIFIER : has
+    PARTY ||--o{ TAX_REGISTRATION : has
+    PARTY ||--o{ PARTY_LEGAL_REGISTRATION : registered_as
+    PARTY ||--o{ ADDRESS : has
+    PARTY ||--o{ CONTACT : has
+
+    BILLING_DOCUMENT ||--|{ BILLING_LINE : contains
+    BILLING_LINE ||--o{ BILLING_LINE : parent_of
+    BILLING_LINE ||--o| LINE_ITEM : describes
+    BILLING_LINE ||--o| LINE_PRICE : priced_by
+    LINE_PRICE ||--o{ PRICE_ADJUSTMENT : adjusted_by
+    BILLING_LINE ||--o{ LINE_CLASSIFICATION : classified_by
+    BILLING_LINE ||--o{ LINE_PARTY : has
+    PARTY ||--o{ LINE_PARTY : participates_as
+    BILLING_LINE ||--o{ LINE_IDENTIFIER : identified_by
+    BILLING_LINE ||--o{ TAX : taxed_by
+    BILLING_LINE ||--o{ LINE_TAX_SUMMARY : tax_summarised_by
+    BILLING_LINE ||--o{ ADJUSTMENT : adjusted_by
+    BILLING_LINE ||--o{ DOCUMENT_RELATIONSHIP : references
+
+    BILLING_DOCUMENT ||--o{ TAX : taxed_by
+    BILLING_DOCUMENT ||--o{ TAX_SUMMARY : summarises
+    BILLING_DOCUMENT ||--o{ ADJUSTMENT : adjusted_by
+    BILLING_DOCUMENT ||--|| MONETARY_TOTAL : totals
+    BILLING_DOCUMENT ||--o{ DOCUMENT_RELATIONSHIP : relates_to
+    BILLING_DOCUMENT ||--o{ PAYMENT_MEANS : paid_by
+    BILLING_DOCUMENT ||--o{ PAYMENT_TERMS : governed_by
+    BILLING_DOCUMENT ||--o| SUPPLY : supplied_by
+    BILLING_DOCUMENT ||--o{ ATTACHMENT : attaches
+    BILLING_DOCUMENT ||--o{ DOCUMENT_REPRESENTATION : represented_as
+    PAYMENT_MEANS }o--o| FINANCIAL_ACCOUNT : uses
+
+    BILLING_DOCUMENT ||--o| FISCAL_CONTEXT : has
+    FISCAL_CONTEXT ||--o{ FISCAL_IDENTIFIER : identifies
+    FISCAL_CONTEXT ||--o{ FISCAL_PARTY_CONTEXT : contextualises
+    PARTY ||--o{ FISCAL_PARTY_CONTEXT : applies_to
+    FISCAL_CONTEXT ||--o{ FISCAL_EXTENSION : extends
+
+    BILLING_DOCUMENT ||--o{ COMPLIANCE_TRANSACTION : processed_as
+    COMPLIANCE_TRANSACTION ||--o{ COMPLIANCE_LIFECYCLE_EVENT : records
+    COMPLIANCE_TRANSACTION ||--o{ VALIDATION_RESULT : validates
+    COMPLIANCE_TRANSACTION ||--o{ AUTHORITY_RESPONSE : receives
+
+    BILLING_DOCUMENT {
+        uuid billing_document_id PK
+        string document_number
+        string document_series
+        string document_type_code
+        date issue_date
+        string document_currency_code
+        string semantic_model_version
+    }
+    BILLING_LINE {
+        uuid billing_line_id PK
+        uuid billing_document_id FK
+        uuid parent_line_id FK
+        string line_number
+        string line_role_code
+        boolean contributes_to_document_totals
+        decimal quantity_value
+        string quantity_unit_code
+        decimal line_net_amount
+        string line_net_currency_code
+        int sequence_no
+    }
+    PARTY { uuid party_id PK string name string legal_name string trading_name }
+    DOCUMENT_PARTY { uuid document_party_id PK uuid billing_document_id FK uuid party_id FK string role_code }
+    LINE_PARTY { uuid line_party_id PK uuid billing_line_id FK uuid party_id FK string role_code }
+    PARTY_IDENTIFIER { uuid party_identifier_id PK uuid party_id FK string scheme_code string identifier_value }
+    TAX_REGISTRATION { uuid tax_registration_id PK uuid party_id FK string scheme_code string identifier_value }
+    PARTY_LEGAL_REGISTRATION { uuid legal_registration_id PK uuid party_id FK string registration_identifier string legal_form }
+    ADDRESS { uuid address_id PK uuid party_id FK string city string postal_code string country_code }
+    CONTACT { uuid contact_id PK uuid party_id FK string telephone string email }
+    LINE_ITEM { uuid billing_line_id PK,FK string name string description string origin_country_code }
+    LINE_PRICE { uuid billing_line_id PK,FK decimal net_price_amount string currency_code decimal gross_price_amount decimal base_quantity_value string base_quantity_unit_code }
+    PRICE_ADJUSTMENT { uuid price_adjustment_id PK uuid billing_line_id FK string adjustment_type_code decimal amount decimal base_amount }
+    LINE_CLASSIFICATION { uuid line_classification_id PK uuid billing_line_id FK string scheme_code string classification_code }
+    LINE_IDENTIFIER { uuid line_identifier_id PK uuid billing_line_id FK string scheme_code string identifier_value string identifier_type_code }
+    ADJUSTMENT { uuid adjustment_id PK uuid billing_document_id FK uuid billing_line_id FK string adjustment_type_code decimal amount string currency_code }
+    TAX { uuid tax_id PK uuid billing_document_id FK uuid billing_line_id FK string tax_type_code string direction_code decimal rate decimal tax_amount }
+    LINE_TAX_SUMMARY { uuid line_tax_summary_id PK uuid billing_line_id FK string tax_type_code decimal taxable_amount decimal tax_amount decimal rate }
+    TAX_SUMMARY { uuid tax_summary_id PK uuid billing_document_id FK string tax_type_code decimal taxable_amount decimal tax_amount decimal rate }
+    MONETARY_TOTAL { uuid billing_document_id PK,FK decimal line_net_amount decimal tax_exclusive_amount decimal tax_inclusive_amount decimal payable_amount string currency_code }
+    DOCUMENT_RELATIONSHIP { uuid document_relationship_id PK uuid billing_document_id FK uuid billing_line_id FK string relationship_type_code string related_document_number }
+    PAYMENT_MEANS { uuid payment_means_id PK uuid billing_document_id FK string type_code string payment_reference uuid financial_account_id FK }
+    FINANCIAL_ACCOUNT { uuid financial_account_id PK string account_identifier string account_scheme_code string financial_institution_id }
+    PAYMENT_TERMS { uuid payment_terms_id PK uuid billing_document_id FK date due_date string description }
+    SUPPLY { uuid supply_id PK uuid billing_document_id FK uuid delivery_party_id FK uuid delivery_address_id FK uuid dispatch_party_id FK uuid dispatch_address_id FK string place_of_supply_code }
+    ATTACHMENT { uuid attachment_id PK uuid billing_document_id FK string filename string mime_type string storage_reference }
+    DOCUMENT_REPRESENTATION { uuid document_representation_id PK uuid billing_document_id FK string direction_code string format_family string format_version string customization_id string profile_id string mapping_version string content_hash string artifact_reference }
+    FISCAL_CONTEXT { uuid fiscal_context_id PK uuid billing_document_id FK string jurisdiction_code string regime_code string fiscal_document_type_code date tax_point_date }
+    FISCAL_IDENTIFIER { uuid fiscal_identifier_id PK uuid fiscal_context_id FK string scheme_code string identifier_value }
+    FISCAL_PARTY_CONTEXT { uuid fiscal_party_context_id PK uuid fiscal_context_id FK uuid party_id FK string party_role_code string fiscal_regime_code string document_use_code }
+    FISCAL_EXTENSION { uuid fiscal_extension_id PK uuid fiscal_context_id FK string namespace string extension_type string extension_version json payload_json }
+    COMPLIANCE_TRANSACTION { uuid compliance_transaction_id PK uuid billing_document_id FK string jurisdiction_code string regime_code string channel_code string authority_reference string status_code }
+    COMPLIANCE_LIFECYCLE_EVENT { uuid lifecycle_event_id PK uuid compliance_transaction_id FK string event_type_code string status_code datetime event_time }
+    VALIDATION_RESULT { uuid validation_result_id PK uuid compliance_transaction_id FK string validation_layer_code string rule_id string severity_code string semantic_path }
+    AUTHORITY_RESPONSE { uuid authority_response_id PK uuid compliance_transaction_id FK string response_type_code string status_code json payload_json }
