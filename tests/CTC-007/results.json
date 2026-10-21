@@ -1,0 +1,90 @@
+{
+  "total": 12,
+  "passed": 12,
+  "cases": [
+    {
+      "id": "V01",
+      "scenario": "Add optional, non-authoritative semantic field",
+      "expected": "compatible",
+      "observed": "compatible",
+      "pass": true
+    },
+    {
+      "id": "V02",
+      "scenario": "Add mandatory field to all published revisions",
+      "expected": "breaking",
+      "observed": "breaking",
+      "pass": true
+    },
+    {
+      "id": "V03",
+      "scenario": "Rename existing canonical path without alias",
+      "expected": "breaking",
+      "observed": "breaking",
+      "pass": true
+    },
+    {
+      "id": "V04",
+      "scenario": "Change tax rate meaning from percentage to fraction",
+      "expected": "breaking",
+      "observed": "breaking",
+      "pass": true
+    },
+    {
+      "id": "V05",
+      "scenario": "Add country extension with registered namespace, no core change",
+      "expected": "profile_only",
+      "observed": "profile_only",
+      "pass": true
+    },
+    {
+      "id": "V06",
+      "scenario": "Change mapping package; pinned historical interpretation",
+      "expected": "historically_pinned",
+      "observed": "historically_pinned",
+      "pass": true
+    },
+    {
+      "id": "V07",
+      "scenario": "Delete code-list value still used by published documents",
+      "expected": "breaking",
+      "observed": "breaking",
+      "pass": true
+    },
+    {
+      "id": "V08",
+      "scenario": "Add validation rule only for future profile effective date",
+      "expected": "profile_only",
+      "observed": "profile_only",
+      "pass": true
+    },
+    {
+      "id": "V09",
+      "scenario": "Change response projection without modifying billing facts",
+      "expected": "interface_review",
+      "observed": "interface_review",
+      "pass": true
+    },
+    {
+      "id": "V10",
+      "scenario": "Release without rollback or regression evidence",
+      "expected": "reject_release",
+      "observed": "reject_release",
+      "pass": true
+    },
+    {
+      "id": "V11",
+      "scenario": "Reprocess historical revision using latest rather than pinned dependencies",
+      "expected": "reject_replay",
+      "observed": "reject_replay",
+      "pass": true
+    },
+    {
+      "id": "V12",
+      "scenario": "Widen optional text length without altering semantics",
+      "expected": "compatible",
+      "observed": "compatible",
+      "pass": true
+    }
+  ]
+}

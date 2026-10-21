@@ -1,0 +1,13 @@
+id,scenario,expected,observed,passed
+V01,"Add optional, non-authoritative semantic field",compatible,compatible,true
+V02,"Add mandatory field to all published revisions",breaking,breaking,true
+V03,"Rename existing canonical path without alias",breaking,breaking,true
+V04,"Change tax rate meaning from percentage to fraction",breaking,breaking,true
+V05,"Add country extension with registered namespace, no core change",profile_only,profile_only,true
+V06,"Change mapping package; pinned historical interpretation",historically_pinned,historically_pinned,true
+V07,"Delete code-list value still used by published documents",breaking,breaking,true
+V08,"Add validation rule only for future profile effective date",profile_only,profile_only,true
+V09,"Change response projection without modifying billing facts",interface_review,interface_review,true
+V10,"Release without rollback or regression evidence",reject_release,reject_release,true
+V11,"Reprocess historical revision using latest rather than pinned dependencies",reject_replay,reject_replay,true
+V12,"Widen optional text length without altering semantics",compatible,compatible,true
