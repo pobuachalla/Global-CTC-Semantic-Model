@@ -7,3 +7,8 @@
 - Deferred: FiscalContext physical A/B/C, jurisdictional fixtures, registry implementation, CTC-007 compatibility.
 - Next: CTC-006.
 - Historical reports retain their original statuses as historical records; current authority is root DECISIONS.md and MODEL-BASELINE.md.
+
+
+## 2026-10-21 CTC-006 update
+
+Full local snapshot from CTC-005 approved ZIP with CTC-006 scoped closure overlay; not verified against GitHub HEAD. See README-CTC006-APPROVAL.md.

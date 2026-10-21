@@ -15,7 +15,7 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 | CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | Done — scoped (detailed logical dictionary approved 2026-10-20) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
 | CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Done — scoped (deterministic logical validation approved 2026-10-21) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Done — scoped (logical governance approved 2026-10-21) | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
-| CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Todo | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
+| CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Done — scoped (C006-01..03 approved 2026-10-21) | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
 | CTC-007 | Define semantic model versioning and compatibility | P0 | Semantic foundation | Todo | CTC-003 | Versioning rules, breaking-change policy and compatibility test plan |
 | CTC-008 | Inventory and score 13 GitHub repositories | P1 | Evidence and validation | Todo | — | File-level inventory, licensing, commit IDs, valid/invalid fixtures and scores |
 | CTC-009 | Create semantic coverage and loss matrix | P1 | Evidence and validation | Todo | CTC-003, CTC-008 | Per-field mapping outcomes, unrepresentable concepts, preservation and reversibility |
@@ -201,3 +201,11 @@ CTC-005 In Progress. One bounded decision candidate created at `research/CTC-005
 - Validation: seven original deterministic scenarios and twenty focused governance assertions passed; tests are synthetic and not country-regulatory conformance.
 - Deferred: production profile registry, archival/replay implementation, real jurisdiction profiles, semantic model compatibility (CTC-007), fixture evidence (CTC-008/009/010), FiscalContext physical A/B/C, and 18 proposed CTC-003 field additions.
 - **Next P0 task: CTC-006** — parties, document identity and correction semantics; reuse the accepted CTC-003 logical dictionary.
+
+
+## CTC-006 — Approved scoped closure — 2026-10-21
+
+- **CTC-006: Done — scoped.** Explicit user approval of C006-01 through C006-03 at logical level, after ten focused synthetic scenarios passed.
+- **CTC-007: Todo; next priority.** Define semantic model versioning and compatibility, breaking-change policy and compatibility test plan.
+- Country-specific identity uniqueness, correction/cancellation legal validity, authority fixtures and relational keys remain deferred to existing backlog workstreams.
+- Approved D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, qualified C09, G2 and JP-01–JP-10 remain unchanged. Eighteen supplemental field contracts remain Proposed; FiscalContext physical A/B/C remains Deferred.

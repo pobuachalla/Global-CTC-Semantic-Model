@@ -361,3 +361,18 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Approval does not include:** New physical entities/fields, profile registry implementation, country-specific legal/tax requirements, authority certification, production replay, global model compatibility rules (CTC-007), FiscalContext physical A/B/C, or the 18 CTC-003 additional field contracts (still Proposed). No previously accepted D2, P1–P7, I-01..10, T01–T03, D01–D03, L01–L10, B01–B10, C09, G2 or CTC-001..004 scoped decisions are superseded.
 
 **Evidence:** `research/CTC-005/CTC-005-JURISDICTION-PROFILE-GOVERNANCE-DECISION-CANDIDATE.md`, `research/CTC-005/CTC-005-TEST-AND-CLOSURE-REVIEW.md`, `research/CTC-005/CTC-005-FOCUSED-VALIDATION-AND-CLOSURE-RECOMMENDATION.md`, and tests under `tests/CTC-005/`. Seven original plus twenty focused deterministic checks passed; these are not jurisdictional conformance evidence.
+
+
+## CTC-006 — Party identity and correction relationships — Approved 2026-10-21
+
+**Status: Accepted — logical constraints only; CTC-006 Done — scoped.**
+
+**Approval authority:** User explicitly stated: “I explicitly approve C006-01 through C006-03 at logical level and mark CTC-006 Done — scoped. Preserve all existing approvals and deferrals.”
+
+- **C006-01 (Accepted):** Commercial identifiers are evaluated in an explicit identity namespace potentially including issuer, document family, series and jurisdiction/profile. The exact uniqueness key is profile-governed; a globally unique invoice number is not assumed.
+- **C006-02 (Accepted):** Published party participation resolves to immutable party snapshots. Subsequent ERP master-data changes cannot rewrite published commercial facts.
+- **C006-03 (Accepted):** Credit, replacement, adjustment and cancellation semantics use typed document relationships and/or compliance evidence, never implicit overwriting of a published revision. Legal admissibility and required references are jurisdiction/profile-governed.
+
+**Approval exclusions:** No universal country correction or cancellation rules, no physical database key/aggregate decision, no new mandatory schema fields, no authority conformance claim. The 18 additional CTC-003 field contracts remain Proposed; FiscalContext A/B/C physical design remains Deferred. No earlier accepted decision is superseded.
+
+**Evidence:** `research/CTC-006/CTC-006-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md` and `tests/CTC-006/results.json` (10/10 synthetic focused checks).

@@ -287,3 +287,13 @@
 - **Preserved:** D2 and all CTC-001..004 scoped decisions; 18 additional field contracts remain Proposed; physical FiscalContext A/B/C deferred.
 - **Open:** Profile registry implementation, real mandate rules, cross-deployment replay, country fixtures and CTC-007 model compatibility.
 - **Git:** Full replacement generated locally; no remote push or synchronization claimed.
+
+
+### CTC-006 closure checkpoint — 2026-10-21
+- Scope: Party identities, immutable snapshots, commercial numbering/series, corrections and cancellation semantics.
+- Evidence: Ten synthetic focused scenarios, all passing; source baseline CTC-005 approved full snapshot, not live GitHub HEAD.
+- Decisions explicitly approved: C006-01, C006-02, C006-03 at logical level; CTC-006 Done — scoped.
+- Unchanged: all prior accepted principles/ADRs, 18 proposed additional fields, deferred physical FiscalContext A/B/C.
+- Not claimed: jurisdictional correction legality, full regulatory conformance, physical database design or full model-wide validation.
+- Next task: CTC-007 — model versioning, breaking changes and compatibility policy.
+- GitHub: replacement package prepared locally; no remote push.

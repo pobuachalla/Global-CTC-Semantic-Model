@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "passed": 10,
+    "total": 10
+  },
+  "tests": [
+    {
+      "id": "ID-01",
+      "scenario": "Party master change cannot mutate published snapshot",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-02",
+      "scenario": "Different registration schemes and jurisdictions remain distinct",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-03",
+      "scenario": "Same number with distinct issuer has distinct identity",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-04",
+      "scenario": "Series participates in scoped commercial identity",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-05",
+      "scenario": "Platform identity stable through draft and publication",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-06",
+      "scenario": "Credit note retains independent identity and typed reference",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-07",
+      "scenario": "Replacement preserves original document identity",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-08",
+      "scenario": "Cancellation appends evidence without erasing clearance",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-09",
+      "scenario": "Unknown local target retains typed external reference",
+      "result": "PASS"
+    },
+    {
+      "id": "ID-10",
+      "scenario": "Repeated submission creates distinct attempts, not documents",
+      "result": "PASS"
+    }
+  ]
+}

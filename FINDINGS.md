@@ -200,3 +200,8 @@ The user approved the scoped detailed logical dictionary. Earlier synthetic stru
 - Seven original synthetic governance scenarios passed; four remaining logical coverage areas passed twenty additional deterministic assertions (package/dependency integrity 4, extension registration 7, legal-state separation 3, promotion/rollback/history 6).
 - These results support logical contract consistency only. No production registry durability, cryptographic verification, actual jurisdictional rule correctness, authority response conformance or cross-deployment replay is established.
 - JP-01..JP-10 and the seven-step decision tree are accepted by explicit user approval, not inferred from tests.
+
+
+## CTC-006 validation evidence — 2026-10-21
+
+Ten synthetic focused scenarios passed, covering immutable party snapshots, multiple registrations, issuer/series numbering, draft-to-publication continuity, credit and replacement references, cancellation history, unresolved external references and repeat submissions. These tests establish selected logical representability only, not full 51-entity schema coverage or country-specific regulatory validity. See `research/CTC-006/CTC-006-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`.

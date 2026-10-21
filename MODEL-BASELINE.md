@@ -136,3 +136,8 @@ D2 and all prior accepted decisions remain unchanged. The 18 proposed CTC-003 fi
 The seven-step reuse-before-extension decision tree and JP-01..JP-10 are **Accepted at logical-governance level**. Applicable profile package identity, effective-date basis, immutable dependency pinning, governed extension ownership, precedence/ambiguity handling, promotion controls and validation/legal-state separation are normative logical rules. See `DECISIONS.md` for exact wording.
 
 This does not add mandatory canonical fields or approve the candidate physical profile contracts. The 18 additional CTC-003 field contracts remain Proposed; physical FiscalContext A/B/C and country-specific regulatory behavior remain deferred. CTC-001..004 scoped approvals and all earlier decisions remain unchanged.
+
+
+## CTC-006 scoped logical constraints — Accepted 2026-10-21
+
+C006-01: explicit, profile-governed commercial identity namespace; C006-02: immutable published party snapshots; C006-03: typed correction/replacement/credit/cancellation relationships without revision overwrite. These constrain interpretation of the approved CTC-003 logical dictionary without adding physical entities or fields. Jurisdiction-specific validity, 18 proposed field additions and FiscalContext physical A/B/C remain unresolved.
