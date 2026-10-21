@@ -376,3 +376,49 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Approval exclusions:** No universal country correction or cancellation rules, no physical database key/aggregate decision, no new mandatory schema fields, no authority conformance claim. The 18 additional CTC-003 field contracts remain Proposed; FiscalContext A/B/C physical design remains Deferred. No earlier accepted decision is superseded.
 
 **Evidence:** `research/CTC-006/CTC-006-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md` and `tests/CTC-006/results.json` (10/10 synthetic focused checks).
+
+## CTC-007 — Versioning and compatibility (Accepted — scoped, 2026-10-21)
+
+**Approval authority:** Explicit user approval in conversation: “I explicitly approve CTC-007 V-01 through V-10 at logical-policy level. Mark CTC-007 Done — scoped.”
+
+**Exact accepted rules** (source: `research/CTC-007/CTC-007-VERSIONING-COMPATIBILITY-DECISION-CANDIDATE.md`):
+
+| ID | Status | Accepted logical-policy rule |
+|---|---|---|
+| V-01 | Accepted | Core semantic contract, jurisdiction profile, source/target mapping, rules, code lists, external API contract and representation format have independent version identifiers. |
+| V-02 | Accepted | Canonical path compatibility includes meaning, units, ownership and identifier scope; identical spelling is insufficient. |
+| V-03 | Accepted | Optional unchanged-meaning additions are backward compatible; new universal required fields, changed types/units, removed paths or changed cardinality are breaking by default. |
+| V-04 | Accepted | Jurisdiction changes are profile-scoped unless canonical meaning changes; no automatic core version bump. |
+| V-05 | Accepted | Published revisions and fiscal interpretations pin exact contract versions and content-addressed applicable dependencies; never implicit latest. |
+| V-06 | Accepted | Historical artifacts and manifests remain resolvable; migration does not rewrite published revisions. |
+| V-07 | Accepted | Breaking changes require a new major core contract version, migration/dual-read strategy, impact assessment and ADR approval; SemVer-style numbering is a logical convention. |
+| V-08 | Accepted | Compatible additions require regression evidence and reader/writer expectations; unknown fields are preserved without inferred semantics. |
+| V-09 | Accepted | Release promotion requires evidence, compatibility classification, rollback plan and retained prior packages. |
+| V-10 | Accepted | API projection/response compatibility is assessed independently; legal state remains evidence-governed. |
+
+**Approved scope:** Logical versioning and compatibility governance only. 12/12 deterministic policy checks passed in the proposed test suite; these are classification assertions, not an independent schema-compatibility engine or historical replay certification.
+
+**Explicit exclusions:** No new detailed fields, no physical schemas, no production version registry/checker, no API negotiation implementation, no regulatory fixture conformance, no new country rules. Eighteen CTC-003 field contracts remain Proposed; FiscalContext A/B/C physical alternatives remain Deferred. No prior accepted decision is superseded.
+
+**Task disposition:** CTC-007 Done — scoped; CTC-008 is the next original backlog task.
+
+## CTC-013 — Compliance lifecycle (Accepted — scoped, 2026-10-21)
+
+**Approval authority:** User explicitly stated: “I explicitly approve CTC-013 CL-01 through CL-08 at logical-policy level and mark CTC-013 Done — scoped. Preserve all previous approved decisions and deferred work.”
+
+**Accepted logical-policy rules:**
+
+| ID | Status | Approved direction |
+|---|---|---|
+| CL-01 | Accepted | Compliance transactions have independent identities and reference exact semantic documents and applicable obligations. |
+| CL-02 | Accepted | Document-level submission attempts and envelope-level transport attempts are distinct identities. |
+| CL-03 | Accepted | Typed processing events preserve immutable append-only history; derived status does not replace evidence. |
+| CL-04 | Accepted | Transport, validation, authority-processing and legal-state dimensions are independently represented. |
+| CL-05 | Accepted | Transport/envelope success never independently proves member acceptance or legal issuance. |
+| CL-06 | Accepted | Client-visible status is a deterministic versioned projection from pinned evidence and policy; unresolved conflicts remain explicit. |
+| CL-07 | Accepted | External correlation identifiers are scoped and must resolve unambiguously before attributing outcomes. |
+| CL-08 | Accepted | Retries, duplicate callbacks and out-of-order responses preserve distinct history and exact original subjects. |
+
+**Exact scope:** Logical compliance lifecycle contract only, backed by 10/10 synthetic scenario checks. Does not approve physical event schema/storage, a production projection engine, provider-specific correlation or response precedence, legal status rules, cryptographic evidence, API payload contracts or new fields. Earlier D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, qualified C09, G2, JP-01–JP-10, C006-01–03 and V-01–V-10 remain unchanged. Eighteen CTC-003 additional field contracts remain Proposed; FiscalContext A/B/C physical options remain Deferred.
+
+**Evidence:** `research/CTC-013/CTC-013-COMPLIANCE-LIFECYCLE-DECISION-CANDIDATE.md`, `research/CTC-013/CTC-013-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`, `tests/CTC-013/`.

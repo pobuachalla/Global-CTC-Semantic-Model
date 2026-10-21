@@ -16,14 +16,14 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 | CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Done — scoped (deterministic logical validation approved 2026-10-21) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Done — scoped (logical governance approved 2026-10-21) | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
 | CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Done — scoped (C006-01..03 approved 2026-10-21) | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
-| CTC-007 | Define semantic model versioning and compatibility | P0 | Semantic foundation | Todo | CTC-003 | Versioning rules, breaking-change policy and compatibility test plan |
-| CTC-008 | Inventory and score 13 GitHub repositories | P1 | Evidence and validation | Todo | — | File-level inventory, licensing, commit IDs, valid/invalid fixtures and scores |
+| CTC-007 | Define semantic model versioning and compatibility | P0 | Semantic foundation | Done — scoped | CTC-003 | Versioning rules, breaking-change policy and compatibility test plan; V-01..V-10 accepted at logical-policy level on 2026-10-21 |
+| CTC-008 | Inventory and score 13 GitHub repositories | P1 | Evidence and validation | In Progress | — | File-level inventory, licensing, commit IDs, valid/invalid fixtures and scores |
 | CTC-009 | Create semantic coverage and loss matrix | P1 | Evidence and validation | Todo | CTC-003, CTC-008 | Per-field mapping outcomes, unrepresentable concepts, preservation and reversibility |
 | CTC-010 | Stress-test French and non-EU payloads | P1 | Evidence and validation | Todo | CTC-004, CTC-008 | Documented tests for grouped lines, signed amounts, multi-regime tax and corrections |
 | CTC-011 | Derive logical relational model | P1 | Persistence | Todo | CTC-002, CTC-003 | Logical ER model derived from accepted semantics with explicit cardinalities |
 | CTC-012 | Define persistence snapshots and lineage | P1 | Persistence | Todo | CTC-011 | Immutability, source and target representations, lineage and retention decisions |
-| CTC-013 | Define compliance transactions and event model | P1 | Compliance lifecycle | Todo | CTC-002 | Submission attempts, destinations, event dimensions and state derivation |
-| CTC-014 | Define normalized authority responses | P1 | Compliance lifecycle | Todo | CTC-013 | Response schema, correlation, evidence and client-facing representation |
+| CTC-013 | Define compliance transactions and event model | P1 | Compliance lifecycle | Done — scoped | CTC-002 | Submission attempts, destinations, event dimensions and state derivation |
+| CTC-014 | Define normalized authority responses | P1 | Compliance lifecycle | Todo — next parallel task | CTC-013 | Response schema, correlation, evidence and client-facing representation |
 | CTC-015 | Assess adapters, rule DSL and routing boundaries | P2 | Integration | Todo | CTC-002, CTC-005 | Compatibility analysis for ERP/CTC adapters, rules and multi-destination routing |
 | CTC-016 | Define API contracts and client notifications | P2 | Integration | Todo | CTC-013, CTC-014 | Submission, query, status and notification interface contracts |
 | CTC-017 | Establish ADR and semantic governance | P0 | Governance | Todo | — | ADR numbering, statuses, approval gates and change review process |
@@ -209,3 +209,19 @@ CTC-005 In Progress. One bounded decision candidate created at `research/CTC-005
 - **CTC-007: Todo; next priority.** Define semantic model versioning and compatibility, breaking-change policy and compatibility test plan.
 - Country-specific identity uniqueness, correction/cancellation legal validity, authority fixtures and relational keys remain deferred to existing backlog workstreams.
 - Approved D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, qualified C09, G2 and JP-01–JP-10 remain unchanged. Eighteen supplemental field contracts remain Proposed; FiscalContext physical A/B/C remains Deferred.
+
+## 2026-10-21 — CTC-007 approved scoped closure
+
+- **CTC-007: Done — scoped.** User explicitly accepted V-01 through V-10 at logical-policy level. The versioning decision candidate and 12/12 deterministic classification checks are the supporting evidence, not proof of a production compatibility engine.
+- **CTC-008: Todo — next.** Inventory and score the 13 candidate public repositories: verify repo availability, license, pinned commit, actual invoice/response fixture paths, schema/profile validity, jurisdiction coverage, and reuse suitability. Do not treat example payloads as authoritative without validation.
+- **Deferred:** machine-readable compatibility engine, API negotiation and consumer migration (CTC-016/018); historical replay package archiving (CTC-002-FU03); real jurisdiction fixtures (CTC-008/009/010); physical FiscalContext A/B/C (CTC-002-FU01/CTC-011); 18 proposed CTC-003 field contracts remain Proposed.
+- Earlier CTC-001..006 Done — scoped statuses and approved D2, P1..P7, I-01..I-10, T01..T03, D01..D03, L01..L10, B01..B10, C09, G2, JP-01..JP-10, and C006-01..03 remain unchanged.
+
+
+## CTC-008 kickoff — 2026-10-21
+
+Initial public-source inventory started. 13 candidates retained; commit pins, license checks, full fixture enumeration and validation remain open. See `research/CTC-008/`.
+
+## CTC-013 scoped closure — 2026-10-21
+
+CTC-013 **Done — scoped** following explicit user approval of CL-01 through CL-08 at logical-policy level. Ten bounded synthetic lifecycle scenarios passed. CTC-008 remains In Progress (delegated fixture inventory). CTC-014 is the next parallel task. Provider-specific authority response schemas, response precedence, cryptographic validation, physical event storage and API contracts remain with CTC-014/016/011/012 and evidence tasks.

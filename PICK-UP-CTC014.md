@@ -1,0 +1,3 @@
+# Next session — CTC-014
+
+Start CTC-014 from this baseline. Read MASTER-PROMPT.md, BACKLOG.md, DECISIONS.md, MODEL-BASELINE.md and the CTC-013 approved evidence. Design one bounded normalized authority-response logical contract covering acknowledgements, validation errors, clearance/rejection, fiscal identifiers, cancellation responses, evidence, scoped correlation, duplicate and asynchronous messages. Distinguish transport/authority/legal dimensions; preserve raw responses and provenance. Use synthetic tests; do not invent jurisdictional rules. Present one scoped decision candidate, not an API implementation. CTC-008 fixture inventory remains delegated.

@@ -205,3 +205,13 @@ The user approved the scoped detailed logical dictionary. Earlier synthetic stru
 ## CTC-006 validation evidence — 2026-10-21
 
 Ten synthetic focused scenarios passed, covering immutable party snapshots, multiple registrations, issuer/series numbering, draft-to-publication continuity, credit and replacement references, cancellation history, unresolved external references and repeat submissions. These tests establish selected logical representability only, not full 51-entity schema coverage or country-specific regulatory validity. See `research/CTC-006/CTC-006-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`.
+
+## CTC-007 scoped closure evidence — 2026-10-21
+
+- The 12/12 deterministic classification assertions support consistency of the V-01..V-10 policy decision table, not full implementation compatibility or historical replay.
+- Semantically breaking changes can occur without a canonical path rename (units, ownership, identifier scope). Independent version domains avoid unnecessary core model revisions.
+- Open evidence: machine-readable compatibility checker, dual-read/API negotiation, archived dependency replay and jurisdictional fixtures. These remain assigned to existing backlog work, not treated as failed CTC-007 acceptance criteria.
+
+## CTC-013 logical validation findings (2026-10-21)
+
+Ten synthetic lifecycle scenarios passed. They support independent member outcomes, timeout/unknown treatment, duplicate/late callback preservation, ambiguity handling and deterministic replay in a bounded projection. Limitations: not a production event engine; no actual provider response payloads, cryptographic validation, jurisdictional legal rules or physical persistence validation. See `research/CTC-013/CTC-013-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`.

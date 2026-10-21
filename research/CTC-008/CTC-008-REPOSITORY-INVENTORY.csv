@@ -1,0 +1,14 @@
+repository,url,claimed_scope,observed_fixture_evidence,example_path_or_area,commit_sha,license_spdx,schema_validation,fixture_count,regression_readiness,evidence_note
+OpenPEPPOL/peppol-bis-invoice-3,https://github.com/OpenPEPPOL/peppol-bis-invoice-3,Peppol UBL,Confirmed example XML,rules/examples/base-example.xml,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Confirmed public source
+ConnectingEurope/eInvoicing-EN16931,https://github.com/ConnectingEurope/eInvoicing-EN16931,EN16931 UBL/CII,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+speedata/einvoice,https://github.com/speedata/einvoice,European fixtures,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+hernaninverso/eu-invoice-fixtures,https://github.com/hernaninverso/eu-invoice-fixtures,Peppol XRechnung Factur-X,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+amusarra/dontesta-fisco-hub,https://github.com/amusarra/dontesta-fisco-hub,Italy FatturaPA,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+azuki-beans/fatturapa,https://github.com/azuki-beans/fatturapa,Italy FatturaPA,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+CIRFMF/ksef-client-java,https://github.com/CIRFMF/ksef-client-java,Poland KSeF,SDK/integration tests confirmed,demo-web-app/integrationTest,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Fixture inventory not verified
+KSeFGuard/ksef-guard,https://github.com/KSeFGuard/ksef-guard,Poland KSeF,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+kreyo-io/facturae-examples,https://github.com/kreyo-io/facturae-examples,Spain Facturae,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+brasil-fiscal/nfe,https://github.com/brasil-fiscal/nfe,Brazil NF-e,Example XML indicated,examples/nfe-exemplo.xml,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,README reports generated example; validate independently
+niclabs/DTE,https://github.com/niclabs/DTE,Chile DTE,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+UblSharp/UblSharp,https://github.com/UblSharp/UblSharp,UBL XML,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection
+InvoiceXML/ubl-api-examples,https://github.com/InvoiceXML/ubl-api-examples,UBL XML/JSON,Unverified,,NOT VERIFIED,NOT VERIFIED,NOT RUN,NOT COUNTED,PENDING,Needs inspection

@@ -297,3 +297,23 @@
 - Not claimed: jurisdictional correction legality, full regulatory conformance, physical database design or full model-wide validation.
 - Next task: CTC-007 — model versioning, breaking changes and compatibility policy.
 - GitHub: replacement package prepared locally; no remote push.
+
+## 2026-10-21 — CTC-007 explicit approval and scoped closure
+
+- **Task:** CTC-007 (only task in this checkpoint).
+- **Source baseline:** `Global_CTC_CTC007_Versioning_Review_Full_Git_2026-10-21.zip` (152 files before this update); live GitHub HEAD not verified.
+- **User-approved:** V-01 through V-10 at logical-policy level; CTC-007 Done — scoped.
+- **Evidence:** `research/CTC-007/CTC-007-VERSIONING-COMPATIBILITY-DECISION-CANDIDATE.md`, compatibility matrix and 12/12 policy classification tests.
+- **Preserved:** all earlier approved decisions, the 18 proposed CTC-003 field additions, and all deferred physical and regulatory work.
+- **Changes:** full replacement BACKLOG, DECISIONS, MODEL-BASELINE, FINDINGS and SESSION-LOG; approval note and restart instructions added.
+- **Next task:** CTC-008 public repository fixture inventory and scoring. Verify actual files, licenses, commit pins, validity and provenance before using any payload for CTC-009/010.
+- **GitHub:** no remote push performed.
+
+
+## 2026-10-21 — CTC-008 kickoff
+
+Reviewed 13 candidate repositories against public-source evidence; recorded limited confirmed examples and SDK evidence without assigning unverified scores. CTC-008 In Progress. Approved CTC-001–007 decisions unchanged. No remote repository modification.
+
+## 2026-10-21 — CTC-013 scoped approval and handoff
+
+User explicitly approved CL-01–CL-08 at logical-policy level and CTC-013 Done — scoped. Preserved prior approvals and all deferrals. Added CTC-013 decision candidate, consolidated report and executable test evidence. Replayed ten focused scenarios successfully. CTC-008 remains delegated/In Progress. Next: CTC-014 normalized authority response contract, without reopening D2 or treating authority transport receipts as legal decisions. No GitHub push performed.

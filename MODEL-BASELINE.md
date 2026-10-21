@@ -141,3 +141,11 @@ This does not add mandatory canonical fields or approve the candidate physical p
 ## CTC-006 scoped logical constraints — Accepted 2026-10-21
 
 C006-01: explicit, profile-governed commercial identity namespace; C006-02: immutable published party snapshots; C006-03: typed correction/replacement/credit/cancellation relationships without revision overwrite. These constrain interpretation of the approved CTC-003 logical dictionary without adding physical entities or fields. Jurisdiction-specific validity, 18 proposed field additions and FiscalContext physical A/B/C remain unresolved.
+
+## Accepted CTC-007 versioning policy — 2026-10-21
+
+V-01..V-10 are accepted at logical-policy level (see `DECISIONS.md` and `research/CTC-007/CTC-007-VERSIONING-COMPATIBILITY-DECISION-CANDIDATE.md`). Core model, jurisdiction profiles, mappings, rules, code lists, representations and API contracts are versioned independently; published artifacts pin exact versions/dependencies; changes to meaning, units, ownership and requiredness are classified for compatibility and governed migration. This does not add any field to the approved CTC-003 logical dictionary or select physical FiscalContext A/B/C.
+
+## CTC-013 accepted compliance lifecycle boundary (2026-10-21)
+
+CL-01–CL-08 are Accepted at logical-policy scope. Preserve independent compliance transaction identity, submission vs transport attempt identity, immutable event history, four independent status dimensions, no transport-to-legal inference, deterministic versioned status projections, scoped response correlation and historical retry/duplicate/out-of-order evidence. These refine operational semantics without changing the accepted D2 billing contract or approving new physical entities. CTC-014 authority response normalization remains open.

@@ -1,0 +1,225 @@
+{
+  "source": "CTC-013 decision candidate 0.1",
+  "test_type": "synthetic focused contract checks",
+  "results": [
+    {
+      "scenario": "S01",
+      "passed": true,
+      "observation": {
+        "subject": "m1",
+        "authority": "ACCEPTED",
+        "legal": "NOT_ASSESSED",
+        "evidence": [
+          "a1"
+        ],
+        "duplicates": [],
+        "policy": "CL-candidate-0.1",
+        "asOf": 100
+      }
+    },
+    {
+      "scenario": "S02",
+      "passed": true,
+      "observation": {
+        "m1": {
+          "subject": "m1",
+          "authority": "UNKNOWN",
+          "legal": "NOT_ASSESSED",
+          "evidence": [],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        },
+        "m2": {
+          "subject": "m2",
+          "authority": "UNKNOWN",
+          "legal": "NOT_ASSESSED",
+          "evidence": [],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        }
+      }
+    },
+    {
+      "scenario": "S03",
+      "passed": true,
+      "observation": {
+        "m1": {
+          "subject": "m1",
+          "authority": "ACCEPTED",
+          "legal": "NOT_ASSESSED",
+          "evidence": [
+            "m1a"
+          ],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        },
+        "m2": {
+          "subject": "m2",
+          "authority": "REJECTED",
+          "legal": "NOT_ASSESSED",
+          "evidence": [
+            "m2r"
+          ],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        }
+      }
+    },
+    {
+      "scenario": "S04",
+      "passed": true,
+      "observation": {
+        "attempts": [
+          {
+            "id": "t1",
+            "subject": "transport1",
+            "kind": "TRANSPORT_TIMEOUT",
+            "value": "UNKNOWN",
+            "attempt": "t1",
+            "recorded": 1,
+            "correlation": "VERIFIED",
+            "provider_event_id": null
+          },
+          {
+            "id": "t2",
+            "subject": "transport2",
+            "kind": "TRANSPORT_ACK",
+            "value": "ACKNOWLEDGED",
+            "attempt": "t2",
+            "recorded": 1,
+            "correlation": "VERIFIED",
+            "provider_event_id": null
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "S05",
+      "passed": true,
+      "observation": {
+        "subject": "m1",
+        "authority": "ACCEPTED",
+        "legal": "NOT_ASSESSED",
+        "evidence": [
+          "cb1"
+        ],
+        "duplicates": [
+          "cb2"
+        ],
+        "policy": "CL-candidate-0.1",
+        "asOf": 100
+      }
+    },
+    {
+      "scenario": "S06",
+      "passed": true,
+      "observation": {
+        "late": [
+          {
+            "id": "new",
+            "subject": "m2",
+            "kind": "AUTHORITY_OUTCOME",
+            "value": "REJECTED",
+            "attempt": "attempt2",
+            "recorded": 1,
+            "correlation": "VERIFIED",
+            "provider_event_id": null
+          },
+          {
+            "id": "late",
+            "subject": "m1",
+            "kind": "AUTHORITY_OUTCOME",
+            "value": "ACCEPTED",
+            "attempt": "attempt1",
+            "recorded": 3,
+            "correlation": "VERIFIED",
+            "provider_event_id": null
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "S07",
+      "passed": true,
+      "observation": {
+        "subject": "m1",
+        "authority": "UNKNOWN",
+        "legal": "NOT_ASSESSED",
+        "evidence": [
+          "amb"
+        ],
+        "duplicates": [],
+        "policy": "CL-candidate-0.1",
+        "asOf": 100
+      }
+    },
+    {
+      "scenario": "S08",
+      "passed": true,
+      "observation": {
+        "subject": "m1",
+        "authority": "UNKNOWN",
+        "legal": "CANCELLED",
+        "evidence": [
+          "clear",
+          "cancel"
+        ],
+        "duplicates": [],
+        "policy": "CL-candidate-0.1",
+        "asOf": 100
+      }
+    },
+    {
+      "scenario": "S09",
+      "passed": true,
+      "observation": {
+        "subject": "m1",
+        "authority": "CONFLICT",
+        "legal": "NOT_ASSESSED",
+        "evidence": [
+          "accept",
+          "reject"
+        ],
+        "duplicates": [],
+        "policy": "CL-candidate-0.1",
+        "asOf": 100
+      }
+    },
+    {
+      "scenario": "S10",
+      "passed": true,
+      "observation": {
+        "first": {
+          "subject": "m1",
+          "authority": "ACCEPTED",
+          "legal": "CLEARED",
+          "evidence": [
+            "e1",
+            "e2"
+          ],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        },
+        "replay": {
+          "subject": "m1",
+          "authority": "ACCEPTED",
+          "legal": "CLEARED",
+          "evidence": [
+            "e1",
+            "e2"
+          ],
+          "duplicates": [],
+          "policy": "CL-candidate-0.1",
+          "asOf": 100
+        }
+      }
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}
