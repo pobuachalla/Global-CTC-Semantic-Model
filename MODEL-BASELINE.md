@@ -123,3 +123,9 @@ G2-A..F accepted **only as logical ownership directions**. Integrated dictionary
 The normative **logical** entity dictionary is `research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md` (closure candidate v1.0 approved by user). It defines the scoped 51-entity logical catalogue, identifiers, types, optionality, relationships and qualified cardinalities. This acceptance supersedes the earlier *candidate status* of the detailed dictionary only within the approved scope; it does not approve physical persistence or jurisdiction-specific rules.
 
 The 18 additional Draft 4.2 field contracts remain Proposed, not part of the approved normative field set. FiscalContext A/B/C remains deferred. Historical source specifications and candidate drafts remain reference material, not independently approved alternatives.
+
+## 2026-10-21 — CTC-004 validation disposition
+
+**CTC-004 Done — scoped.** The accepted logical model's T01–T03 tax and monetary policies have focused deterministic validation for multi-regime aggregation, withholding, signed effects, tax inclusion, source assertions, currency safeguards, precision and rounding-policy controls. This is **validation evidence**, not a new schema approval or jurisdictional compliance statement.
+
+D2 and all prior accepted decisions remain unchanged. The 18 proposed CTC-003 field contracts remain unapproved; FiscalContext physical A/B/C remains deferred. The authoritative scoped CTC-003 dictionary remains `research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md`.

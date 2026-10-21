@@ -13,7 +13,7 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 | CTC-001 | Reconcile SemanticDocument and BillingDocument | P0 | Semantic foundation | Done (scoped reconciliation deliverable) | — | Entity-by-entity comparison, conflict register, proposed resolutions with evidence |
 | CTC-002 | Agree semantic aggregate boundaries | P0 | Semantic foundation | Done (scoped logical boundary only; P1-P7 + D2 + I-01..I-10 accepted) | CTC-001 | Proposed boundaries for BillingDocument, FiscalContext, ComplianceTransaction, DocumentRepresentation; FiscalContext A/B/C unresolved |
 | CTC-003 | Define semantic entity dictionary and cardinalities | P0 | Semantic foundation | Done — scoped (detailed logical dictionary approved 2026-10-20) | CTC-002 | Entity definitions, identifiers, cardinalities, nullability and relationships |
-| CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Todo (prior CTC-003 evidence linked) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
+| CTC-004 | Validate tax and monetary semantics | P0 | Semantic foundation | Done — scoped (deterministic logical validation approved 2026-10-21) | CTC-003 | Multi-regime tax, withholding, signed values, reconciliation and precision rules |
 | CTC-005 | Design jurisdiction profiles and extension governance | P0 | Semantic foundation | Todo | CTC-002 | Extension decision tree, validation, versioning and promotion criteria |
 | CTC-006 | Resolve parties, document identity and corrections | P0 | Semantic foundation | Todo | CTC-003 | Party role, identifiers, snapshots, series, correction/reference semantics |
 | CTC-007 | Define semantic model versioning and compatibility | P0 | Semantic foundation | Todo | CTC-003 | Versioning rules, breaking-change policy and compatibility test plan |
@@ -181,3 +181,11 @@ CTC-003: **Review / evidence-gated, not Done**. Six G2 logical ownership disposi
 - The 18 additional typed field contracts remain **Proposed**; do not treat them as accepted normative fields.
 - Physical FiscalContext A/B/C, relational design, regulatory conformance, full independent format round trips and exhaustive historical field compatibility remain deferred to existing workstreams (CTC-002-FU01, CTC-004, CTC-008/009/010, CTC-011/012).
 - **Next: CTC-004** — formal tax and monetary semantic validation, reusing prior T01–T03 tests; assess multi-regime tax, withholding, signed values, reconciliation and precision.
+
+## 2026-10-21 — CTC-004 scoped closure
+
+- **CTC-004: Done — scoped**, explicitly approved by the user on 2026-10-21. Scope is deterministic logical tax and monetary validation only.
+- Evidence: 66/66 assertions replayed across four overlapping T01–T03 suites, plus 23/23 new focused assertions (12 multi-regime, 11 precision/rounding), 89/89 total assertions, not independent regulatory scenarios.
+- Preserve accepted T01–T03, D2, P1–P7, I-01–I-10 and all other previously accepted logical decisions. The 18 CTC-003 additional field contracts remain Proposed.
+- Jurisdictional tax ordering, profile rounding and tolerance policies: CTC-005/007. Real licensed authority fixtures: CTC-008/010. Semantic-loss and field coverage: CTC-009. Physical FiscalContext A/B/C: CTC-002-FU01/CTC-011.
+- **Recommended next P0 task:** CTC-005 jurisdiction profiles and extension governance, bounded to logical applicability/versioning and extension ownership; do not reopen D2.

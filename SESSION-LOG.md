@@ -258,3 +258,14 @@
 - **Evidence:** Final closure candidate and earlier focused synthetic tests. No new runtime tests in this record-only update.
 - **Next task:** CTC-004, validate tax and monetary semantics using existing test corpus and evidence gap matrix, avoiding repeat exploratory design.
 - **Synchronization:** Full replacement Markdown files prepared for manual Git commit; GitHub not modified automatically.
+
+## 2026-10-21 — CTC-004 scoped closure approval
+
+- **Scope:** Validate multi-regime tax, withholding, signed values, monetary reconciliation and precision without revising D2 or approved T01–T03 policies.
+- **Evidence:** Four replayed T01–T03 suites 66/66 assertions; new MG-004-01 and MG-004-02 tests 23/23 assertions; 89 passing assertions across overlapping synthetic suites. The new test's first run contained a test-assertion expression error, corrected before the successful rerun; no semantic implementation code changed.
+- **Explicit user decision:** Approve CTC-004 Done — scoped, limited to deterministic logical tax/monetary validation.
+- **Decisions approved:** Task closure only; no new schema/ADR approval. Existing approved D2/P1–P7/I-01–I-10/T01–T03/D01–D03/L01–L10/B01–B10/C09/G2 preserved.
+- **Proposals preserved:** 18 additional CTC-003 field contracts remain Proposed.
+- **Deferred:** Country-specific policy CTC-005/007; verified fixtures CTC-008/010; loss matrix CTC-009; physical FiscalContext A/B/C.
+- **Next task:** CTC-005 (jurisdiction profiles and extension governance), subject to backlog prioritization.
+- **Synchronization:** Full replacement Git-ready files generated; not pushed to remote GitHub.

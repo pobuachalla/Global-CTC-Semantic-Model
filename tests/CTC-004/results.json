@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-21",
+  "scope": "Synthetic logical structural tests; no regulatory conformance",
+  "passed": 23,
+  "total": 23,
+  "checks": [
+    {
+      "check": "multiple distinct regimes",
+      "pass": true
+    },
+    {
+      "check": "every application scoped",
+      "pass": true
+    },
+    {
+      "check": "unique application identities",
+      "pass": true
+    },
+    {
+      "check": "VAT summary",
+      "pass": true
+    },
+    {
+      "check": "excise summary",
+      "pass": true
+    },
+    {
+      "check": "withholding summary",
+      "pass": true
+    },
+    {
+      "check": "tax magnitude nonnegative",
+      "pass": true
+    },
+    {
+      "check": "tax arithmetic",
+      "pass": true
+    },
+    {
+      "check": "signed payable contributions",
+      "pass": true
+    },
+    {
+      "check": "document payable no double count",
+      "pass": true
+    },
+    {
+      "check": "asserted regime totals preserved",
+      "pass": true
+    },
+    {
+      "check": "detect incorrect summary double-counting",
+      "pass": true
+    },
+    {
+      "check": "high precision fractional rate retained",
+      "pass": true
+    },
+    {
+      "check": "line tax rounded to currency quantum",
+      "pass": true
+    },
+    {
+      "check": "line versus aggregate rounding divergence",
+      "pass": true
+    },
+    {
+      "check": "half even differs from half up",
+      "pass": true
+    },
+    {
+      "check": "per-unit tax with quantity",
+      "pass": true
+    },
+    {
+      "check": "unknown currency policy not evaluable",
+      "pass": true
+    },
+    {
+      "check": "unknown rounding stage not evaluable",
+      "pass": true
+    },
+    {
+      "check": "cross currency no silent addition",
+      "pass": true
+    },
+    {
+      "check": "source discrepancy preserved",
+      "pass": true
+    },
+    {
+      "check": "profile-specific tolerance not inferred",
+      "pass": true
+    },
+    {
+      "check": "versioned policy identity",
+      "pass": true
+    }
+  ],
+  "policy": {
+    "id": "SYNTH-PREC-1",
+    "currency": "XCU",
+    "minor_unit": "0.01",
+    "rounding": "HALF_UP",
+    "tax_rate_scale": 6,
+    "stage": "LINE"
+  },
+  "synthetic_example": {
+    "base": "100.00",
+    "VAT": "10.00",
+    "EXCISE": "5.00",
+    "WITHHOLD": "2.00",
+    "payable": "113.00"
+  }
+}

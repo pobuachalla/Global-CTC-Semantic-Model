@@ -325,3 +325,13 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Not approved:** The 18 Draft 4.2 additional field contracts (remain Proposed); physical FiscalContext A/B/C; tables and aggregate-root implementation; country-specific publication/issuance rules; full regulatory conformance; full independent format round trips; exhaustive historical field compatibility; unresolved jurisdictional mappings. No historical ADR is silently superseded.
 
 **Disposition:** CTC-003 Done — scoped. Deferred items retain their existing backlog ownership; this is not an assertion that all 51 entities have been proven across all countries.
+
+## CTC-004 — Scoped tax and monetary validation closure — 2026-10-21
+
+**Status: Accepted — scoped task closure. Authority:** User explicitly stated: “I explicitly approve CTC-004 Done — scoped, limited to deterministic logical tax and monetary validation. Preserve all existing approved decisions and proposed fields, defer jurisdictional evidence to existing backlog tasks, and prepare complete replacement Git-ready project records.”
+
+**Approval includes:** Closure of CTC-004's original logical validation criteria for multi-regime tax, withholding, signed amounts/credit polarity, source-vs-derived reconciliation, inclusive/exclusive basis, currency arithmetic safeguards, precision and rounding-policy behavior. Evidence comprises 66 previously replayed focused assertions and 23 newly executed assertions, all passing, with overlapping suites and synthetic test assumptions.
+
+**Not approved:** New schema fields or entities; the 18 additional CTC-003 field contracts (still Proposed); tax-authority or jurisdictional conformance; country-specific tax ordering/rounding/tolerances; production FX policy; exhaustive semantic-loss coverage; physical FiscalContext A/B/C. No earlier ADR superseded.
+
+**Evidence:** `research/CTC-004/CTC-004-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`; `tests/CTC-004/test_remaining_gaps.py`; `tests/CTC-004/results.json`.

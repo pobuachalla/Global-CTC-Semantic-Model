@@ -186,3 +186,10 @@ The six ownership overlaps are resolved at logical level under standing blitz au
 ## 2026-10-20 — CTC-003 closure evidence disposition
 
 The user approved the scoped detailed logical dictionary. Earlier synthetic structural validations and partial UBL/CFDI selected-field tests remain evidence of *focused* consistency only; they do not demonstrate full country regulatory conformance, complete source-to-D2-to-target round-trip preservation, or exhaustive historical field-level coverage. The 18 additional typed field contracts remain proposals. No existing finding confidence is upgraded by the closure decision.
+
+## CTC-004 — Validated logical findings — 2026-10-21
+
+- **F-004-01 (focused synthetic):** Three concurrent tax regimes with charge/withhold directions were aggregated independently without double-counting source-asserted summaries (MG-004-01: 12/12).
+- **F-004-02 (focused synthetic):** Explicit quantization, rounding mode and calculation stage yield reproducible monetary results; missing essential policy inputs produce `NOT_EVALUABLE` (MG-004-02: 11/11).
+- **F-004-03 (evidence boundary):** Earlier four overlapping suites replayed 66/66 assertions. Combined 89/89 assertions support logical behavior, not 89 independent real-world cases or authority compliance.
+- **Deferred:** Country profiles and precision rules CTC-005/007; validated authority samples CTC-008/010; semantic-loss analysis CTC-009.
