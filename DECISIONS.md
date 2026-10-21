@@ -335,3 +335,29 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Not approved:** New schema fields or entities; the 18 additional CTC-003 field contracts (still Proposed); tax-authority or jurisdictional conformance; country-specific tax ordering/rounding/tolerances; production FX policy; exhaustive semantic-loss coverage; physical FiscalContext A/B/C. No earlier ADR superseded.
 
 **Evidence:** `research/CTC-004/CTC-004-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`; `tests/CTC-004/test_remaining_gaps.py`; `tests/CTC-004/results.json`.
+
+
+## CTC-005 — Jurisdiction profile and extension governance approval — 2026-10-21
+
+**Status: Accepted — logical-governance scope only.**
+
+**Approval authority:** User explicitly approved the CTC-005 seven-part extension decision tree and JP-01 through JP-10 and directed CTC-005 Done — scoped.
+
+**Approved seven-step decision tree (in order):** (1) reuse existing canonical fact; (2) express tighter local requirements/code lists as profile constraints; (3) propose cross-jurisdiction reusable new meaning for separately approved core enhancement; (4) register genuinely local meaning in governed typed namespace; (5) assign serialization metadata to representation/mapping; (6) assign submission, routing, fiscal evidence and status to their non-billing owners; (7) preserve original and flag unresolved ambiguity/insufficient evidence.
+
+**Approved invariants (logical governance):**
+
+- **JP-01:** Published profile packages are immutable and content-addressable.
+- **JP-02:** Interpretations pin exact applicable profile packages, mapping/rule/code-list dependencies and input manifest.
+- **JP-03:** Effective-date applicability specifies the date basis; no universal default.
+- **JP-04:** Overlap requires explicit precedence or AMBIGUOUS, never silent latest selection.
+- **JP-05:** Profile rules may constrain but not overwrite authoritative source facts.
+- **JP-06:** Extensions require namespace, owner, typed meaning, applicability, provenance and test evidence.
+- **JP-07:** Core promotion requires cross-jurisdiction reuse evidence, semantic equivalence, migration mapping and explicit ADR approval.
+- **JP-08:** Original/outbound artifacts remain preserved; validation and legal-state assessment remain distinct.
+- **JP-09:** Release promotion requires regression evidence and rollback path; historical interpretations remain pinned.
+- **JP-10:** Unavailable/conflicting applicability inputs produce NOT_EVALUABLE / AMBIGUOUS, not acceptance.
+
+**Approval does not include:** New physical entities/fields, profile registry implementation, country-specific legal/tax requirements, authority certification, production replay, global model compatibility rules (CTC-007), FiscalContext physical A/B/C, or the 18 CTC-003 additional field contracts (still Proposed). No previously accepted D2, P1–P7, I-01..10, T01–T03, D01–D03, L01–L10, B01–B10, C09, G2 or CTC-001..004 scoped decisions are superseded.
+
+**Evidence:** `research/CTC-005/CTC-005-JURISDICTION-PROFILE-GOVERNANCE-DECISION-CANDIDATE.md`, `research/CTC-005/CTC-005-TEST-AND-CLOSURE-REVIEW.md`, `research/CTC-005/CTC-005-FOCUSED-VALIDATION-AND-CLOSURE-RECOMMENDATION.md`, and tests under `tests/CTC-005/`. Seven original plus twenty focused deterministic checks passed; these are not jurisdictional conformance evidence.

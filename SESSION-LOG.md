@@ -269,3 +269,21 @@
 - **Deferred:** Country-specific policy CTC-005/007; verified fixtures CTC-008/010; loss matrix CTC-009; physical FiscalContext A/B/C.
 - **Next task:** CTC-005 (jurisdiction profiles and extension governance), subject to backlog prioritization.
 - **Synchronization:** Full replacement Git-ready files generated; not pushed to remote GitHub.
+
+### 2026-10-21 — CTC-005 jurisdiction profile governance kickoff
+- Scope: profile applicability, effective dating, governed extension decision tree, rule/code-list/mapping package pinning and promotion criteria.
+- Source baseline: approved CTC-004 full Git-ready snapshot of 2026-10-21; live GitHub not accessed.
+- Evidence: earlier semantic billing model §§2,9–10; accepted D2, CTC-003 dictionary and CTC-004 logical validation.
+- Proposed: CTC-005 decision candidate and JP-01..JP-10. No decisions accepted.
+- Deferred: physical FiscalContext A/B/C, 18 proposed CTC-003 fields, regulatory evidence, global compatibility policy.
+- Next: bounded seven-case profile governance validation and explicit decision review.
+
+
+### Session — 2026-10-21 — CTC-005 scoped approval and handoff
+- **Scope:** Approve jurisdiction profile and extension governance at logical level; prepare full Git-ready replacement.
+- **Evidence:** 7/7 original governance scenarios and 20/20 focused assertions; synthetic tests, not regulatory conformance.
+- **Approved:** Seven-part extension decision tree; JP-01 through JP-10, logical governance only.
+- **Backlog:** CTC-005 Done — scoped; CTC-006 recommended next P0 task.
+- **Preserved:** D2 and all CTC-001..004 scoped decisions; 18 additional field contracts remain Proposed; physical FiscalContext A/B/C deferred.
+- **Open:** Profile registry implementation, real mandate rules, cross-deployment replay, country fixtures and CTC-007 model compatibility.
+- **Git:** Full replacement generated locally; no remote push or synchronization claimed.

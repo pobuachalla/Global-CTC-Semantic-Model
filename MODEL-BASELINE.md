@@ -129,3 +129,10 @@ The 18 additional Draft 4.2 field contracts remain Proposed, not part of the app
 **CTC-004 Done — scoped.** The accepted logical model's T01–T03 tax and monetary policies have focused deterministic validation for multi-regime aggregation, withholding, signed effects, tax inclusion, source assertions, currency safeguards, precision and rounding-policy controls. This is **validation evidence**, not a new schema approval or jurisdictional compliance statement.
 
 D2 and all prior accepted decisions remain unchanged. The 18 proposed CTC-003 field contracts remain unapproved; FiscalContext physical A/B/C remains deferred. The authoritative scoped CTC-003 dictionary remains `research/CTC-003/CTC-003-DETAILED-LOGICAL-DICTIONARY-APPROVED-SCOPED.md`.
+
+
+## CTC-005 approved logical governance baseline — 2026-10-21
+
+The seven-step reuse-before-extension decision tree and JP-01..JP-10 are **Accepted at logical-governance level**. Applicable profile package identity, effective-date basis, immutable dependency pinning, governed extension ownership, precedence/ambiguity handling, promotion controls and validation/legal-state separation are normative logical rules. See `DECISIONS.md` for exact wording.
+
+This does not add mandatory canonical fields or approve the candidate physical profile contracts. The 18 additional CTC-003 field contracts remain Proposed; physical FiscalContext A/B/C and country-specific regulatory behavior remain deferred. CTC-001..004 scoped approvals and all earlier decisions remain unchanged.

@@ -193,3 +193,10 @@ The user approved the scoped detailed logical dictionary. Earlier synthetic stru
 - **F-004-02 (focused synthetic):** Explicit quantization, rounding mode and calculation stage yield reproducible monetary results; missing essential policy inputs produce `NOT_EVALUABLE` (MG-004-02: 11/11).
 - **F-004-03 (evidence boundary):** Earlier four overlapping suites replayed 66/66 assertions. Combined 89/89 assertions support logical behavior, not 89 independent real-world cases or authority compliance.
 - **Deferred:** Country profiles and precision rules CTC-005/007; validated authority samples CTC-008/010; semantic-loss analysis CTC-009.
+
+
+## 2026-10-21 — CTC-005 scoped closure evidence disposition
+
+- Seven original synthetic governance scenarios passed; four remaining logical coverage areas passed twenty additional deterministic assertions (package/dependency integrity 4, extension registration 7, legal-state separation 3, promotion/rollback/history 6).
+- These results support logical contract consistency only. No production registry durability, cryptographic verification, actual jurisdictional rule correctness, authority response conformance or cross-deployment replay is established.
+- JP-01..JP-10 and the seven-step decision tree are accepted by explicit user approval, not inferred from tests.

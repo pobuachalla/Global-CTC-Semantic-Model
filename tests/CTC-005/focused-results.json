@@ -1,0 +1,91 @@
+{
+  "passed": 20,
+  "total": 20,
+  "tests": [
+    {
+      "test": "JP01 immutable package digest verified",
+      "passed": true
+    },
+    {
+      "test": "JP02 all mapping rule and code list digests pinned",
+      "passed": true
+    },
+    {
+      "test": "JP01/02 reject dependency tampering",
+      "passed": true
+    },
+    {
+      "test": "JP02 reject missing dependency",
+      "passed": true
+    },
+    {
+      "test": "JP06 complete extension accepted",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing namespace rejected",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing owner rejected",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing valueType rejected",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing applicability rejected",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing provenancePolicy rejected",
+      "passed": true
+    },
+    {
+      "test": "JP06 missing testEvidence rejected",
+      "passed": true
+    },
+    {
+      "test": "JP08 validation pass without authority remains unknown",
+      "passed": true
+    },
+    {
+      "test": "JP08 reject clearance inferred from validation",
+      "passed": true
+    },
+    {
+      "test": "JP08 require preserved source and outbound artifacts",
+      "passed": true
+    },
+    {
+      "test": "JP09 reject promotion without regression evidence",
+      "passed": true
+    },
+    {
+      "test": "JP09 valid promotion accepted",
+      "passed": true
+    },
+    {
+      "test": "JP09 old interpretation pinned after promotion",
+      "passed": true
+    },
+    {
+      "test": "JP09 rollback target exists",
+      "passed": true
+    },
+    {
+      "test": "JP09 rollback restores prior active digest",
+      "passed": true
+    },
+    {
+      "test": "JP09 rollback preserves historical interpretation",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Synthetic in-memory governance checks",
+    "No durable archival, signature verification, or real profile registry",
+    "No legal/regulatory conformance validation"
+  ]
+}

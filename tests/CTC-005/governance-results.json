@@ -1,0 +1,50 @@
+{
+  "source": "CTC-005 jurisdiction profile governance decision candidate 2026-10-21",
+  "scope": "synthetic logical governance contract",
+  "cases": [
+    {
+      "name": "Overlapping published profiles without precedence",
+      "expected": "AMBIGUOUS",
+      "actual": "AMBIGUOUS",
+      "passed": true
+    },
+    {
+      "name": "Missing applicability date basis",
+      "expected": "NOT_EVALUABLE",
+      "actual": "NOT_EVALUABLE",
+      "passed": true
+    },
+    {
+      "name": "Historical v1 mapping unchanged after v2 release",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "Redundant local extension rejected",
+      "expected": "REJECT_REDUNDANT_EXTENSION",
+      "actual": "REJECT_REDUNDANT_EXTENSION",
+      "passed": true
+    },
+    {
+      "name": "Unknown local source code preserved",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "Authority response ID cannot become billing field",
+      "expected": "REJECT_WRONG_OWNER",
+      "actual": "REJECT_WRONG_OWNER",
+      "passed": true
+    },
+    {
+      "name": "Reusable core concept requires ADR and migration",
+      "expected": "ADR_AND_MIGRATION_REQUIRED",
+      "actual": "ADR_AND_MIGRATION_REQUIRED",
+      "passed": true
+    }
+  ],
+  "passed": 7,
+  "total": 7
+}
