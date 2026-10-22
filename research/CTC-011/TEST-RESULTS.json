@@ -1,0 +1,62 @@
+{
+  "passed": 14,
+  "total": 14,
+  "results": [
+    {
+      "test": "exactly 51 approved logical concepts represented",
+      "passed": true
+    },
+    {
+      "test": "no duplicate concept names",
+      "passed": true
+    },
+    {
+      "test": "all relationships have existing endpoint concepts",
+      "passed": true
+    },
+    {
+      "test": "all relationship references classified",
+      "passed": true
+    },
+    {
+      "test": "no proposed fields silently declared",
+      "passed": true
+    },
+    {
+      "test": "no universal positive published-revision minimum",
+      "passed": true
+    },
+    {
+      "test": "ingestion can produce zero to many extractions",
+      "passed": true
+    },
+    {
+      "test": "document and transport attempts are distinct",
+      "passed": true
+    },
+    {
+      "test": "source facts and derived facts are distinct",
+      "passed": true
+    },
+    {
+      "test": "response correlation and legal state distinct",
+      "passed": true
+    },
+    {
+      "test": "diagrams exist",
+      "passed": true
+    },
+    {
+      "test": "negative control: orphan relationship endpoint rejected",
+      "passed": true
+    },
+    {
+      "test": "negative control: a proposed field is not an approved field",
+      "passed": true
+    },
+    {
+      "test": "negative control: no physical FiscalContext selection",
+      "passed": true
+    }
+  ]
+}

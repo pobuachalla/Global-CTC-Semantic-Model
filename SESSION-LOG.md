@@ -317,3 +317,25 @@ Reviewed 13 candidate repositories against public-source evidence; recorded limi
 ## 2026-10-21 — CTC-013 scoped approval and handoff
 
 User explicitly approved CL-01–CL-08 at logical-policy level and CTC-013 Done — scoped. Preserved prior approvals and all deferrals. Added CTC-013 decision candidate, consolidated report and executable test evidence. Replayed ten focused scenarios successfully. CTC-008 remains delegated/In Progress. Next: CTC-014 normalized authority response contract, without reopening D2 or treating authority transport receipts as legal decisions. No GitHub push performed.
+
+## 2026-10-21 — CTC-014 approval and handoff
+
+User explicitly accepted AR-01–AR-10 at logical-contract level and approved CTC-014 Done — scoped. Complete replacement Git-ready snapshot prepared from latest locally available CTC-013 full baseline and CTC-014 research; live GitHub HEAD not verified. Existing approvals and deferrals retained. CTC-008 remains delegated/in progress. Recommend CTC-011 as next independent task.
+
+## 2026-10-21 — CTC-011 explicit approval and TDS kickoff
+
+- **Task:** CTC-011; **outcome:** Done — scoped by explicit user approval.
+- **Available baseline:** locally supplied approved CTC-014 full snapshot dated 2026-10-21 plus CTC-011 logical review package; live GitHub HEAD not verified.
+- **Accepted:** implementation-neutral logical relational candidate and qualified associations, 51 concept mappings, 24 principal relationships, four ERDs.
+- **Evidence:** 14/14 focused structural checks in CTC-011 package; no physical schema or jurisdiction conformance tested.
+- **Deferred:** physical keys/tables, FiscalContext A/B/C, lineage/retention CTC-012, 18 proposed field contracts, provider fixtures CTC-008–010.
+- **New artifact:** `specifications/Global-CTC-Technical-Design-Specification-v0.1-DRAFT.md` (draft, not accepted; proposed CTC-019 remains unapproved).
+- **Next task:** CTC-012; CTC-008 delegated in parallel. Apply Git-ready replacements after reviewing local differences.
+
+## 2026-10-21 — CTC-012 bounded review
+
+Prepared one persistence and lineage decision candidate (PS-01..PS-12) and executed 12/12 synthetic checks. Proposed scoped closure, pending user approval. No approved decisions reopened, no remote GitHub changes. Next: seek CTC-012 decision; then update TDS persistence chapter and consider CTC-015/016 while CTC-008 runs independently.
+
+## 2026-10-21 — CTC-012 approval checkpoint
+
+CTC-012 is Done — scoped. PS-01 through PS-12 are accepted at logical-policy level only. Preserve immutable inbound and outbound representations, published revisions, version-pinned interpretation manifests, provenance, submitted snapshots and response/event histories. Retention evaluation is explicit and policy-versioned; historical replay requires resolvable dependencies and distinguishes recomputation from recorded authority outcomes. The focused 12/12 tests are synthetic. Physical storage, retention periods, FiscalContext A/B/C and the 18 proposed CTC-003 field contracts remain deferred. Next independent tasks: CTC-015 and CTC-016; CTC-008 remains delegated.

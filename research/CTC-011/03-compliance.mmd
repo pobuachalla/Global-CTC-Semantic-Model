@@ -1,0 +1,7 @@
+erDiagram
+    PublishedRevision ||--o{ ComplianceTransaction : "logical"
+    ComplianceTransaction ||--o{ SubmissionAttempt : "logical"
+    ComplianceTransaction ||--o{ ProcessingEvent : "logical"
+    ComplianceTransaction ||--o{ LegalStateAssessment : "logical"
+    SubmissionEnvelope ||--o{ EnvelopeMember : "logical"
+    SubmissionEnvelope ||--o{ TransportAttempt : "logical"

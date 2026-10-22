@@ -1,0 +1,8 @@
+erDiagram
+    BillingDocument ||--o{ PublishedRevision : "logical"
+    PublishedRevision ||--o{ PartyParticipation : "logical"
+    PartySnapshot ||--o{ PartyParticipation : "logical"
+    PublishedRevision ||--o{ BillingLine : "logical"
+    BillingLine o|--o{ BillingLine : "parent-child"
+    BillingDocument ||--o{ DocumentRelationship : "logical"
+    PublishedRevision ||--o{ DocumentReference : "logical"

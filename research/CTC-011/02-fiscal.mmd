@@ -1,0 +1,8 @@
+erDiagram
+    PublishedRevision ||--o{ RevisionTaxRegime : "logical"
+    TaxRegime ||--o{ RevisionTaxRegime : "logical"
+    PublishedRevision ||--o{ TaxApplication : "logical"
+    PublishedRevision ||--o{ SourceFiscalFact : "logical"
+    PublishedRevision ||--o{ FiscalInterpretation : "logical"
+    ProfilePackage ||--o{ FiscalInterpretation : "logical"
+    FiscalInterpretation ||--o{ DerivedFiscalFact : "logical"

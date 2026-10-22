@@ -1,0 +1,25 @@
+parent_or_subject,child_or_target,reference_path,parent_cardinality,child_cardinality,authority,field_declaration,implementation_note
+BillingDocument,PublishedRevision,documentRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+PublishedRevision,PartyParticipation,revisionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+PartySnapshot,PartyParticipation,partySnapshotRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+PublishedRevision,BillingLine,revisionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+BillingLine,BillingLine,parentLineRef,0..1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+BillingDocument,DocumentRelationship,sourceDocumentRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+BillingDocument,DocumentRelationship,targetDocumentRef,1,0..N,Accepted qualified; external targets need typed unresolved reference,Declared,Reference only; not physical FK
+PublishedRevision,DocumentReference,revisionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+PublishedRevision,Supply,revisionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+PublishedRevision,TaxApplication,revisionRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+PublishedRevision,RevisionTaxRegime,revisionRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+TaxRegime,RevisionTaxRegime,regimeRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+PublishedRevision,SourceFiscalFact,revisionRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+PublishedRevision,FiscalInterpretation,revisionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+ProfilePackage,FiscalInterpretation,profilePackageRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+FiscalInterpretation,DerivedFiscalFact,interpretationRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+PublishedRevision,ComplianceTransaction,revisionRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+ComplianceTransaction,SubmissionAttempt,transactionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+ComplianceTransaction,ProcessingEvent,transactionRef,1,0..N,Accepted qualified,Logical association; no exact approved FK field,Reference only; not physical FK
+ComplianceTransaction,LegalStateAssessment,transactionRef,1,0..N,Accepted qualified,Logical association; no exact approved FK field,Reference only; not physical FK
+SubmissionEnvelope,EnvelopeMember,envelopeRef,1,1..N when submitted,Accepted qualified,Declared,Reference only; not physical FK
+SubmissionEnvelope,TransportAttempt,envelopeRef,1,0..N,Accepted qualified,Declared,Reference only; not physical FK
+IngestionRecord,DocumentExtraction,ingestionRef,1,0..N,Accepted,Declared,Reference only; not physical FK
+DocumentExtraction,BillingDocument,documentRef,0..1,0..N,Accepted,Declared,Reference only; not physical FK

@@ -1,0 +1,100 @@
+{
+  "total": 12,
+  "passed": 12,
+  "cases": [
+    {
+      "scenario": "S01 immutable valid published snapshot",
+      "expected_error": null,
+      "observed_errors": [],
+      "passed": true
+    },
+    {
+      "scenario": "S02 altered original artifact digest",
+      "expected_error": "DIGEST_MISMATCH:source",
+      "observed_errors": [
+        "DIGEST_MISMATCH:source"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S03 mutable published revision",
+      "expected_error": "REVISION_MUTABLE:r1",
+      "observed_errors": [
+        "REVISION_MUTABLE:r1"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S04 missing interpretation dependency",
+      "expected_error": "MISSING_INPUT:m1:absent",
+      "observed_errors": [
+        "MISSING_INPUT:m1:absent"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S05 unpinned profile",
+      "expected_error": "UNPINNED_PROFILE:m1",
+      "observed_errors": [
+        "UNPINNED_PROFILE:m1"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S06 mutable submission snapshot",
+      "expected_error": "SNAPSHOT_MUTABLE:s1",
+      "observed_errors": [
+        "SNAPSHOT_MUTABLE:s1"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S07 envelope success cannot clear document",
+      "expected_error": "ILLEGAL_CLEARANCE_INFERENCE",
+      "observed_errors": [
+        "ILLEGAL_CLEARANCE_INFERENCE"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S08 ambiguous correlation not resolved",
+      "expected_error": "AMBIGUOUS_RESOLVED",
+      "observed_errors": [
+        "AMBIGUOUS_RESOLVED"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S09 legal hold blocks deletion",
+      "expected_error": "UNSAFE_RETENTION",
+      "observed_errors": [
+        "UNSAFE_RETENTION"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S10 missing replay dependency",
+      "expected_error": "FALSE_REPLAYABILITY",
+      "observed_errors": [
+        "FALSE_REPLAYABILITY"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S11 envelope manifest inconsistent",
+      "expected_error": "ENVELOPE_MEMBER_MISMATCH",
+      "observed_errors": [
+        "ENVELOPE_MEMBER_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "S12 source fact overwrite forbidden",
+      "expected_error": "SOURCE_FACT_OVERWRITE",
+      "observed_errors": [
+        "SOURCE_FACT_OVERWRITE"
+      ],
+      "passed": true
+    }
+  ]
+}

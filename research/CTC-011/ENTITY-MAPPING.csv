@@ -1,0 +1,52 @@
+semantic_concept,approved_field_count,identity_candidates,logical_role,relation_note,physical_disposition
+BillingDocument,2,documentId,semantic value/record; physical table not implied,0..N PublishedRevision.,Deferred
+PublishedRevision,10,revisionId,semantic value/record; physical table not implied,1 BillingDocument; 0..N lines/parties/taxes.,Deferred
+PartySnapshot,4,partySnapshotId,semantic value/record; physical table not implied,0..N PartyParticipation.,Deferred
+PartyParticipation,5,participationId,semantic value/record; physical table not implied,1 revision; 1 snapshot.,Deferred
+BillingLine,6,lineId,semantic value/record; physical table not implied,1 revision; 0..N child lines.,Deferred
+Item,3,itemId,candidate embedded/value-object representation; no table decision,0..N lines.,Deferred
+Price,3,,candidate embedded/value-object representation; no table decision,0..N lines.,Deferred
+Adjustment,4,adjustmentId,semantic value/record; physical table not implied,1 scope.,Deferred
+DocumentRelationship,4,relationshipId,semantic value/record; physical table not implied,2 documents.,Deferred
+DocumentReference,4,referenceId; externalId,semantic value/record; physical table not implied,1 revision.,Deferred
+Supply,4,supplyId,semantic value/record; physical table not implied,1 revision.,Deferred
+TaxPoint,4,taxPointId,semantic value/record; physical table not implied,1 scope.,Deferred
+PaymentTerms,4,termsId,candidate embedded/value-object representation; no table decision,1 revision.,Deferred
+AttachmentReference,4,attachmentId,semantic value/record; physical table not implied,0..1 revision; 1 representation.,Deferred
+TaxRegime,3,regimeId,semantic value/record; physical table not implied,0..N TaxApplication.,Deferred
+RevisionTaxRegime,4,registrationId,semantic value/record; physical table not implied,1 revision; 1 scheme.,Deferred
+TaxApplication,8,applicationId,semantic value/record; physical table not implied,1 revision; 1 regime; 1 economic scope.,Deferred
+TaxSummary,4,summaryId,derived/assessment record; preserve inputs and versions,0..N applications.,Deferred
+SourceAssertion,4,assertionId,semantic value/record; physical table not implied,1 representation.,Deferred
+MonetaryTotal,6,,semantic value/record; physical table not implied,1 revision.,Deferred
+MonetaryBasis,4,basisId,candidate embedded/value-object representation; no table decision,1 revision.,Deferred
+MonetaryEffect,4,effectId,candidate embedded/value-object representation; no table decision,1 basis.,Deferred
+MonetaryConversion,6,conversionId,semantic value/record; physical table not implied,0..N monetary facts.,Deferred
+MonetaryComponent,8,componentId,semantic value/record; physical table not implied,1 revision; 0..1 basis.,Deferred
+MonetaryReconciliation,8,evaluationId,derived/assessment record; preserve inputs and versions,1 revision.,Deferred
+SourceFiscalFact,6,factId,semantic value/record; physical table not implied,1 revision; 1 representation.,Deferred
+FiscalInterpretation,6,interpretationId,semantic value/record; physical table not implied,1 revision; 1 package; 0..N derived facts.,Deferred
+InterpretationInputManifest,10,manifestId,semantic value/record; physical table not implied,1 revision; immutable members.,Deferred
+DerivedFiscalFact,5,factId,semantic value/record; physical table not implied,1 interpretation; 1 provenance.,Deferred
+SourceLocator,3,locatorId,semantic value/record; physical table not implied,1 representation.,Deferred
+FactProvenance,5,provenanceId,semantic value/record; physical table not implied,1 revision.,Deferred
+EnrichmentSnapshot,4,enrichmentId,semantic value/record; physical table not implied,0..N provenance.,Deferred
+ProfilePackage,6,profilePackageId,semantic value/record; physical table not implied,0..N interpretations.,Deferred
+DocumentRepresentation,6,representationId,semantic value/record; physical table not implied,0..1 revision; 0..1 ingestion.,Deferred
+ComplianceTransaction,4,transactionId,semantic value/record; physical table not implied,1 revision; 0..N attempts/events.,Deferred
+SubmissionSnapshot,9,snapshotId,semantic value/record; physical table not implied,1 revision; 1 outbound representation.,Deferred
+SubmissionAttempt,4,submissionAttemptId,semantic value/record; physical table not implied,1 transaction; 1 snapshot.,Deferred
+ProcessingEvent,6,eventId,semantic value/record; physical table not implied,1 typed subject.,Deferred
+ValidationFinding,5,findingId,semantic value/record; physical table not implied,1 subject.,Deferred
+ResponseCorrelation,7,correlationId,semantic value/record; physical table not implied,0..1 resolved subject.,Deferred
+FiscalIdentity,5,fiscalIdentityId,semantic value/record; physical table not implied,1 artifact.,Deferred
+FiscalEvidence,4,evidenceId,semantic value/record; physical table not implied,1 artifact.,Deferred
+IngestionRecord,4,ingestionId,semantic value/record; physical table not implied,0..N extractions.,Deferred
+DocumentExtraction,4,extractionId,semantic value/record; physical table not implied,1 ingestion; 0..1 document.,Deferred
+WorkingDocument,4,workingId,semantic value/record; physical table not implied,0..1 extraction; 0..1 document.,Deferred
+SubmissionEnvelope,4,envelopeId,semantic value/record; physical table not implied,0..N members in draft; >=1 submitted.,Deferred
+EnvelopeMember,7,memberId,semantic value/record; physical table not implied,1 envelope; 1 transaction.,Deferred
+TransportAttempt,4,transportAttemptId,semantic value/record; physical table not implied,1 envelope; 1 immutable payload.,Deferred
+TransportResponse,5,responseId,semantic value/record; physical table not implied,1 attempt; optional member.,Deferred
+LegalStateAssessment,5,assessmentId,derived/assessment record; preserve inputs and versions,1 revision.,Deferred
+DuplicateResolution,5,resolutionId,semantic value/record; physical table not implied,0..N ingestions.,Deferred

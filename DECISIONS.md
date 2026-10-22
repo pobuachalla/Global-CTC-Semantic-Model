@@ -422,3 +422,30 @@ The following three lifecycle dimensions are independently modelled: **document 
 **Exact scope:** Logical compliance lifecycle contract only, backed by 10/10 synthetic scenario checks. Does not approve physical event schema/storage, a production projection engine, provider-specific correlation or response precedence, legal status rules, cryptographic evidence, API payload contracts or new fields. Earlier D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, qualified C09, G2, JP-01–JP-10, C006-01–03 and V-01–V-10 remain unchanged. Eighteen CTC-003 additional field contracts remain Proposed; FiscalContext A/B/C physical options remain Deferred.
 
 **Evidence:** `research/CTC-013/CTC-013-COMPLIANCE-LIFECYCLE-DECISION-CANDIDATE.md`, `research/CTC-013/CTC-013-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`, `tests/CTC-013/`.
+
+## 2026-10-21 — CTC-014 AR-01 through AR-10 (Accepted — logical contract)
+
+**Explicit approval:** CTC-014 Done — scoped; accept AR-01–AR-10 exactly as defined in `research/CTC-014/CTC-014-APPROVED-SCOPED-CLOSURE.md`. The approved scope concerns immutable authority response observations, source-preserving normalization, scoped correlation, typed response subjects, separate status dimensions, legal-state non-inference, typed external references, append-only histories, preserved findings and deterministic evidence-linked projections.
+
+**Not approved:** candidate physical/logical entity shapes beyond the scoped response contract, provider-specific status semantics, cryptographic verification, country-specific legality, ERP-facing API design. All earlier approvals preserved; 18 proposed CTC-003 fields and FiscalContext A/B/C remain deferred.
+
+## 2026-10-21 — CTC-011 logical relational model (Accepted — scoped)
+
+**Explicit user approval:** “I explicitly approve CTC-011 Done — scoped at the implementation-neutral logical relational model level. Preserve all existing accepted decisions and deferred physical work. Prepare complete replacement Git-ready project records and begin the development-facing Technical Design Specification baseline.”
+
+**Accepted scope:** The CTC-011 candidate's implementation-neutral logical model, 51-concept semantic mapping inventory, 24 principal relationship definitions, qualified cardinalities and four Mermaid diagrams are approved as the CTC-011 logical deliverable. The 14/14 structural checks provide bounded synthetic evidence, not SQL or regulatory validation. The distinction between declared references and logical associations without an accepted field declaration is retained.
+
+**Explicit exclusions:** No physical schema/tables/columns, database selection, indexes, partitions, persistence layout, FiscalContext A/B/C choice, retention policy, migration strategy, jurisdictional legality, production API, or promotion of the 18 proposed CTC-003 field contracts. This approval does not supersede D2, P1–P7, I-01–I-10, T01–T03, D01–D03, L01–L10, B01–B10, C09, G2, JP-01–JP-10, C006-01–03, V-01–V-10, CL-01–CL-08 or AR-01–AR-10.
+
+**Evidence:** `research/CTC-011/CTC-011-LOGICAL-RELATIONAL-MODEL-DECISION-CANDIDATE.md`, `research/CTC-011/ENTITY-MAPPING.csv`, `research/CTC-011/RELATIONSHIP-REGISTER.csv`, `research/CTC-011/01-commercial.mmd` through `04-ingestion.mmd`, `tests/CTC-011/validate_logical_model.py`.
+
+**Task status:** CTC-011 Done — scoped. CTC-012 next; CTC-008 continues in parallel. Development-facing TDS v0.1 initiated as a draft artifact, without automatically creating or approving a new backlog ID.
+
+## 2026-10-21 — CTC-012 PS-01 through PS-12 (Accepted — logical-policy scope)
+
+**Explicit user approval:** “I explicitly approve CTC-012 PS-01 through PS-12 at logical-policy level and mark CTC-012 Done — scoped. Preserve all previous approved decisions and deferred physical work. Prepare complete replacement Git-ready records and update the Word TDS persistence and lineage chapter.”
+
+**Accepted scope:** PS-01 through PS-12 as specified in `research/CTC-012/CTC-012-PERSISTENCE-SNAPSHOTS-AND-LINEAGE-DECISION-CANDIDATE.md`: immutable original and generated artifacts, published revision snapshots, pinned interpretation manifests, field provenance, submission and response histories, digest context, explicit retention policy evaluation, replay outcomes, tenant-scoped references and immutable audit/correction links. CTC-012 is Done — scoped. The 12/12 synthetic checks support the stated logical scope only.
+
+**Not approved:** physical schema, storage engine, encryption design, retention durations, physical FiscalContext A/B/C, production replay guarantees, country-specific legal retention or evidence verification, and the 18 proposed CTC-003 field contracts. All previous accepted decisions remain unchanged.
+

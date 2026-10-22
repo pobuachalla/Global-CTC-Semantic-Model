@@ -1,10 +1,3 @@
-# Apply CTC-003 Scoped Closure
+# CTC-011 package application
 
-This package contains **full replacement versions** of the five root project registers and the approved scoped dictionary under `research/CTC-003/`. It is not an entire repository replacement.
-
-1. Extract at the root of your local GitHub checkout, retaining paths.
-2. Review `git diff --check` and `git diff` before staging. The source baseline was the latest available CTC-003 Draft 1.9 full snapshot; merge any newer local changes rather than overwriting them.
-3. Run `git add BACKLOG.md DECISIONS.md FINDINGS.md MODEL-BASELINE.md SESSION-LOG.md research/CTC-003/`.
-4. Run `git commit -m "docs(ctc-003): approve scoped detailed logical dictionary"` and `git push origin main`.
-
-No remote repository modifications were made here.
+This is a **review candidate**, not an authoritative replacement of project registers. Copy `research/CTC-011/` and `tests/CTC-011/` into your repository. Review the decision candidate and explicitly approve scoped closure before marking `BACKLOG.md` Done or adding an Accepted ADR. No GitHub push was performed. Source: 2026-10-21 CTC-014 approved local baseline, not verified live GitHub HEAD.

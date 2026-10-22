@@ -215,3 +215,23 @@ Ten synthetic focused scenarios passed, covering immutable party snapshots, mult
 ## CTC-013 logical validation findings (2026-10-21)
 
 Ten synthetic lifecycle scenarios passed. They support independent member outcomes, timeout/unknown treatment, duplicate/late callback preservation, ambiguity handling and deterministic replay in a bounded projection. Limitations: not a production event engine; no actual provider response payloads, cryptographic validation, jurisdictional legal rules or physical persistence validation. See `research/CTC-013/CTC-013-CONSOLIDATED-VALIDATION-AND-CLOSURE-REVIEW.md`.
+
+## CTC-014 scoped validation disposition — 2026-10-21
+
+Ten synthetic response-policy checks passed (partial batch, ambiguity, duplicate/late/conflicting responses, fiscal identity, validation findings, cancellation and deterministic replay). Evidence supports logical policy only; no real provider fixture conformance, cryptographic verification or country-specific legal conclusion is asserted.
+
+## CTC-011 findings and evidence limitations — 2026-10-21
+
+- The logical relational candidate covers 51 semantic concepts, 24 principal relationships and four domain ERDs; 14/14 focused structural checks passed (synthetic, not SQL/regulatory).
+- Several relationships are logical associations without exact approved FK attributes; they must not be silently materialized as accepted canonical fields.
+- Conditional document-family and profile cardinalities cannot be replaced by universal NOT NULL/UNIQUE rules.
+- CTC-012 must address persistence snapshots and lineage; FiscalContext A/B/C remains deferred to its tracked decision gate.
+- CTC-008 evidence inventory remains delegated and unfinished. TDS v0.1 can document accepted semantics now, but integration, persistence and fixture chapters remain incomplete.
+
+## 2026-10-21 — CTC-012 logical persistence validation
+
+Twelve synthetic checks passed. No evidence of production storage atomicity, cryptographic validation or country-specific retention compliance is asserted. Reproducibility depends on resolvable pinned inputs, not digests alone.
+
+## CTC-012 scoped closure findings
+
+CTC-012 is Done — scoped. PS-01 through PS-12 are accepted at logical-policy level only. Preserve immutable inbound and outbound representations, published revisions, version-pinned interpretation manifests, provenance, submitted snapshots and response/event histories. Retention evaluation is explicit and policy-versioned; historical replay requires resolvable dependencies and distinguishes recomputation from recorded authority outcomes. The focused 12/12 tests are synthetic. Physical storage, retention periods, FiscalContext A/B/C and the 18 proposed CTC-003 field contracts remain deferred. Next independent tasks: CTC-015 and CTC-016; CTC-008 remains delegated.

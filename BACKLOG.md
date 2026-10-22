@@ -20,10 +20,10 @@ Statuses: `Todo`, `In Progress`, `Blocked`, `Review`, `Done`. Only mark `Done` a
 | CTC-008 | Inventory and score 13 GitHub repositories | P1 | Evidence and validation | In Progress | — | File-level inventory, licensing, commit IDs, valid/invalid fixtures and scores |
 | CTC-009 | Create semantic coverage and loss matrix | P1 | Evidence and validation | Todo | CTC-003, CTC-008 | Per-field mapping outcomes, unrepresentable concepts, preservation and reversibility |
 | CTC-010 | Stress-test French and non-EU payloads | P1 | Evidence and validation | Todo | CTC-004, CTC-008 | Documented tests for grouped lines, signed amounts, multi-regime tax and corrections |
-| CTC-011 | Derive logical relational model | P1 | Persistence | Todo | CTC-002, CTC-003 | Logical ER model derived from accepted semantics with explicit cardinalities |
-| CTC-012 | Define persistence snapshots and lineage | P1 | Persistence | Todo | CTC-011 | Immutability, source and target representations, lineage and retention decisions |
+| CTC-011 | Derive logical relational model | P1 | Persistence | Done — scoped | CTC-002, CTC-003 | Logical ER model derived from accepted semantics with explicit cardinalities |
+| CTC-012 | Define persistence snapshots and lineage | P1 | Persistence | Done — scoped; PS-01–PS-12 accepted logical policy | CTC-011 | Immutability, source and target representations, lineage and retention decisions |
 | CTC-013 | Define compliance transactions and event model | P1 | Compliance lifecycle | Done — scoped | CTC-002 | Submission attempts, destinations, event dimensions and state derivation |
-| CTC-014 | Define normalized authority responses | P1 | Compliance lifecycle | Todo — next parallel task | CTC-013 | Response schema, correlation, evidence and client-facing representation |
+| CTC-014 | Define normalized authority responses | P1 | Compliance lifecycle | Done — scoped | CTC-013 | Response schema, correlation, evidence and client-facing representation |
 | CTC-015 | Assess adapters, rule DSL and routing boundaries | P2 | Integration | Todo | CTC-002, CTC-005 | Compatibility analysis for ERP/CTC adapters, rules and multi-destination routing |
 | CTC-016 | Define API contracts and client notifications | P2 | Integration | Todo | CTC-013, CTC-014 | Submission, query, status and notification interface contracts |
 | CTC-017 | Establish ADR and semantic governance | P0 | Governance | Todo | — | ADR numbering, statuses, approval gates and change review process |
@@ -225,3 +225,14 @@ Initial public-source inventory started. 13 candidates retained; commit pins, li
 ## CTC-013 scoped closure — 2026-10-21
 
 CTC-013 **Done — scoped** following explicit user approval of CL-01 through CL-08 at logical-policy level. Ten bounded synthetic lifecycle scenarios passed. CTC-008 remains In Progress (delegated fixture inventory). CTC-014 is the next parallel task. Provider-specific authority response schemas, response precedence, cryptographic validation, physical event storage and API contracts remain with CTC-014/016/011/012 and evidence tasks.
+
+## 2026-10-21 CTC-014 approved scoped closure
+
+CTC-014 **Done — scoped** following explicit approval of AR-01–AR-10 at logical-contract level. Ten synthetic focused checks passed. Detailed response entity shapes, regulatory evidence and CTC-016 API delivery remain deferred. CTC-008 remains In Progress (delegated). Next independent task: CTC-011 logical relational model.
+
+## CTC-011 scoped closure — 2026-10-21
+
+- **CTC-011: Done — scoped** by explicit user approval of the implementation-neutral logical relational model. Deliverables: `research/CTC-011/CTC-011-LOGICAL-RELATIONAL-MODEL-DECISION-CANDIDATE.md`, `research/CTC-011/RELATIONSHIP-REGISTER.csv`, `research/CTC-011/ENTITY-MAPPING.csv`, four Mermaid diagrams and 14/14 focused structural checks.
+- Approval does not establish physical tables, indexes, database technology, storage/retention, FiscalContext A/B/C, or the 18 proposed CTC-003 field contracts.
+- **CTC-012** is next for persistence snapshots and lineage. **CTC-008** remains In Progress (delegated). **CTC-019** (development-facing Technical Design Specification) is a *proposed* backlog addition, not approved as a new task.
+

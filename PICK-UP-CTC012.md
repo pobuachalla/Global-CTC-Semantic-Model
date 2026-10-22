@@ -1,0 +1,1 @@
+CTC-012 decision candidate prepared. Review PS-01..PS-12, test evidence (12/12 synthetic checks), and decide scoped approval. If approved, update full registers and TDS persistence chapter. Keep physical FiscalContext A/B/C and 18 candidate fields deferred. CTC-008 delegated.

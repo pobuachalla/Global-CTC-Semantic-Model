@@ -149,3 +149,15 @@ V-01..V-10 are accepted at logical-policy level (see `DECISIONS.md` and `researc
 ## CTC-013 accepted compliance lifecycle boundary (2026-10-21)
 
 CL-01–CL-08 are Accepted at logical-policy scope. Preserve independent compliance transaction identity, submission vs transport attempt identity, immutable event history, four independent status dimensions, no transport-to-legal inference, deterministic versioned status projections, scoped response correlation and historical retry/duplicate/out-of-order evidence. These refine operational semantics without changing the accepted D2 billing contract or approving new physical entities. CTC-014 authority response normalization remains open.
+
+## CTC-014 accepted logical response contract (2026-10-21)
+
+AR-01–AR-10 accepted at logical-contract level; normalized external observations are immutable and distinct from derived client-facing projections, with typed scoped correlation and evidence-linked status dimensions. This extends the accepted CTC-013 lifecycle policy without altering the approved D2 semantic dictionary. Candidate response entity shapes and provider-specific rules are not approved. See `research/CTC-014/CTC-014-APPROVED-SCOPED-CLOSURE.md`.
+
+## CTC-011 accepted implementation-neutral logical relational model — 2026-10-21
+
+CTC-011 is **Done — scoped** by explicit user approval. The accepted deliverable is the logical association and cardinality model in `research/CTC-011/`, including 51 semantic concept mappings, 24 principal relationships and four Mermaid diagrams. Relationship references labeled “logical association” are **not** newly accepted semantic fields or physical foreign-key columns. The physical FiscalContext A/B/C decision, database schema, retention and the 18 proposed CTC-003 field additions remain unresolved. The TDS v0.1 is a **draft documentation baseline**, not an additional architecture approval.
+
+## CTC-012 approved logical persistence and lineage baseline
+
+CTC-012 is Done — scoped. PS-01 through PS-12 are accepted at logical-policy level only. Preserve immutable inbound and outbound representations, published revisions, version-pinned interpretation manifests, provenance, submitted snapshots and response/event histories. Retention evaluation is explicit and policy-versioned; historical replay requires resolvable dependencies and distinguishes recomputation from recorded authority outcomes. The focused 12/12 tests are synthetic. Physical storage, retention periods, FiscalContext A/B/C and the 18 proposed CTC-003 field contracts remain deferred. Next independent tasks: CTC-015 and CTC-016; CTC-008 remains delegated.

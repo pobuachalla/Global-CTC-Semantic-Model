@@ -16,3 +16,6 @@ Full local snapshot from CTC-005 approved ZIP with CTC-006 scoped closure overla
 ## 2026-10-21 CTC-007 approval overlay
 
 Source: 152-file CTC-007 review ZIP (local, not live GitHub). V-01..V-10 accepted at logical-policy scope; CTC-007 Done — scoped. Complete root register replacements and `README-CTC007-APPROVAL.md` added. Existing 18 proposed fields, physical design and jurisdiction evidence remain deferred. `SHA256SUMS.txt` regenerated for this archive.
+
+## CTC-012 review package (2026-10-21)
+Source: locally mounted CTC-011 approved full Git baseline. CTC-012 PS-01..12 proposed, 12/12 synthetic checks; live GitHub HEAD unverified.

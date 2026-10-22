@@ -1,0 +1,13 @@
+scenario,result,expected_error
+S01 immutable valid published snapshot,PASS,NONE
+S02 altered original artifact digest,PASS,DIGEST_MISMATCH:source
+S03 mutable published revision,PASS,REVISION_MUTABLE:r1
+S04 missing interpretation dependency,PASS,MISSING_INPUT:m1:absent
+S05 unpinned profile,PASS,UNPINNED_PROFILE:m1
+S06 mutable submission snapshot,PASS,SNAPSHOT_MUTABLE:s1
+S07 envelope success cannot clear document,PASS,ILLEGAL_CLEARANCE_INFERENCE
+S08 ambiguous correlation not resolved,PASS,AMBIGUOUS_RESOLVED
+S09 legal hold blocks deletion,PASS,UNSAFE_RETENTION
+S10 missing replay dependency,PASS,FALSE_REPLAYABILITY
+S11 envelope manifest inconsistent,PASS,ENVELOPE_MEMBER_MISMATCH
+S12 source fact overwrite forbidden,PASS,SOURCE_FACT_OVERWRITE
